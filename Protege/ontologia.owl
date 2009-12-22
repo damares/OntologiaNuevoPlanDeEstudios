@@ -1,0 +1,1381 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1260008768250 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#" >
+    <!ENTITY AF-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-S/" >
+    <!ENTITY CG-13 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-13/" >
+    <!ENTITY CG-02 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:CG-02="&Ontology1260008768250;CG-02/"
+     xmlns:Ontology1260008768250="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
+     xmlns:AF-S="&Ontology1260008768250;AF-S/"
+     xmlns:CG-13="&Ontology1260008768250;CG-13/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#constaDe -->
+
+    <owl:ObjectProperty rdf:about="#constaDe">
+        <rdfs:range rdf:resource="#Asignatura"/>
+        <rdfs:domain rdf:resource="#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#esOtorgadaPor -->
+
+    <owl:ObjectProperty rdf:about="#esOtorgadaPor">
+        <rdfs:domain rdf:resource="#Competencia"/>
+        <rdfs:range rdf:resource="#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#estaMatriculado -->
+
+    <owl:ObjectProperty rdf:about="#estaMatriculado">
+        <rdfs:range rdf:resource="#Alumno"/>
+        <rdfs:domain rdf:resource="#Asignatura"/>
+        <owl:inverseOf rdf:resource="#seMatriculaEn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#formaParteDe -->
+
+    <owl:ObjectProperty rdf:about="#formaParteDe">
+        <rdfs:domain rdf:resource="#Asignatura"/>
+        <rdfs:range rdf:resource="#Materia"/>
+        <owl:inverseOf rdf:resource="#constaDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#otorgaCompetencias -->
+
+    <owl:ObjectProperty rdf:about="#otorgaCompetencias">
+        <rdfs:range rdf:resource="#Competencia"/>
+        <rdfs:domain rdf:resource="#Materia"/>
+        <owl:inverseOf rdf:resource="#esOtorgadaPor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#seAdquiereParaCumplir -->
+
+    <owl:ObjectProperty rdf:about="#seAdquiereParaCumplir">
+        <rdfs:domain rdf:resource="#Competencia"/>
+        <rdfs:range rdf:resource="#ObjetivoGeneral"/>
+        <owl:inverseOf rdf:resource="#seCumpleMedianteLaAdquisicionDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#seCumpleMedianteLaAdquisicionDe -->
+
+    <owl:ObjectProperty rdf:about="#seCumpleMedianteLaAdquisicionDe">
+        <rdfs:range rdf:resource="#Competencia"/>
+        <rdfs:domain rdf:resource="#ObjetivoGeneral"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#seImparteMediante -->
+
+    <owl:ObjectProperty rdf:about="#seImparteMediante">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:range rdf:resource="#MetodoDocente"/>
+        <owl:inverseOf rdf:resource="#utilizadoEn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#seMatriculaEn -->
+
+    <owl:ObjectProperty rdf:about="#seMatriculaEn">
+        <rdfs:domain rdf:resource="#Alumno"/>
+        <rdfs:range rdf:resource="#Asignatura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#utilizadoEn -->
+
+    <owl:ObjectProperty rdf:about="#utilizadoEn">
+        <rdfs:range rdf:resource="#Materia"/>
+        <rdfs:domain rdf:resource="#MetodoDocente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ActividadesFormativas -->
+
+    <owl:DatatypeProperty rdf:about="#ActividadesFormativas">
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CaracterAsignatura -->
+
+    <owl:DatatypeProperty rdf:about="#CaracterAsignatura">
+        <rdfs:domain rdf:resource="#Asignatura"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesAsignatura"/>
+        <rdfs:range>
+            <rdf:Description>
+                <rdf:type rdf:resource="&owl;DataRange"/>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">Basica</rdf:first>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdf:Description>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CaracterMateria -->
+
+    <owl:DatatypeProperty rdf:about="#CaracterMateria">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range>
+            <rdf:Description>
+                <rdf:type rdf:resource="&owl;DataRange"/>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">Basica</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Mixta</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">Obligatoria</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:datatype="&xsd;string">Optativa</rdf:first>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdf:Description>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CreditosECTS -->
+
+    <owl:DatatypeProperty rdf:about="#CreditosECTS">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Descripcion -->
+
+    <owl:DatatypeProperty rdf:about="#Descripcion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#DuracionYUbicacion -->
+
+    <owl:DatatypeProperty rdf:about="#DuracionYUbicacion">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Extension -->
+
+    <owl:DatatypeProperty rdf:about="#Extension">
+        <rdfs:comment
+            >Las asignaturas tendr&#225;n una extensi&#243;n de 3 ECTS m&#237;nimo, y una duraci&#243;n m&#250;ltiplo de 3.</rdfs:comment>
+        <rdfs:domain rdf:resource="#Asignatura"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesAsignatura"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesAsignatura -->
+
+    <owl:DatatypeProperty rdf:about="#PropiedadesAsignatura"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesMateria -->
+
+    <owl:DatatypeProperty rdf:about="#PropiedadesMateria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#UbicacionTemporal -->
+
+    <owl:DatatypeProperty rdf:about="#UbicacionTemporal">
+        <rdfs:domain rdf:resource="#Asignatura"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesAsignatura"/>
+        <rdfs:range>
+            <rdf:Description>
+                <rdf:type rdf:resource="&owl;DataRange"/>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">1er semestre</rdf:first>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdf:Description>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Alumno -->
+
+    <owl:Class rdf:about="#Alumno">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Asignatura -->
+
+    <owl:Class rdf:about="#Asignatura"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Competencia -->
+
+    <owl:Class rdf:about="#Competencia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CompetenciaEspecifica -->
+
+    <owl:Class rdf:about="#CompetenciaEspecifica">
+        <rdfs:subClassOf rdf:resource="#Competencia"/>
+        <owl:disjointWith rdf:resource="#CompetenciaGeneral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CompetenciaGeneral -->
+
+    <owl:Class rdf:about="#CompetenciaGeneral">
+        <rdfs:subClassOf rdf:resource="#Competencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Materia -->
+
+    <owl:Class rdf:about="#Materia">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MetodoDocente -->
+
+    <owl:Class rdf:about="#MetodoDocente">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ObjetivoGeneral -->
+
+    <owl:Class rdf:about="#ObjetivoGeneral"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-FundamentosFisicosYTecnologicosDeLaInformatica -->
+
+    <Asignatura rdf:about="#AS-FundamentosFisicosYTecnologicosDeLaInformatica">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">1er semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-01 -->
+
+    <owl:Thing rdf:about="#CE-01">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocer profundamente los cimientos esenciales y fundacionales de la inform&#225;tica, abarcando tanto conceptos y teor&#237;as abstractos como los valores y los principios profesionales, subrayando los aspectos esenciales de la disciplina que permanecen inalterables ante el cambio tecnol&#243;gico.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-02 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-02">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Formalizaci&#243;n y especificaci&#243;n de problemas reales cuya soluci&#243;n requiere el uso de la inform&#225;tica.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-03/04 -->
+
+    <owl:Thing rdf:about="#CE-03/04">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de elegir y usar los m&#233;todos anal&#237;ticos y de modelizaci&#243;n relevantes, y de describir una soluci&#243;n de forma abstracta.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-05 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-05">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de dise&#241;ar y realizar experimentos apropiados, interpretar los datos y extraer conclusiones.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-06 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-06">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comprender intelectualmente el papel central que tienen los algoritmos y las estructuras de datos, as&#237; como una apreciaci&#243;n del mismo.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-07 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-07">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Entender el soporte f&#237;sico (hardware) de los ordenadores desde el punto de vista del soporte l&#243;gico (software), por ejemplo, el uso del procesador, de la memoria, de los discos, del monitor, etc.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-08 -->
+
+    <owl:Thing rdf:about="#CE-08">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Poseer destrezas fundamentales de la programaci&#243;n que permitan la implementaci&#243;n de los algoritmos y las estructuras de datos en el software.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-09 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-09">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Poseer las destrezas que se requieren para dise&#241;ar e implementar unidades estructurales mayores que utilizan los algoritmos y las estructuras de datos, as&#237; como las interfaces por las que se comunican estas unidades.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-10 -->
+
+    <owl:Thing rdf:about="#CE-10">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Concebir y desarrollar sistemas digitales utilizando lenguajes de descripci&#243;n hardware.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-11 -->
+
+    <owl:Thing rdf:about="#CE-11">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocimientos b&#225;sicos para estimar y medir el gasto y la productividad.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-12/16 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-12/16">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocer los campos de aplicaci&#243;n de la inform&#225;tica, y tener una apreciaci&#243;n de la necesidad de poseer unos conocimientos t&#233;cnicos profundos en ciertas &#225;reas de aplicaci&#243;n; apreciaci&#243;n del grado de esta necesidad en, por lo menos, una situaci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-13/18 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-13/18">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comprender lo que pueden y no pueden conseguir las tecnolog&#237;as actuales, y las limitaciones de la inform&#225;tica, que implica distinguir entre lo que, inherentemente, la inform&#225;tica no es capaz de hacer y lo que puede lograrse a trav&#233;s de la ciencia y la tecnolog&#237;a futuras.</Descripcion>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-14/15 -->
+
+    <owl:Thing rdf:about="#CE-14/15">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocer el software, el hardware y las aplicaciones existentes en el mercado, as&#237; como el uso de sus elementos, y capacidad para familiarizarse con nuevas aplicaciones inform&#225;ticas.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-17 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-17">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocer los temas inform&#225;ticos avanzados de modo que permita a los alumnos vislumbrar y entender las fronteras de la disciplina, por medio de la inclusi&#243;n de experiencias de aprendizaje que dirigen a los alumnos desde los temas elementales a los temas avanzados o los temas de los que se nutren los nov&#237;simos desarrollos.</Descripcion>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-19/20 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-19/20">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocimiento de los tipos apropiados de soluciones, y comprensi&#243;n de la complejidad de los problemas inform&#225;ticos y la viabilidad de su soluci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj06"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-21 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-21">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Educir, analizar y especificar las necesidades de los clientes (empresas o usuarios individuales), plazos, medios disponibles y posibles condicionantes que pudieran afectar al sistema a desarrollar.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-22 -->
+
+    <owl:Thing rdf:about="#CE-22">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de aplicar sus conocimientos e intuici&#243;n para dise&#241;ar el hardware/software que cumple unos requisitos especificados.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-23 -->
+
+    <owl:Thing rdf:about="#CE-23">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Modelizar y dise&#241;ar la interacci&#243;n humana-ordenador adoptando un enfoque centrado en el usuario, y siendo capaz de dise&#241;ar, desarrollar, evaluar y asegurar la accesibilidad, ergonom&#237;a, usabilidad y seguridad de los mismos.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-24 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-24">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Elegir y usar los lenguajes de programaci&#243;n adecuados al tipo de aplicaci&#243;n a desarrollar.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-25 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-25">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Concebir y dise&#241;ar la arquitectura de un sistema software.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-26/27 -->
+
+    <owl:Thing rdf:about="#CE-26/27">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Definir, evaluar y seleccionar plataformas hardware y software, incluyendo el sistema operativo, y concebir, llevar a cabo, instalar y mantener arquitecturas inform&#225;ticas centralizadas o distribuidas integrando hardware, software y redes.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj06"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-28 -->
+
+    <owl:Thing rdf:about="#CE-28">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Evaluar y seleccionar adecuadamente sistemas de gesti&#243;n de bases de datos, y dise&#241;ar y crear estos sistemas integr&#225;ndolos con el resto de tecnolog&#237;as del sistema.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-29 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-29">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Dise&#241;ar, desarrollar, y evaluar la seguridad de los sistemas, aplicaciones, servicios inform&#225;ticos y sistemas operativos sobre los que se ejecutan, as&#237; como de la informaci&#243;n que proporcionan.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-30 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-30">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Dise&#241;ar sistemas, creando prototipos hardware y desarrollando software, que se vayan a explotar en entornos industriales y de tiempo real.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-31 -->
+
+    <owl:Thing rdf:about="#CE-31">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Desarrollar, desplegar, organizar y gestionar servicios inform&#225;ticos en contextos empresariales para mejorar sus procesos de negocio.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-32 -->
+
+    <owl:Thing rdf:about="#CE-32">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comprender el concepto de ciclo de vida, que abarca el significado de sus fases (planificaci&#243;n, desarrollo, instalaci&#243;n y evoluci&#243;n), las consecuencias para el desarrollo de todos los aspectos de los sistemas inform&#225;ticos (el software, el hardware, y el interfaz humano-m&#225;quina), y la relaci&#243;n entre la calidad y la gesti&#243;n del ciclo de vida.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-33 -->
+
+    <owl:Thing rdf:about="#CE-33">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Aplicar t&#233;cnicas y procedimientos de gesti&#243;n y control de la configuraci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj06"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-34 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-34">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Crear prototipos, simulaciones o modelos que permitan la validaci&#243;n del sistema con el cliente.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj06"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-35 -->
+
+    <owl:Thing rdf:about="#CE-35">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Integrar, instalar, probar y mantener un sistema inform&#225;tico.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-36 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-36">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para dise&#241;ar, planificar, documentar y presupuestar la instalaci&#243;n de un sistema hardware y de puestos de trabajo en un espacio f&#237;sico.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-37 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-37">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Aplicar t&#233;cnicas y procedimientos de gesti&#243;n, control y aseguramiento de la calidad.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-38 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-38">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para formular una soluci&#243;n inform&#225;tica aceptable a un problema de forma efectiva en t&#233;rminos del coste y del tiempo.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-39 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-39">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocer y aplicar los principios de la ingenier&#237;a del software y de sus tecnolog&#237;as para garantizar que las implementaciones de software sean robustas, fiables y apropiadas para la audiencia a la que van destinadas.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-40 -->
+
+    <owl:Thing rdf:about="#CE-40">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comprender el concepto esencial de proceso en cuanto a su relaci&#243;n con la inform&#225;tica, especialmente la ejecuci&#243;n de los programas y la operaci&#243;n del sistema.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-41 -->
+
+    <owl:Thing rdf:about="#CE-41">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Elegir y usar modelos de proceso y entornos de programaci&#243;n apropiados para proyectos que implican aplicaciones tradicionales, as&#237; como &#225;reas de aplicaci&#243;n emergentes.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj06"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-42 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-42">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Combinar la teor&#237;a y la pr&#225;ctica para realizar tareas inform&#225;ticas.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-43 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-43">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de realizar b&#250;squedas bibliogr&#225;ficas y de utilizar bases de datos y otras fuentes de informaci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-44 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-44">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocimiento de tecnolog&#237;as punteras relevantes y su aplicaci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-46 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-46">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comprender el concepto esencial de proceso en cuanto a su relaci&#243;n con la actividad profesional, especialmente la relaci&#243;n entre la calidad del producto y la creaci&#243;n de procesos humanos apropiados durante el desarrollo del producto.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-47 -->
+
+    <owl:Thing rdf:about="#CE-47">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Conocer las pr&#225;cticas de gesti&#243;n de proyectos, sistemas y servicios empresariales, tales como la gesti&#243;n del riesgo y del cambio, y una comprensi&#243;n de sus limitaciones.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-48 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-48">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Gestionar sistemas y servicios inform&#225;ticos en contextos empresariales o institucionales para mejorar sus procesos de negocio.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-49 -->
+
+    <owl:Thing rdf:about="#CE-49">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Hacer recomendaciones sobre la estrategia de la empresa en materia de dise&#241;o y desarrollo de nuevos productos, relaciones en los canales de distribuci&#243;n y estrategia de comunicaci&#243;n empresarial.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-50 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-50">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Lanzar nuevos productos en el mercado tras analizar los programas propuestos para el desarrollo de productos; preparar an&#225;lisis de rentabilidad de la inversi&#243;n; realizar un plan de marketing; y elaborar calendarios con ingenier&#237;a y producci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-51 -->
+
+    <owl:Thing rdf:about="#CE-51">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de realizar tareas en distintas &#225;reas de aplicaci&#243;n teniendo en cuenta el contexto t&#233;cnico, econ&#243;mico y social existente.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-52 -->
+
+    <owl:Thing rdf:about="#CE-52">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Tener en consideraci&#243;n las condiciones sociales, &#233;ticas y legales deseadas en la profesi&#243;n y pr&#225;ctica de la inform&#225;tica.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-53/54 -->
+
+    <CompetenciaEspecifica rdf:about="#CE-53/54">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para trabajar de forma efectiva como individuo, organizando y planificando su propio trabajo, de forma independiente o como miembro de un equipo.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj02"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+    </CompetenciaEspecifica>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CE-56 -->
+
+    <owl:Thing rdf:about="#CE-56">
+        <rdf:type rdf:resource="#CompetenciaEspecifica"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Ser capaz de aclarar la relevancia y utilidad de la teor&#237;a y las habilidades aprendidas en el contexto acad&#233;mico sobre los acontecimientos del mundo real.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj02"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-01/21 -->
+
+    <CompetenciaGeneral rdf:about="#CG-01/21">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de resoluci&#243;n de problemas aplicando conocimientos de matem&#225;ticas, ciencias e ingenier&#237;a.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj05"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj06"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/CE-45 -->
+
+    <owl:Thing rdf:about="#CG-02/CE-45">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para el aprendizaje aut&#243;nomo y la actualizaci&#243;n de conocimientos, y reconocimiento de su necesidad en el &#225;rea de la inform&#225;tica.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-03/04 -->
+
+    <CompetenciaGeneral rdf:about="#CG-03/04">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Saber trabajar en situaciones carentes de informaci&#243;n y bajo presi&#243;n, teniendo nuevas ideas, siendo creativo.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </CompetenciaGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-05 -->
+
+    <CompetenciaGeneral rdf:about="#CG-05">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de gesti&#243;n de la informaci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+    </CompetenciaGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-06 -->
+
+    <owl:Thing rdf:about="#CG-06">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de abstracci&#243;n, an&#225;lisis y s&#237;ntesis.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-07/08/09/10/16/17 -->
+
+    <CompetenciaGeneral rdf:about="#CG-07/08/09/10/16/17">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para trabajar dentro de un equipo, organizando, planificando, tomando decisiones, negociando y resolviendo conflictos, relacion&#225;ndose, y criticando y haciendo autocr&#237;tica.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj02"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj09"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-11/12/20 -->
+
+    <CompetenciaGeneral rdf:about="#CG-11/12/20">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para tomar iniciativas y esp&#237;ritu emprendedor, el liderazgo, la direcci&#243;n, la gesti&#243;n de equipos y proyectos.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </CompetenciaGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-13/CE-55 -->
+
+    <owl:Thing rdf:about="#CG-13/CE-55">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de comunicarse de forma efectiva con los compa&#241;eros, usuarios (potenciales) y el p&#250;blico en general acerca de cuestiones reales y problemas relacionados con la especializaci&#243;n elegida.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj02"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-14/15/18/23 -->
+
+    <owl:Thing rdf:about="#CG-14/15/18/23">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad de integrarse en la empresa de modo aut&#243;nomo demostrando conocimientos b&#225;sicos de la profesi&#243;n, comprensi&#243;n de la responsabilidad &#233;tica y profesional, y motivaci&#243;n por la calidad y la mejora continua.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj07"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj08"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj11"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-19 -->
+
+    <owl:Thing rdf:about="#CG-19">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para usar las tecnolog&#237;as de la informaci&#243;n y la comunicaci&#243;n.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj10"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-22 -->
+
+    <owl:Thing rdf:about="#CG-22">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Compromiso con la preservaci&#243;n del medio ambiente y la sostenibilidad.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj03"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-24/25/26/27 -->
+
+    <owl:Thing rdf:about="#CG-24/25/26/27">
+        <rdf:type rdf:resource="#CompetenciaGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Capacidad para trabajar en un contexto internacional, comunic&#225;ndose en lengua inglesa y adapt&#225;ndose a un nuevo entorno.</Descripcion>
+        <seAdquiereParaCumplir rdf:resource="#Obj01"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj02"/>
+        <seAdquiereParaCumplir rdf:resource="#Obj04"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-FISICA -->
+
+    <owl:Thing rdf:about="#MA-FISICA">
+        <rdf:type rdf:resource="#Materia"/>
+        <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
+        <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
+        <DuracionYUbicacion
+            >Materia compuesta por 1 asignatura programada en el 1er semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
+        <constaDe rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
+        <otorgaCompetencias rdf:resource="#CE-01"/>
+        <otorgaCompetencias rdf:resource="#CE-13/18"/>
+        <otorgaCompetencias rdf:resource="#CE-26/27"/>
+        <otorgaCompetencias rdf:resource="#CE-30"/>
+        <otorgaCompetencias rdf:resource="#CG-01/21"/>
+        <otorgaCompetencias rdf:resource="#CG-02/CE-45"/>
+        <otorgaCompetencias rdf:resource="#CG-03/04"/>
+        <otorgaCompetencias rdf:resource="#CG-05"/>
+        <otorgaCompetencias rdf:resource="#CG-06"/>
+        <otorgaCompetencias rdf:resource="#CG-19"/>
+        <seImparteMediante rdf:resource="#MD-ABP"/>
+        <seImparteMediante rdf:resource="#MD-LM"/>
+        <seImparteMediante rdf:resource="#MD-RE"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MD-ABP -->
+
+    <MetodoDocente rdf:about="#MD-ABP">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion
+            >Aprendizaje basado en problemas o pr&#225;cticas</Descripcion>
+    </MetodoDocente>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MD-AC -->
+
+    <owl:Thing rdf:about="#MD-AC">
+        <rdf:type rdf:resource="#MetodoDocente"/>
+        <Descripcion
+            >Aprendizaje cooperativo, en grupo</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MD-AOP -->
+
+    <owl:Thing rdf:about="#MD-AOP">
+        <rdf:type rdf:resource="#MetodoDocente"/>
+        <Descripcion
+            >Aprendizaje orientado a proyectos</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MD-EC -->
+
+    <owl:Thing rdf:about="#MD-EC">
+        <rdf:type rdf:resource="#MetodoDocente"/>
+        <Descripcion
+            >Estudio de casos</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MD-LM -->
+
+    <owl:Thing rdf:about="#MD-LM">
+        <rdf:type rdf:resource="#MetodoDocente"/>
+        <Descripcion
+            >M&#233;todo expositivo / Lecci&#243;n magistral</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MD-RE -->
+
+    <owl:Thing rdf:about="#MD-RE">
+        <rdf:type rdf:resource="#MetodoDocente"/>
+        <Descripcion
+            >Resoluci&#243;n de ejercicios y problemas</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj01 -->
+
+    <owl:Thing rdf:about="#Obj01">
+        <rdf:type rdf:resource="#ObjetivoGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Aprender de manera aut&#243;noma nuevos conocimientos y t&#233;cnicas adecuados para la concepci&#243;n, el desarrollo o la explotaci&#243;n de sistemas inform&#225;ticos.</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj02 -->
+
+    <owl:Thing rdf:about="#Obj02">
+        <rdf:type rdf:resource="#ObjetivoGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Inform&#225;tica, conociendo su impacto socioecon&#243;mico.</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj03 -->
+
+    <owl:Thing rdf:about="#Obj03">
+        <rdf:type rdf:resource="#ObjetivoGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Inform&#225;tica, conociendo su impacto socioecon&#243;mico.</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj04 -->
+
+    <ObjetivoGeneral rdf:about="#Obj04">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Concebir y llevar a cabo proyectos inform&#225;ticos utilizando los principios y metodolog&#237;as propios de la ingenier&#237;a.</Descripcion>
+    </ObjetivoGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj05 -->
+
+    <ObjetivoGeneral rdf:about="#Obj05">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Dise&#241;ar, desarrollar, evaluar y asegurar la accesibilidad, ergonom&#237;a, usabilidad y seguridad de los sistemas, aplicaciones y servicios inform&#225;ticos, as&#237; como de la informaci&#243;n que proporcionan, conforme a la legislaci&#243;n y normativa vigentes.</Descripcion>
+    </ObjetivoGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj06 -->
+
+    <owl:Thing rdf:about="#Obj06">
+        <rdf:type rdf:resource="#ObjetivoGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Definir, evaluar y seleccionar plataformas hardware y software para el desarrollo y la ejecuci&#243;n de aplicaciones y servicios inform&#225;ticos de diversa complejidad.</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj07 -->
+
+    <ObjetivoGeneral rdf:about="#Obj07">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Disponer de los fundamentos matem&#225;ticos, f&#237;sicos, econ&#243;micos y sociol&#243;gicos necesarios para interpretar, seleccionar, valorar, y crear nuevos conceptos, teor&#237;as, usos y desarrollos tecnol&#243;gicos relacionados con la inform&#225;tica, y su aplicaci&#243;n.</Descripcion>
+    </ObjetivoGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj08 -->
+
+    <ObjetivoGeneral rdf:about="#Obj08">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Concebir, desarrollar y mantener sistemas y aplicaciones software empleando diversos m&#233;todos de ingenier&#237;a del software y lenguajes de programaci&#243;n adecuados al tipo de aplicaci&#243;n a desarrollar manteniendo los niveles de calidad exigidos.</Descripcion>
+    </ObjetivoGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj09 -->
+
+    <owl:Thing rdf:about="#Obj09">
+        <rdf:type rdf:resource="#ObjetivoGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Concebir y desarrollar sistemas o arquitecturas inform&#225;ticas, centralizadas o distribuidas, integrando hardware, software y redes.</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj10 -->
+
+    <ObjetivoGeneral rdf:about="#Obj10">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Proponer, analizar, validar, interpretar, instalar y mantener soluciones inform&#225;ticas en situaciones reales en diversas &#225;reas de aplicaci&#243;n dentro de una organizaci&#243;n.</Descripcion>
+    </ObjetivoGeneral>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Obj11 -->
+
+    <owl:Thing rdf:about="#Obj11">
+        <rdf:type rdf:resource="#ObjetivoGeneral"/>
+        <Descripcion rdf:datatype="&rdfs;Literal"
+            >Concebir, desplegar, organizar y gestionar sistemas y servicios inform&#225;ticos en contextos empresariales o institucionales para mejorar sus procesos de negocio, responsabiliz&#225;ndose y liderando su puesta en marcha y mejora continua, as&#237; como valorar su impacto econ&#243;mico y social.</Descripcion>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#MD-EC"/>
+            <rdf:Description rdf:about="#MD-AOP"/>
+            <rdf:Description rdf:about="#MD-AC"/>
+            <rdf:Description rdf:about="#MD-RE"/>
+            <rdf:Description rdf:about="#MD-LM"/>
+            <rdf:Description rdf:about="#MD-ABP"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CG-11/12/20"/>
+            <rdf:Description rdf:about="#CE-41"/>
+            <rdf:Description rdf:about="#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="#Obj08"/>
+            <rdf:Description rdf:about="#CE-24"/>
+            <rdf:Description rdf:about="#CE-25"/>
+            <rdf:Description rdf:about="#CE-14/15"/>
+            <rdf:Description rdf:about="#CE-29"/>
+            <rdf:Description rdf:about="#CE-17"/>
+            <rdf:Description rdf:about="#CG-02/CE-45"/>
+            <rdf:Description rdf:about="#Obj05"/>
+            <rdf:Description rdf:about="#CE-11"/>
+            <rdf:Description rdf:about="#Obj10"/>
+            <rdf:Description rdf:about="#CE-46"/>
+            <rdf:Description rdf:about="#CE-23"/>
+            <rdf:Description rdf:about="#CE-12/16"/>
+            <rdf:Description rdf:about="#CE-35"/>
+            <rdf:Description rdf:about="#CG-13/CE-55"/>
+            <rdf:Description rdf:about="#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="#CE-51"/>
+            <rdf:Description rdf:about="#CE-32"/>
+            <rdf:Description rdf:about="#CE-31"/>
+            <rdf:Description rdf:about="#Obj02"/>
+            <rdf:Description rdf:about="#Obj07"/>
+            <rdf:Description rdf:about="#CG-06"/>
+            <rdf:Description rdf:about="#CE-49"/>
+            <rdf:Description rdf:about="#CE-39"/>
+            <rdf:Description rdf:about="#CE-50"/>
+            <rdf:Description rdf:about="#CE-36"/>
+            <rdf:Description rdf:about="#CG-05"/>
+            <rdf:Description rdf:about="#CG-01/21"/>
+            <rdf:Description rdf:about="#CG-07/08/09/10/16/17"/>
+            <rdf:Description rdf:about="#CE-05"/>
+            <rdf:Description rdf:about="#CE-37"/>
+            <rdf:Description rdf:about="#CE-07"/>
+            <rdf:Description rdf:about="#Obj04"/>
+            <rdf:Description rdf:about="#CE-19/20"/>
+            <rdf:Description rdf:about="#Obj01"/>
+            <rdf:Description rdf:about="#CE-43"/>
+            <rdf:Description rdf:about="#Obj11"/>
+            <rdf:Description rdf:about="#CE-26/27"/>
+            <rdf:Description rdf:about="#CE-47"/>
+            <rdf:Description rdf:about="#CE-53/54"/>
+            <rdf:Description rdf:about="#CE-06"/>
+            <rdf:Description rdf:about="#CE-38"/>
+            <rdf:Description rdf:about="#CE-44"/>
+            <rdf:Description rdf:about="#CE-34"/>
+            <rdf:Description rdf:about="#CE-09"/>
+            <rdf:Description rdf:about="#CG-22"/>
+            <rdf:Description rdf:about="#CE-08"/>
+            <rdf:Description rdf:about="#Obj03"/>
+            <rdf:Description rdf:about="#CE-42"/>
+            <rdf:Description rdf:about="#CE-52"/>
+            <rdf:Description rdf:about="#Obj09"/>
+            <rdf:Description rdf:about="#CE-56"/>
+            <rdf:Description rdf:about="#CE-22"/>
+            <rdf:Description rdf:about="#CE-02"/>
+            <rdf:Description rdf:about="#CE-48"/>
+            <rdf:Description rdf:about="#CE-40"/>
+            <rdf:Description rdf:about="#CE-28"/>
+            <rdf:Description rdf:about="#Obj06"/>
+            <rdf:Description rdf:about="#CE-21"/>
+            <rdf:Description rdf:about="#CE-33"/>
+            <rdf:Description rdf:about="#CG-19"/>
+            <rdf:Description rdf:about="#CE-01"/>
+            <rdf:Description rdf:about="#CE-10"/>
+            <rdf:Description rdf:about="#CE-30"/>
+            <rdf:Description rdf:about="#CE-13/18"/>
+            <rdf:Description rdf:about="#CE-03/04"/>
+            <rdf:Description rdf:about="#CG-03/04"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+
