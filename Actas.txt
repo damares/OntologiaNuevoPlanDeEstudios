@@ -1,0 +1,10 @@
+28 de Diciembre de 2009
+
+- Se acuerda que el modelado de las actividades formativas se hará creando una clase para cada actividad formativa (6 en total). Existirá un individuo por cada actividad formativa y materia que tendrá como propiedad el número de créditos que se han de dedicar a esa actividad formativa para esa materia.
+- Montar un repositorio sobre github. (http://github.com/damares/OntologiaNuevoPlanDeEstudios)
+- Presentar a la próxima reunión la ontología completa y probada.
+- Presentar a la próxima reunión ideas de posibles aplicaciones para aprovechar la ontología creada
+- Próxima reunión: 11 de Enero de 2010, 17:00h en el despacho de Ángel Herranz.
+
+
+11 de Enero de 2010
