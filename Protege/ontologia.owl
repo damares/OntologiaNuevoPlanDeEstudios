@@ -225,9 +225,33 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Descripcion -->
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#DescripcionCompetencia -->
 
-    <owl:DatatypeProperty rdf:about="#Descripcion"/>
+    <owl:DatatypeProperty rdf:about="#DescripcionCompetencia">
+        <rdfs:domain rdf:resource="#Competencia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesCompetencia"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#DescripcionMetodoDocente -->
+
+    <owl:DatatypeProperty rdf:about="#DescripcionMetodoDocente">
+        <rdfs:domain rdf:resource="#MetodoDocente"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMetodoDocente"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#DescripcionObjetivoGeneral -->
+
+    <owl:DatatypeProperty rdf:about="#DescripcionObjetivoGeneral">
+        <rdfs:domain rdf:resource="#ObjetivoGeneral"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedesObjetivoGeneral"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -259,9 +283,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesCompetencia -->
+
+    <owl:DatatypeProperty rdf:about="#PropiedadesCompetencia"/>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesMateria -->
 
     <owl:DatatypeProperty rdf:about="#PropiedadesMateria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesMetodoDocente -->
+
+    <owl:DatatypeProperty rdf:about="#PropiedadesMetodoDocente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedesObjetivoGeneral -->
+
+    <owl:DatatypeProperty rdf:about="#PropiedesObjetivoGeneral"/>
     
 
 
@@ -388,8 +430,8 @@
 
     <owl:Thing rdf:about="#CE-01">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocer profundamente los cimientos esenciales y fundacionales de la inform&#225;tica, abarcando tanto conceptos y teor&#237;as abstractos como los valores y los principios profesionales, subrayando los aspectos esenciales de la disciplina que permanecen inalterables ante el cambio tecnol&#243;gico.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocer profundamente los cimientos esenciales y fundacionales de la inform&#225;tica, abarcando tanto conceptos y teor&#237;as abstractos como los valores y los principios profesionales, subrayando los aspectos esenciales de la disciplina que permanecen inalterables ante el cambio tecnol&#243;gico.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
     </owl:Thing>
@@ -400,8 +442,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-02">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Formalizaci&#243;n y especificaci&#243;n de problemas reales cuya soluci&#243;n requiere el uso de la inform&#225;tica.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Formalizaci&#243;n y especificaci&#243;n de problemas reales cuya soluci&#243;n requiere el uso de la inform&#225;tica.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </CompetenciaEspecifica>
@@ -412,8 +454,8 @@
 
     <owl:Thing rdf:about="#CE-03/04">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de elegir y usar los m&#233;todos anal&#237;ticos y de modelizaci&#243;n relevantes, y de describir una soluci&#243;n de forma abstracta.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de elegir y usar los m&#233;todos anal&#237;ticos y de modelizaci&#243;n relevantes, y de describir una soluci&#243;n de forma abstracta.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
     </owl:Thing>
     
@@ -423,8 +465,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-05">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de dise&#241;ar y realizar experimentos apropiados, interpretar los datos y extraer conclusiones.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de dise&#241;ar y realizar experimentos apropiados, interpretar los datos y extraer conclusiones.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
     </CompetenciaEspecifica>
     
@@ -434,8 +476,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-06">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comprender intelectualmente el papel central que tienen los algoritmos y las estructuras de datos, as&#237; como una apreciaci&#243;n del mismo.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Comprender intelectualmente el papel central que tienen los algoritmos y las estructuras de datos, as&#237; como una apreciaci&#243;n del mismo.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </CompetenciaEspecifica>
     
@@ -445,8 +487,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-07">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Entender el soporte f&#237;sico (hardware) de los ordenadores desde el punto de vista del soporte l&#243;gico (software), por ejemplo, el uso del procesador, de la memoria, de los discos, del monitor, etc.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Entender el soporte f&#237;sico (hardware) de los ordenadores desde el punto de vista del soporte l&#243;gico (software), por ejemplo, el uso del procesador, de la memoria, de los discos, del monitor, etc.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </CompetenciaEspecifica>
     
@@ -456,8 +498,8 @@
 
     <owl:Thing rdf:about="#CE-08">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Poseer destrezas fundamentales de la programaci&#243;n que permitan la implementaci&#243;n de los algoritmos y las estructuras de datos en el software.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Poseer destrezas fundamentales de la programaci&#243;n que permitan la implementaci&#243;n de los algoritmos y las estructuras de datos en el software.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </owl:Thing>
     
@@ -467,8 +509,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-09">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Poseer las destrezas que se requieren para dise&#241;ar e implementar unidades estructurales mayores que utilizan los algoritmos y las estructuras de datos, as&#237; como las interfaces por las que se comunican estas unidades.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Poseer las destrezas que se requieren para dise&#241;ar e implementar unidades estructurales mayores que utilizan los algoritmos y las estructuras de datos, as&#237; como las interfaces por las que se comunican estas unidades.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </CompetenciaEspecifica>
     
@@ -478,8 +520,8 @@
 
     <owl:Thing rdf:about="#CE-10">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Concebir y desarrollar sistemas digitales utilizando lenguajes de descripci&#243;n hardware.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Concebir y desarrollar sistemas digitales utilizando lenguajes de descripci&#243;n hardware.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </owl:Thing>
     
@@ -489,8 +531,8 @@
 
     <owl:Thing rdf:about="#CE-11">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocimientos b&#225;sicos para estimar y medir el gasto y la productividad.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocimientos b&#225;sicos para estimar y medir el gasto y la productividad.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
     </owl:Thing>
     
@@ -500,8 +542,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-12/16">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocer los campos de aplicaci&#243;n de la inform&#225;tica, y tener una apreciaci&#243;n de la necesidad de poseer unos conocimientos t&#233;cnicos profundos en ciertas &#225;reas de aplicaci&#243;n; apreciaci&#243;n del grado de esta necesidad en, por lo menos, una situaci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocer los campos de aplicaci&#243;n de la inform&#225;tica, y tener una apreciaci&#243;n de la necesidad de poseer unos conocimientos t&#233;cnicos profundos en ciertas &#225;reas de aplicaci&#243;n; apreciaci&#243;n del grado de esta necesidad en, por lo menos, una situaci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
@@ -513,8 +555,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-13/18">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comprender lo que pueden y no pueden conseguir las tecnolog&#237;as actuales, y las limitaciones de la inform&#225;tica, que implica distinguir entre lo que, inherentemente, la inform&#225;tica no es capaz de hacer y lo que puede lograrse a trav&#233;s de la ciencia y la tecnolog&#237;a futuras.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Comprender lo que pueden y no pueden conseguir las tecnolog&#237;as actuales, y las limitaciones de la inform&#225;tica, que implica distinguir entre lo que, inherentemente, la inform&#225;tica no es capaz de hacer y lo que puede lograrse a trav&#233;s de la ciencia y la tecnolog&#237;a futuras.</DescripcionCompetencia>
     </CompetenciaEspecifica>
     
 
@@ -523,8 +565,8 @@
 
     <owl:Thing rdf:about="#CE-14/15">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocer el software, el hardware y las aplicaciones existentes en el mercado, as&#237; como el uso de sus elementos, y capacidad para familiarizarse con nuevas aplicaciones inform&#225;ticas.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocer el software, el hardware y las aplicaciones existentes en el mercado, as&#237; como el uso de sus elementos, y capacidad para familiarizarse con nuevas aplicaciones inform&#225;ticas.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
@@ -536,8 +578,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-17">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocer los temas inform&#225;ticos avanzados de modo que permita a los alumnos vislumbrar y entender las fronteras de la disciplina, por medio de la inclusi&#243;n de experiencias de aprendizaje que dirigen a los alumnos desde los temas elementales a los temas avanzados o los temas de los que se nutren los nov&#237;simos desarrollos.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocer los temas inform&#225;ticos avanzados de modo que permita a los alumnos vislumbrar y entender las fronteras de la disciplina, por medio de la inclusi&#243;n de experiencias de aprendizaje que dirigen a los alumnos desde los temas elementales a los temas avanzados o los temas de los que se nutren los nov&#237;simos desarrollos.</DescripcionCompetencia>
     </CompetenciaEspecifica>
     
 
@@ -546,8 +588,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-19/20">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocimiento de los tipos apropiados de soluciones, y comprensi&#243;n de la complejidad de los problemas inform&#225;ticos y la viabilidad de su soluci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocimiento de los tipos apropiados de soluciones, y comprensi&#243;n de la complejidad de los problemas inform&#225;ticos y la viabilidad de su soluci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj06"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
@@ -560,8 +602,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-21">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Educir, analizar y especificar las necesidades de los clientes (empresas o usuarios individuales), plazos, medios disponibles y posibles condicionantes que pudieran afectar al sistema a desarrollar.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Educir, analizar y especificar las necesidades de los clientes (empresas o usuarios individuales), plazos, medios disponibles y posibles condicionantes que pudieran afectar al sistema a desarrollar.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </CompetenciaEspecifica>
     
@@ -571,8 +613,8 @@
 
     <owl:Thing rdf:about="#CE-22">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de aplicar sus conocimientos e intuici&#243;n para dise&#241;ar el hardware/software que cumple unos requisitos especificados.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de aplicar sus conocimientos e intuici&#243;n para dise&#241;ar el hardware/software que cumple unos requisitos especificados.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </owl:Thing>
@@ -583,8 +625,8 @@
 
     <owl:Thing rdf:about="#CE-23">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Modelizar y dise&#241;ar la interacci&#243;n humana-ordenador adoptando un enfoque centrado en el usuario, y siendo capaz de dise&#241;ar, desarrollar, evaluar y asegurar la accesibilidad, ergonom&#237;a, usabilidad y seguridad de los mismos.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Modelizar y dise&#241;ar la interacci&#243;n humana-ordenador adoptando un enfoque centrado en el usuario, y siendo capaz de dise&#241;ar, desarrollar, evaluar y asegurar la accesibilidad, ergonom&#237;a, usabilidad y seguridad de los mismos.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
     </owl:Thing>
     
@@ -594,8 +636,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-24">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Elegir y usar los lenguajes de programaci&#243;n adecuados al tipo de aplicaci&#243;n a desarrollar.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Elegir y usar los lenguajes de programaci&#243;n adecuados al tipo de aplicaci&#243;n a desarrollar.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </CompetenciaEspecifica>
     
@@ -605,8 +647,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-25">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Concebir y dise&#241;ar la arquitectura de un sistema software.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Concebir y dise&#241;ar la arquitectura de un sistema software.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </CompetenciaEspecifica>
@@ -617,8 +659,8 @@
 
     <owl:Thing rdf:about="#CE-26/27">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Definir, evaluar y seleccionar plataformas hardware y software, incluyendo el sistema operativo, y concebir, llevar a cabo, instalar y mantener arquitecturas inform&#225;ticas centralizadas o distribuidas integrando hardware, software y redes.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Definir, evaluar y seleccionar plataformas hardware y software, incluyendo el sistema operativo, y concebir, llevar a cabo, instalar y mantener arquitecturas inform&#225;ticas centralizadas o distribuidas integrando hardware, software y redes.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj06"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </owl:Thing>
@@ -629,8 +671,8 @@
 
     <owl:Thing rdf:about="#CE-28">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Evaluar y seleccionar adecuadamente sistemas de gesti&#243;n de bases de datos, y dise&#241;ar y crear estos sistemas integr&#225;ndolos con el resto de tecnolog&#237;as del sistema.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Evaluar y seleccionar adecuadamente sistemas de gesti&#243;n de bases de datos, y dise&#241;ar y crear estos sistemas integr&#225;ndolos con el resto de tecnolog&#237;as del sistema.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </owl:Thing>
@@ -641,8 +683,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-29">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Dise&#241;ar, desarrollar, y evaluar la seguridad de los sistemas, aplicaciones, servicios inform&#225;ticos y sistemas operativos sobre los que se ejecutan, as&#237; como de la informaci&#243;n que proporcionan.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Dise&#241;ar, desarrollar, y evaluar la seguridad de los sistemas, aplicaciones, servicios inform&#225;ticos y sistemas operativos sobre los que se ejecutan, as&#237; como de la informaci&#243;n que proporcionan.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </CompetenciaEspecifica>
@@ -653,8 +695,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-30">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Dise&#241;ar sistemas, creando prototipos hardware y desarrollando software, que se vayan a explotar en entornos industriales y de tiempo real.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Dise&#241;ar sistemas, creando prototipos hardware y desarrollando software, que se vayan a explotar en entornos industriales y de tiempo real.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </CompetenciaEspecifica>
     
@@ -664,8 +706,8 @@
 
     <owl:Thing rdf:about="#CE-31">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Desarrollar, desplegar, organizar y gestionar servicios inform&#225;ticos en contextos empresariales para mejorar sus procesos de negocio.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Desarrollar, desplegar, organizar y gestionar servicios inform&#225;ticos en contextos empresariales para mejorar sus procesos de negocio.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
@@ -677,8 +719,8 @@
 
     <owl:Thing rdf:about="#CE-32">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comprender el concepto de ciclo de vida, que abarca el significado de sus fases (planificaci&#243;n, desarrollo, instalaci&#243;n y evoluci&#243;n), las consecuencias para el desarrollo de todos los aspectos de los sistemas inform&#225;ticos (el software, el hardware, y el interfaz humano-m&#225;quina), y la relaci&#243;n entre la calidad y la gesti&#243;n del ciclo de vida.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Comprender el concepto de ciclo de vida, que abarca el significado de sus fases (planificaci&#243;n, desarrollo, instalaci&#243;n y evoluci&#243;n), las consecuencias para el desarrollo de todos los aspectos de los sistemas inform&#225;ticos (el software, el hardware, y el interfaz humano-m&#225;quina), y la relaci&#243;n entre la calidad y la gesti&#243;n del ciclo de vida.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </owl:Thing>
     
@@ -688,8 +730,8 @@
 
     <owl:Thing rdf:about="#CE-33">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Aplicar t&#233;cnicas y procedimientos de gesti&#243;n y control de la configuraci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Aplicar t&#233;cnicas y procedimientos de gesti&#243;n y control de la configuraci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj06"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
@@ -701,8 +743,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-34">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Crear prototipos, simulaciones o modelos que permitan la validaci&#243;n del sistema con el cliente.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Crear prototipos, simulaciones o modelos que permitan la validaci&#243;n del sistema con el cliente.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj06"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
@@ -714,8 +756,8 @@
 
     <owl:Thing rdf:about="#CE-35">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Integrar, instalar, probar y mantener un sistema inform&#225;tico.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Integrar, instalar, probar y mantener un sistema inform&#225;tico.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </owl:Thing>
     
@@ -725,8 +767,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-36">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para dise&#241;ar, planificar, documentar y presupuestar la instalaci&#243;n de un sistema hardware y de puestos de trabajo en un espacio f&#237;sico.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para dise&#241;ar, planificar, documentar y presupuestar la instalaci&#243;n de un sistema hardware y de puestos de trabajo en un espacio f&#237;sico.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </CompetenciaEspecifica>
     
@@ -736,8 +778,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-37">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Aplicar t&#233;cnicas y procedimientos de gesti&#243;n, control y aseguramiento de la calidad.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Aplicar t&#233;cnicas y procedimientos de gesti&#243;n, control y aseguramiento de la calidad.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </CompetenciaEspecifica>
     
@@ -747,8 +789,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-38">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para formular una soluci&#243;n inform&#225;tica aceptable a un problema de forma efectiva en t&#233;rminos del coste y del tiempo.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para formular una soluci&#243;n inform&#225;tica aceptable a un problema de forma efectiva en t&#233;rminos del coste y del tiempo.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </CompetenciaEspecifica>
@@ -759,8 +801,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-39">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocer y aplicar los principios de la ingenier&#237;a del software y de sus tecnolog&#237;as para garantizar que las implementaciones de software sean robustas, fiables y apropiadas para la audiencia a la que van destinadas.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocer y aplicar los principios de la ingenier&#237;a del software y de sus tecnolog&#237;as para garantizar que las implementaciones de software sean robustas, fiables y apropiadas para la audiencia a la que van destinadas.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </CompetenciaEspecifica>
     
@@ -770,8 +812,8 @@
 
     <owl:Thing rdf:about="#CE-40">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comprender el concepto esencial de proceso en cuanto a su relaci&#243;n con la inform&#225;tica, especialmente la ejecuci&#243;n de los programas y la operaci&#243;n del sistema.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Comprender el concepto esencial de proceso en cuanto a su relaci&#243;n con la inform&#225;tica, especialmente la ejecuci&#243;n de los programas y la operaci&#243;n del sistema.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </owl:Thing>
     
@@ -781,8 +823,8 @@
 
     <owl:Thing rdf:about="#CE-41">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Elegir y usar modelos de proceso y entornos de programaci&#243;n apropiados para proyectos que implican aplicaciones tradicionales, as&#237; como &#225;reas de aplicaci&#243;n emergentes.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Elegir y usar modelos de proceso y entornos de programaci&#243;n apropiados para proyectos que implican aplicaciones tradicionales, as&#237; como &#225;reas de aplicaci&#243;n emergentes.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj06"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
     </owl:Thing>
@@ -793,8 +835,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-42">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Combinar la teor&#237;a y la pr&#225;ctica para realizar tareas inform&#225;ticas.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Combinar la teor&#237;a y la pr&#225;ctica para realizar tareas inform&#225;ticas.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </CompetenciaEspecifica>
@@ -805,8 +847,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-43">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de realizar b&#250;squedas bibliogr&#225;ficas y de utilizar bases de datos y otras fuentes de informaci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de realizar b&#250;squedas bibliogr&#225;ficas y de utilizar bases de datos y otras fuentes de informaci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
     </CompetenciaEspecifica>
     
@@ -816,8 +858,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-44">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocimiento de tecnolog&#237;as punteras relevantes y su aplicaci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocimiento de tecnolog&#237;as punteras relevantes y su aplicaci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj09"/>
     </CompetenciaEspecifica>
     
@@ -827,8 +869,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-46">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comprender el concepto esencial de proceso en cuanto a su relaci&#243;n con la actividad profesional, especialmente la relaci&#243;n entre la calidad del producto y la creaci&#243;n de procesos humanos apropiados durante el desarrollo del producto.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Comprender el concepto esencial de proceso en cuanto a su relaci&#243;n con la actividad profesional, especialmente la relaci&#243;n entre la calidad del producto y la creaci&#243;n de procesos humanos apropiados durante el desarrollo del producto.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </CompetenciaEspecifica>
     
@@ -838,8 +880,8 @@
 
     <owl:Thing rdf:about="#CE-47">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Conocer las pr&#225;cticas de gesti&#243;n de proyectos, sistemas y servicios empresariales, tales como la gesti&#243;n del riesgo y del cambio, y una comprensi&#243;n de sus limitaciones.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Conocer las pr&#225;cticas de gesti&#243;n de proyectos, sistemas y servicios empresariales, tales como la gesti&#243;n del riesgo y del cambio, y una comprensi&#243;n de sus limitaciones.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj08"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </owl:Thing>
@@ -850,8 +892,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-48">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Gestionar sistemas y servicios inform&#225;ticos en contextos empresariales o institucionales para mejorar sus procesos de negocio.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Gestionar sistemas y servicios inform&#225;ticos en contextos empresariales o institucionales para mejorar sus procesos de negocio.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </CompetenciaEspecifica>
     
@@ -861,8 +903,8 @@
 
     <owl:Thing rdf:about="#CE-49">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Hacer recomendaciones sobre la estrategia de la empresa en materia de dise&#241;o y desarrollo de nuevos productos, relaciones en los canales de distribuci&#243;n y estrategia de comunicaci&#243;n empresarial.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Hacer recomendaciones sobre la estrategia de la empresa en materia de dise&#241;o y desarrollo de nuevos productos, relaciones en los canales de distribuci&#243;n y estrategia de comunicaci&#243;n empresarial.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </owl:Thing>
     
@@ -872,8 +914,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-50">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Lanzar nuevos productos en el mercado tras analizar los programas propuestos para el desarrollo de productos; preparar an&#225;lisis de rentabilidad de la inversi&#243;n; realizar un plan de marketing; y elaborar calendarios con ingenier&#237;a y producci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Lanzar nuevos productos en el mercado tras analizar los programas propuestos para el desarrollo de productos; preparar an&#225;lisis de rentabilidad de la inversi&#243;n; realizar un plan de marketing; y elaborar calendarios con ingenier&#237;a y producci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </CompetenciaEspecifica>
@@ -884,8 +926,8 @@
 
     <owl:Thing rdf:about="#CE-51">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de realizar tareas en distintas &#225;reas de aplicaci&#243;n teniendo en cuenta el contexto t&#233;cnico, econ&#243;mico y social existente.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de realizar tareas en distintas &#225;reas de aplicaci&#243;n teniendo en cuenta el contexto t&#233;cnico, econ&#243;mico y social existente.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
     </owl:Thing>
     
@@ -895,8 +937,8 @@
 
     <owl:Thing rdf:about="#CE-52">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Tener en consideraci&#243;n las condiciones sociales, &#233;ticas y legales deseadas en la profesi&#243;n y pr&#225;ctica de la inform&#225;tica.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Tener en consideraci&#243;n las condiciones sociales, &#233;ticas y legales deseadas en la profesi&#243;n y pr&#225;ctica de la inform&#225;tica.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
     </owl:Thing>
     
@@ -906,8 +948,8 @@
 
     <CompetenciaEspecifica rdf:about="#CE-53/54">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para trabajar de forma efectiva como individuo, organizando y planificando su propio trabajo, de forma independiente o como miembro de un equipo.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para trabajar de forma efectiva como individuo, organizando y planificando su propio trabajo, de forma independiente o como miembro de un equipo.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj02"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
     </CompetenciaEspecifica>
@@ -918,8 +960,8 @@
 
     <owl:Thing rdf:about="#CE-56">
         <rdf:type rdf:resource="#CompetenciaEspecifica"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Ser capaz de aclarar la relevancia y utilidad de la teor&#237;a y las habilidades aprendidas en el contexto acad&#233;mico sobre los acontecimientos del mundo real.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Ser capaz de aclarar la relevancia y utilidad de la teor&#237;a y las habilidades aprendidas en el contexto acad&#233;mico sobre los acontecimientos del mundo real.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj02"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
     </owl:Thing>
@@ -930,8 +972,8 @@
 
     <CompetenciaGeneral rdf:about="#CG-01/21">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de resoluci&#243;n de problemas aplicando conocimientos de matem&#225;ticas, ciencias e ingenier&#237;a.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de resoluci&#243;n de problemas aplicando conocimientos de matem&#225;ticas, ciencias e ingenier&#237;a.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj05"/>
@@ -949,8 +991,8 @@
 
     <owl:Thing rdf:about="#CG-02/CE-45">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para el aprendizaje aut&#243;nomo y la actualizaci&#243;n de conocimientos, y reconocimiento de su necesidad en el &#225;rea de la inform&#225;tica.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para el aprendizaje aut&#243;nomo y la actualizaci&#243;n de conocimientos, y reconocimiento de su necesidad en el &#225;rea de la inform&#225;tica.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
     </owl:Thing>
@@ -961,8 +1003,8 @@
 
     <CompetenciaGeneral rdf:about="#CG-03/04">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Saber trabajar en situaciones carentes de informaci&#243;n y bajo presi&#243;n, teniendo nuevas ideas, siendo creativo.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Saber trabajar en situaciones carentes de informaci&#243;n y bajo presi&#243;n, teniendo nuevas ideas, siendo creativo.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
     </CompetenciaGeneral>
     
@@ -972,8 +1014,8 @@
 
     <CompetenciaGeneral rdf:about="#CG-05">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de gesti&#243;n de la informaci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de gesti&#243;n de la informaci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
     </CompetenciaGeneral>
     
@@ -983,8 +1025,8 @@
 
     <owl:Thing rdf:about="#CG-06">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de abstracci&#243;n, an&#225;lisis y s&#237;ntesis.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de abstracci&#243;n, an&#225;lisis y s&#237;ntesis.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
     </owl:Thing>
     
@@ -994,8 +1036,8 @@
 
     <CompetenciaGeneral rdf:about="#CG-07/08/09/10/16/17">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para trabajar dentro de un equipo, organizando, planificando, tomando decisiones, negociando y resolviendo conflictos, relacion&#225;ndose, y criticando y haciendo autocr&#237;tica.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para trabajar dentro de un equipo, organizando, planificando, tomando decisiones, negociando y resolviendo conflictos, relacion&#225;ndose, y criticando y haciendo autocr&#237;tica.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj02"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
@@ -1011,8 +1053,8 @@
 
     <CompetenciaGeneral rdf:about="#CG-11/12/20">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para tomar iniciativas y esp&#237;ritu emprendedor, el liderazgo, la direcci&#243;n, la gesti&#243;n de equipos y proyectos.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para tomar iniciativas y esp&#237;ritu emprendedor, el liderazgo, la direcci&#243;n, la gesti&#243;n de equipos y proyectos.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj11"/>
@@ -1024,8 +1066,8 @@
 
     <owl:Thing rdf:about="#CG-13/CE-55">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de comunicarse de forma efectiva con los compa&#241;eros, usuarios (potenciales) y el p&#250;blico en general acerca de cuestiones reales y problemas relacionados con la especializaci&#243;n elegida.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de comunicarse de forma efectiva con los compa&#241;eros, usuarios (potenciales) y el p&#250;blico en general acerca de cuestiones reales y problemas relacionados con la especializaci&#243;n elegida.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj02"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </owl:Thing>
@@ -1036,8 +1078,8 @@
 
     <owl:Thing rdf:about="#CG-14/15/18/23">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad de integrarse en la empresa de modo aut&#243;nomo demostrando conocimientos b&#225;sicos de la profesi&#243;n, comprensi&#243;n de la responsabilidad &#233;tica y profesional, y motivaci&#243;n por la calidad y la mejora continua.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad de integrarse en la empresa de modo aut&#243;nomo demostrando conocimientos b&#225;sicos de la profesi&#243;n, comprensi&#243;n de la responsabilidad &#233;tica y profesional, y motivaci&#243;n por la calidad y la mejora continua.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj07"/>
@@ -1051,8 +1093,8 @@
 
     <owl:Thing rdf:about="#CG-19">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para usar las tecnolog&#237;as de la informaci&#243;n y la comunicaci&#243;n.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para usar las tecnolog&#237;as de la informaci&#243;n y la comunicaci&#243;n.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj10"/>
     </owl:Thing>
@@ -1063,8 +1105,8 @@
 
     <owl:Thing rdf:about="#CG-22">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Compromiso con la preservaci&#243;n del medio ambiente y la sostenibilidad.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Compromiso con la preservaci&#243;n del medio ambiente y la sostenibilidad.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj03"/>
     </owl:Thing>
     
@@ -1074,8 +1116,8 @@
 
     <owl:Thing rdf:about="#CG-24/25/26/27">
         <rdf:type rdf:resource="#CompetenciaGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Capacidad para trabajar en un contexto internacional, comunic&#225;ndose en lengua inglesa y adapt&#225;ndose a un nuevo entorno.</Descripcion>
+        <DescripcionCompetencia rdf:datatype="&rdfs;Literal"
+            >Capacidad para trabajar en un contexto internacional, comunic&#225;ndose en lengua inglesa y adapt&#225;ndose a un nuevo entorno.</DescripcionCompetencia>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj01"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj02"/>
         <CO_seAdquiereParaCumplir rdf:resource="#Obj04"/>
@@ -1113,8 +1155,8 @@
 
     <MetodoDocente rdf:about="#MD-ABP">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion
-            >Aprendizaje basado en problemas o pr&#225;cticas</Descripcion>
+        <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
+            >Aprendizaje basado en problemas o pr&#225;cticas</DescripcionMetodoDocente>
     </MetodoDocente>
     
 
@@ -1123,8 +1165,8 @@
 
     <owl:Thing rdf:about="#MD-AC">
         <rdf:type rdf:resource="#MetodoDocente"/>
-        <Descripcion
-            >Aprendizaje cooperativo, en grupo</Descripcion>
+        <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
+            >Aprendizaje cooperativo, en grupo</DescripcionMetodoDocente>
     </owl:Thing>
     
 
@@ -1133,8 +1175,8 @@
 
     <owl:Thing rdf:about="#MD-AOP">
         <rdf:type rdf:resource="#MetodoDocente"/>
-        <Descripcion
-            >Aprendizaje orientado a proyectos</Descripcion>
+        <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
+            >Aprendizaje orientado a proyectos</DescripcionMetodoDocente>
     </owl:Thing>
     
 
@@ -1143,8 +1185,8 @@
 
     <owl:Thing rdf:about="#MD-EC">
         <rdf:type rdf:resource="#MetodoDocente"/>
-        <Descripcion
-            >Estudio de casos</Descripcion>
+        <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
+            >Estudio de casos</DescripcionMetodoDocente>
     </owl:Thing>
     
 
@@ -1153,8 +1195,8 @@
 
     <owl:Thing rdf:about="#MD-LM">
         <rdf:type rdf:resource="#MetodoDocente"/>
-        <Descripcion
-            >M&#233;todo expositivo / Lecci&#243;n magistral</Descripcion>
+        <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
+            >M&#233;todo expositivo / Lecci&#243;n magistral</DescripcionMetodoDocente>
     </owl:Thing>
     
 
@@ -1163,8 +1205,8 @@
 
     <owl:Thing rdf:about="#MD-RE">
         <rdf:type rdf:resource="#MetodoDocente"/>
-        <Descripcion
-            >Resoluci&#243;n de ejercicios y problemas</Descripcion>
+        <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
+            >Resoluci&#243;n de ejercicios y problemas</DescripcionMetodoDocente>
     </owl:Thing>
     
 
@@ -1173,8 +1215,8 @@
 
     <owl:Thing rdf:about="#Obj01">
         <rdf:type rdf:resource="#ObjetivoGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Aprender de manera aut&#243;noma nuevos conocimientos y t&#233;cnicas adecuados para la concepci&#243;n, el desarrollo o la explotaci&#243;n de sistemas inform&#225;ticos.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Aprender de manera aut&#243;noma nuevos conocimientos y t&#233;cnicas adecuados para la concepci&#243;n, el desarrollo o la explotaci&#243;n de sistemas inform&#225;ticos.</DescripcionObjetivoGeneral>
     </owl:Thing>
     
 
@@ -1183,8 +1225,8 @@
 
     <owl:Thing rdf:about="#Obj02">
         <rdf:type rdf:resource="#ObjetivoGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Inform&#225;tica, conociendo su impacto socioecon&#243;mico.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Inform&#225;tica, conociendo su impacto socioecon&#243;mico.</DescripcionObjetivoGeneral>
     </owl:Thing>
     
 
@@ -1193,8 +1235,8 @@
 
     <owl:Thing rdf:about="#Obj03">
         <rdf:type rdf:resource="#ObjetivoGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Inform&#225;tica, conociendo su impacto socioecon&#243;mico.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Inform&#225;tica, conociendo su impacto socioecon&#243;mico.</DescripcionObjetivoGeneral>
     </owl:Thing>
     
 
@@ -1203,8 +1245,8 @@
 
     <ObjetivoGeneral rdf:about="#Obj04">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Concebir y llevar a cabo proyectos inform&#225;ticos utilizando los principios y metodolog&#237;as propios de la ingenier&#237;a.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Concebir y llevar a cabo proyectos inform&#225;ticos utilizando los principios y metodolog&#237;as propios de la ingenier&#237;a.</DescripcionObjetivoGeneral>
     </ObjetivoGeneral>
     
 
@@ -1213,8 +1255,8 @@
 
     <ObjetivoGeneral rdf:about="#Obj05">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Dise&#241;ar, desarrollar, evaluar y asegurar la accesibilidad, ergonom&#237;a, usabilidad y seguridad de los sistemas, aplicaciones y servicios inform&#225;ticos, as&#237; como de la informaci&#243;n que proporcionan, conforme a la legislaci&#243;n y normativa vigentes.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Dise&#241;ar, desarrollar, evaluar y asegurar la accesibilidad, ergonom&#237;a, usabilidad y seguridad de los sistemas, aplicaciones y servicios inform&#225;ticos, as&#237; como de la informaci&#243;n que proporcionan, conforme a la legislaci&#243;n y normativa vigentes.</DescripcionObjetivoGeneral>
     </ObjetivoGeneral>
     
 
@@ -1223,8 +1265,8 @@
 
     <owl:Thing rdf:about="#Obj06">
         <rdf:type rdf:resource="#ObjetivoGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Definir, evaluar y seleccionar plataformas hardware y software para el desarrollo y la ejecuci&#243;n de aplicaciones y servicios inform&#225;ticos de diversa complejidad.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Definir, evaluar y seleccionar plataformas hardware y software para el desarrollo y la ejecuci&#243;n de aplicaciones y servicios inform&#225;ticos de diversa complejidad.</DescripcionObjetivoGeneral>
     </owl:Thing>
     
 
@@ -1233,8 +1275,8 @@
 
     <ObjetivoGeneral rdf:about="#Obj07">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Disponer de los fundamentos matem&#225;ticos, f&#237;sicos, econ&#243;micos y sociol&#243;gicos necesarios para interpretar, seleccionar, valorar, y crear nuevos conceptos, teor&#237;as, usos y desarrollos tecnol&#243;gicos relacionados con la inform&#225;tica, y su aplicaci&#243;n.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Disponer de los fundamentos matem&#225;ticos, f&#237;sicos, econ&#243;micos y sociol&#243;gicos necesarios para interpretar, seleccionar, valorar, y crear nuevos conceptos, teor&#237;as, usos y desarrollos tecnol&#243;gicos relacionados con la inform&#225;tica, y su aplicaci&#243;n.</DescripcionObjetivoGeneral>
     </ObjetivoGeneral>
     
 
@@ -1243,8 +1285,8 @@
 
     <ObjetivoGeneral rdf:about="#Obj08">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Concebir, desarrollar y mantener sistemas y aplicaciones software empleando diversos m&#233;todos de ingenier&#237;a del software y lenguajes de programaci&#243;n adecuados al tipo de aplicaci&#243;n a desarrollar manteniendo los niveles de calidad exigidos.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Concebir, desarrollar y mantener sistemas y aplicaciones software empleando diversos m&#233;todos de ingenier&#237;a del software y lenguajes de programaci&#243;n adecuados al tipo de aplicaci&#243;n a desarrollar manteniendo los niveles de calidad exigidos.</DescripcionObjetivoGeneral>
     </ObjetivoGeneral>
     
 
@@ -1253,8 +1295,8 @@
 
     <owl:Thing rdf:about="#Obj09">
         <rdf:type rdf:resource="#ObjetivoGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Concebir y desarrollar sistemas o arquitecturas inform&#225;ticas, centralizadas o distribuidas, integrando hardware, software y redes.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Concebir y desarrollar sistemas o arquitecturas inform&#225;ticas, centralizadas o distribuidas, integrando hardware, software y redes.</DescripcionObjetivoGeneral>
     </owl:Thing>
     
 
@@ -1263,8 +1305,8 @@
 
     <ObjetivoGeneral rdf:about="#Obj10">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Proponer, analizar, validar, interpretar, instalar y mantener soluciones inform&#225;ticas en situaciones reales en diversas &#225;reas de aplicaci&#243;n dentro de una organizaci&#243;n.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Proponer, analizar, validar, interpretar, instalar y mantener soluciones inform&#225;ticas en situaciones reales en diversas &#225;reas de aplicaci&#243;n dentro de una organizaci&#243;n.</DescripcionObjetivoGeneral>
     </ObjetivoGeneral>
     
 
@@ -1273,8 +1315,8 @@
 
     <owl:Thing rdf:about="#Obj11">
         <rdf:type rdf:resource="#ObjetivoGeneral"/>
-        <Descripcion rdf:datatype="&rdfs;Literal"
-            >Concebir, desplegar, organizar y gestionar sistemas y servicios inform&#225;ticos en contextos empresariales o institucionales para mejorar sus procesos de negocio, responsabiliz&#225;ndose y liderando su puesta en marcha y mejora continua, as&#237; como valorar su impacto econ&#243;mico y social.</Descripcion>
+        <DescripcionObjetivoGeneral rdf:datatype="&rdfs;Literal"
+            >Concebir, desplegar, organizar y gestionar sistemas y servicios inform&#225;ticos en contextos empresariales o institucionales para mejorar sus procesos de negocio, responsabiliz&#225;ndose y liderando su puesta en marcha y mejora continua, as&#237; como valorar su impacto econ&#243;mico y social.</DescripcionObjetivoGeneral>
     </owl:Thing>
     
 
@@ -1287,6 +1329,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Alumno"/>
+            <rdf:Description rdf:about="#Asignatura"/>
+            <rdf:Description rdf:about="#Competencia"/>
+            <rdf:Description rdf:about="#Materia"/>
+            <rdf:Description rdf:about="#MetodoDocente"/>
+            <rdf:Description rdf:about="#ObjetivoGeneral"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
@@ -1361,17 +1414,6 @@
             <rdf:Description rdf:about="#CE-03/04"/>
             <rdf:Description rdf:about="#CG-03/04"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="#Alumno"/>
-            <rdf:Description rdf:about="#Asignatura"/>
-            <rdf:Description rdf:about="#Competencia"/>
-            <rdf:Description rdf:about="#Materia"/>
-            <rdf:Description rdf:about="#MetodoDocente"/>
-            <rdf:Description rdf:about="#ObjetivoGeneral"/>
-        </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
