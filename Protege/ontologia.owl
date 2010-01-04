@@ -8,16 +8,20 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY Ontology1260008768250 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#" >
+    <!ENTITY S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#S/" >
     <!ENTITY AF-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-S/" >
     <!ENTITY CG-13 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-13/" >
     <!ENTITY CG-02 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/" >
+    <!ENTITY AF-FISICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-S/" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xml:base="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:S="&Ontology1260008768250;S/"
      xmlns:CG-02="&Ontology1260008768250;CG-02/"
+     xmlns:AF-FISICA-S="&Ontology1260008768250;AF-FISICA-S/"
      xmlns:Ontology1260008768250="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xmlns:AF-S="&Ontology1260008768250;AF-S/"
      xmlns:CG-13="&Ontology1260008768250;CG-13/"
@@ -37,6 +41,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_esValidaParaEnse&#241;arUna -->
+
+    <owl:ObjectProperty rdf:about="#AF_esValidaParaEnse&#241;arUna">
+        <rdfs:domain rdf:resource="#ActividadFormativa"/>
+        <owl:inverseOf rdf:resource="#MA_seAprendeMediante"/>
+        <rdfs:range rdf:resource="#Materia"/>
+    </owl:ObjectProperty>
     
 
 
@@ -107,6 +121,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_seAprendeMediante -->
+
+    <owl:ObjectProperty rdf:about="#MA_seAprendeMediante">
+        <rdfs:range rdf:resource="#ActividadFormativa"/>
+        <rdfs:domain rdf:resource="#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_seImparteMediante -->
 
     <owl:ObjectProperty rdf:about="#MA_seImparteMediante">
@@ -143,15 +166,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ActividadesFormativas -->
-
-    <owl:DatatypeProperty rdf:about="#ActividadesFormativas">
-        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
-        <rdfs:range rdf:resource="&xsd;decimal"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -211,6 +225,16 @@
                 </owl:oneOf>
             </rdf:Description>
         </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Creditos -->
+
+    <owl:DatatypeProperty rdf:about="#Creditos">
+        <rdfs:domain rdf:resource="#ActividadFormativa"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesActividadFormativa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -277,6 +301,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesActividadFormativa -->
+
+    <owl:DatatypeProperty rdf:about="#PropiedadesActividadFormativa"/>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedadesAsignatura -->
 
     <owl:DatatypeProperty rdf:about="#PropiedadesAsignatura"/>
@@ -304,6 +334,16 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PropiedesObjetivoGeneral -->
 
     <owl:DatatypeProperty rdf:about="#PropiedesObjetivoGeneral"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ResultadosDelAprendizaje -->
+
+    <owl:DatatypeProperty rdf:about="#ResultadosDelAprendizaje">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -339,6 +379,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ActividadFormativa -->
+
+    <owl:Class rdf:about="#ActividadFormativa"/>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Alumno -->
 
     <owl:Class rdf:about="#Alumno">
@@ -350,6 +396,22 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Asignatura -->
 
     <owl:Class rdf:about="#Asignatura"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CP -->
+
+    <owl:Class rdf:about="#CP">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CT -->
+
+    <owl:Class rdf:about="#CT">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
     
 
 
@@ -376,6 +438,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#EG -->
+
+    <owl:Class rdf:about="#EG">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ETAI -->
+
+    <owl:Class rdf:about="#ETAI">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#L -->
+
+    <owl:Class rdf:about="#L">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Materia -->
 
     <owl:Class rdf:about="#Materia">
@@ -398,6 +484,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PA -->
+
+    <owl:Class rdf:about="#PA">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#PO -->
+
+    <owl:Class rdf:about="#PO">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#S/T -->
+
+    <owl:Class rdf:about="#S/T">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#T -->
+
+    <owl:Class rdf:about="#T">
+        <rdfs:subClassOf rdf:resource="#ActividadFormativa"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="&owl;Thing"/>
@@ -412,6 +530,87 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-CP -->
+
+    <CP rdf:about="#AF-FISICA-CP">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </CP>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-CT -->
+
+    <CT rdf:about="#AF-FISICA-CT">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">1,8</Creditos>
+    </CT>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-EG -->
+
+    <owl:Thing rdf:about="#AF-FISICA-EG">
+        <rdf:type rdf:resource="#EG"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-ETAI -->
+
+    <owl:Thing rdf:about="#AF-FISICA-ETAI">
+        <rdf:type rdf:resource="#ETAI"/>
+        <Creditos rdf:datatype="&xsd;decimal">1,9</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-L -->
+
+    <owl:Thing rdf:about="#AF-FISICA-L">
+        <rdf:type rdf:resource="#L"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,7</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-PA -->
+
+    <PA rdf:about="#AF-FISICA-PA">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </PA>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-PO -->
+
+    <PO rdf:about="#AF-FISICA-PO">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </PO>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-S/T -->
+
+    <owl:Thing rdf:about="#AF-FISICA-S/T">
+        <rdf:type rdf:resource="#S/T"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-T -->
+
+    <T rdf:about="#AF-FISICA-T">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,2</Creditos>
+    </T>
     
 
 
@@ -1129,15 +1328,17 @@
 
     <owl:Thing rdf:about="#MA-FISICA">
         <rdf:type rdf:resource="#Materia"/>
+        <ResultadosDelAprendizaje rdf:datatype="&rdfs;Literal"
+            >-Comprender los principios b&#225;sicos y conceptos fundamentales de electricidad, magnetismo y an&#225;lisis de circuitos en los que se basan los dispositivos de computaci&#243;n.
+-Analizar la estructura y funcionamiento delos dispositivos electr&#243;nicos
+semiconductores empleados en la construcci&#243;n de sistemas digitales.
+-Aplicar las herramientas de simulaci&#243;n el&#233;ctrica y dise&#241;o relacionadas con el proceso tecnol&#243;gico de fabricaci&#243;n de circuitos CMOS.
+-Manejar la instrumentaci&#243;n de medida y an&#225;lisis empleada en sistemas electr&#243;nicos.</ResultadosDelAprendizaje>
         <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
         <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
         <DuracionYUbicacion
             >Materia compuesta por 1 asignatura programada en el 1er semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
         <MA_constaDe rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
-        <MA_otorgaCompetencias rdf:resource="#CE-01"/>
-        <MA_otorgaCompetencias rdf:resource="#CE-13/18"/>
-        <MA_otorgaCompetencias rdf:resource="#CE-26/27"/>
-        <MA_otorgaCompetencias rdf:resource="#CE-30"/>
         <MA_otorgaCompetencias rdf:resource="#CG-01/21"/>
         <MA_otorgaCompetencias rdf:resource="#CG-02/CE-45"/>
         <MA_otorgaCompetencias rdf:resource="#CG-03/04"/>
@@ -1332,6 +1533,7 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#ActividadFormativa"/>
             <rdf:Description rdf:about="#Alumno"/>
             <rdf:Description rdf:about="#Asignatura"/>
             <rdf:Description rdf:about="#Competencia"/>
@@ -1339,6 +1541,17 @@
             <rdf:Description rdf:about="#MetodoDocente"/>
             <rdf:Description rdf:about="#ObjetivoGeneral"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#MD-EC"/>
+            <rdf:Description rdf:about="#MD-AOP"/>
+            <rdf:Description rdf:about="#MD-AC"/>
+            <rdf:Description rdf:about="#MD-RE"/>
+            <rdf:Description rdf:about="#MD-LM"/>
+            <rdf:Description rdf:about="#MD-ABP"/>
+        </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
@@ -1416,15 +1629,18 @@
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="#MD-EC"/>
-            <rdf:Description rdf:about="#MD-AOP"/>
-            <rdf:Description rdf:about="#MD-AC"/>
-            <rdf:Description rdf:about="#MD-RE"/>
-            <rdf:Description rdf:about="#MD-LM"/>
-            <rdf:Description rdf:about="#MD-ABP"/>
-        </owl:distinctMembers>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CP"/>
+            <rdf:Description rdf:about="#CT"/>
+            <rdf:Description rdf:about="#EG"/>
+            <rdf:Description rdf:about="#ETAI"/>
+            <rdf:Description rdf:about="#L"/>
+            <rdf:Description rdf:about="#PA"/>
+            <rdf:Description rdf:about="#PO"/>
+            <rdf:Description rdf:about="#S/T"/>
+            <rdf:Description rdf:about="#T"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
