@@ -14,15 +14,16 @@
     <!ENTITY CG-02 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/" >
     <!ENTITY AF-FISICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-S/" >
     <!ENTITY AF-MATEMATICAS-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-S/" >
+    <!ENTITY AF-ESTADISTICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-S/" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xml:base="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:S="&Ontology1260008768250;S/"
-     xmlns:Ontology1260008768250="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:AF-S="&Ontology1260008768250;AF-S/"
+     xmlns:Ontology1260008768250="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:AF-MATEMATICAS-S="&Ontology1260008768250;AF-MATEMATICAS-S/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -30,6 +31,7 @@
      xmlns:CG-02="&Ontology1260008768250;CG-02/"
      xmlns:AF-FISICA-S="&Ontology1260008768250;AF-FISICA-S/"
      xmlns:CG-13="&Ontology1260008768250;CG-13/"
+     xmlns:AF-ESTADISTICA-S="&Ontology1260008768250;AF-ESTADISTICA-S/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about=""/>
     
@@ -70,6 +72,25 @@
     <owl:ObjectProperty rdf:about="#AL_seMatriculaEn">
         <rdfs:domain rdf:resource="#Alumno"/>
         <rdfs:range rdf:resource="#Asignatura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-esRequisitoPara -->
+
+    <owl:ObjectProperty rdf:about="#AS-esRequisitoPara">
+        <owl:inverseOf rdf:resource="#AS-tieneComoRequisito"/>
+        <rdfs:range rdf:resource="#Asignatura"/>
+        <rdfs:domain rdf:resource="#Asignatura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-tieneComoRequisito -->
+
+    <owl:ObjectProperty rdf:about="#AS-tieneComoRequisito">
+        <rdfs:range rdf:resource="#Asignatura"/>
+        <rdfs:domain rdf:resource="#Asignatura"/>
     </owl:ObjectProperty>
     
 
@@ -201,11 +222,11 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first>Basica</rdf:first>
+                        <rdf:first rdf:datatype="&xsd;string">Basica</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first>Obligatoria</rdf:first>
+                                <rdf:first rdf:datatype="&xsd;string">Obligatoria</rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
                             </rdf:Description>
                         </rdf:rest>
@@ -228,11 +249,11 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first>Basico</rdf:first>
+                        <rdf:first rdf:datatype="&xsd;string">Basico</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first>Mixto</rdf:first>
+                                <rdf:first rdf:datatype="&xsd;string">Mixto</rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
                             </rdf:Description>
                         </rdf:rest>
@@ -403,11 +424,11 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first>1er semestre</rdf:first>
+                        <rdf:first rdf:datatype="&xsd;string">1er semestre</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first>2o semestre</rdf:first>
+                                <rdf:first rdf:datatype="&xsd;string">2o semestre</rdf:first>
                                 <rdf:rest rdf:resource="&rdf;nil"/>
                             </rdf:Description>
                         </rdf:rest>
@@ -581,6 +602,94 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-CP -->
+
+    <owl:Thing rdf:about="#AF-ESTADISTICA-CP">
+        <rdf:type rdf:resource="#CP"/>
+        <Creditos rdf:datatype="&xsd;decimal">1,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-CT -->
+
+    <owl:Thing rdf:about="#AF-ESTADISTICA-CT">
+        <rdf:type rdf:resource="#CT"/>
+        <Creditos rdf:datatype="&xsd;decimal">1,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-05"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
+        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-EG -->
+
+    <owl:Thing rdf:about="#AF-ESTADISTICA-EG">
+        <rdf:type rdf:resource="#EG"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-ETAI -->
+
+    <ETAI rdf:about="#AF-ESTADISTICA-ETAI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">3,6</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-05"/>
+        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+    </ETAI>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-L -->
+
+    <owl:Thing rdf:about="#AF-ESTADISTICA-L">
+        <rdf:type rdf:resource="#L"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-PA -->
+
+    <PA rdf:about="#AF-ESTADISTICA-PA">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,6</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-05"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-43"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
+        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+    </PA>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-S/T -->
+
+    <owl:Thing rdf:about="#AF-ESTADISTICA-S/T">
+        <rdf:type rdf:resource="#S/T"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-T -->
+
+    <owl:Thing rdf:about="#AF-ESTADISTICA-T">
+        <rdf:type rdf:resource="#T"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,1</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+    </owl:Thing>
     
 
 
@@ -882,6 +991,46 @@ Combinatoria</Contenidos>
             >Relaciones de recurrencia y funciones generatrices
 Teor&#237;a de grafos</Contenidos>
     </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-ProbabilidadesYEstadisticaI -->
+
+    <Asignatura rdf:about="#AS-ProbabilidadesYEstadisticaI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">2o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Estad&#237;stica Descriptiva
+C&#225;lculo de Probabilidades
+Variable Aleatoria Discreta
+Variable Aleatoria Continua
+T&#233;cnicas de Inferencia Param&#233;trica
+T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
+        <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaI"/>
+        <AS_formaParteDe rdf:resource="#MA-ESTADISTICA"/>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-ProbabilidadesYEstadisticaII -->
+
+    <owl:Thing rdf:about="#AS-ProbabilidadesYEstadisticaII">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">2o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">3</Extension>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Estad&#237;stica Descriptiva
+C&#225;lculo de Probabilidades
+Variable Aleatoria Discreta
+Variable Aleatoria Continua
+T&#233;cnicas de Inferencia Param&#233;trica
+T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaI"/>
+        <AS_formaParteDe rdf:resource="#MA-ESTADISTICA"/>
+    </owl:Thing>
     
 
 
@@ -1584,6 +1733,38 @@ Teor&#237;a de grafos</Contenidos>
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-ESTADISTICA -->
+
+    <Materia rdf:about="#MA-ESTADISTICA">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
+            >- Pruebas: de respuesta larga, de desarrollo.
+- Informes/memorias de pr&#225;cticas.</SistemasDeEvaluacion>
+        <ResultadosDelAprendizaje rdf:datatype="&rdfs;Literal"
+            >- Saber estructurar un conjunto de datos cuantitativos.
+- Saber manejar la sintaxis de probabil&#237;stica basada en &#193;lgebra de Boole.
+- Manejar la sintaxis probabil&#237;stica basada en conceptos del c&#225;lculo.
+- Ajuste de modelos a un conjunto de datos.
+- Manejar t&#233;cnicas b&#225;sicas de inferencia estad&#237;stica.</ResultadosDelAprendizaje>
+        <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
+        <CaracterMateria rdf:datatype="&xsd;string">Basico</CaracterMateria>
+        <Coordinacion rdf:datatype="&rdfs;Literal"
+            >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
+        <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
+            >Materia compuesta por 1 asignatura programada en el 2&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas.</DuracionYUbicacion>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-01/21"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-05"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-06"/>
+        <MA_seImparteMediante rdf:resource="#MD-ABP"/>
+        <MA_seImparteMediante rdf:resource="#MD-EC"/>
+        <MA_seImparteMediante rdf:resource="#MD-LM"/>
+        <MA_seImparteMediante rdf:resource="#MD-RE"/>
+    </Materia>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-FISICA -->
 
     <owl:Thing rdf:about="#MA-FISICA">
@@ -1863,17 +2044,6 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
      -->
 
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="#MD-EC"/>
-            <rdf:Description rdf:about="#MD-AOP"/>
-            <rdf:Description rdf:about="#MD-AC"/>
-            <rdf:Description rdf:about="#MD-RE"/>
-            <rdf:Description rdf:about="#MD-LM"/>
-            <rdf:Description rdf:about="#MD-ABP"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="#ActividadFormativa"/>
@@ -1898,6 +2068,17 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
             <rdf:Description rdf:about="#S/T"/>
             <rdf:Description rdf:about="#T"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#MD-EC"/>
+            <rdf:Description rdf:about="#MD-AOP"/>
+            <rdf:Description rdf:about="#MD-AC"/>
+            <rdf:Description rdf:about="#MD-RE"/>
+            <rdf:Description rdf:about="#MD-LM"/>
+            <rdf:Description rdf:about="#MD-ABP"/>
+        </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
