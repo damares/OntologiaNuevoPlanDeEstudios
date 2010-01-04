@@ -13,6 +13,7 @@
     <!ENTITY CG-13 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-13/" >
     <!ENTITY CG-02 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/" >
     <!ENTITY AF-FISICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-S/" >
+    <!ENTITY AF-MATEMATICAS-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-S/" >
 ]>
 
 
@@ -20,15 +21,16 @@
      xml:base="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:S="&Ontology1260008768250;S/"
-     xmlns:CG-02="&Ontology1260008768250;CG-02/"
-     xmlns:AF-FISICA-S="&Ontology1260008768250;AF-FISICA-S/"
      xmlns:Ontology1260008768250="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xmlns:AF-S="&Ontology1260008768250;AF-S/"
-     xmlns:CG-13="&Ontology1260008768250;CG-13/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:AF-MATEMATICAS-S="&Ontology1260008768250;AF-MATEMATICAS-S/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:CG-02="&Ontology1260008768250;CG-02/"
+     xmlns:AF-FISICA-S="&Ontology1260008768250;AF-FISICA-S/"
+     xmlns:CG-13="&Ontology1260008768250;CG-13/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about=""/>
     
 
@@ -199,8 +201,14 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first rdf:datatype="&xsd;string">Basica</rdf:first>
-                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>Basica</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>Obligatoria</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
                     </rdf:Description>
                 </owl:oneOf>
             </rdf:Description>
@@ -220,24 +228,12 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first rdf:datatype="&xsd;string">Basica</rdf:first>
+                        <rdf:first>Basico</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first rdf:datatype="&xsd;string">Mixta</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&rdf;List"/>
-                                        <rdf:first rdf:datatype="&xsd;string">Obligatoria</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&rdf;List"/>
-                                                <rdf:first rdf:datatype="&xsd;string">Optativa</rdf:first>
-                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
+                                <rdf:first>Mixto</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
@@ -407,8 +403,14 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first rdf:datatype="&xsd;string">1er semestre</rdf:first>
-                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>1er semestre</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>2o semestre</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
                     </rdf:Description>
                 </owl:oneOf>
             </rdf:Description>
@@ -618,6 +620,10 @@
     <owl:Thing rdf:about="#AF-FISICA-ETAI">
         <rdf:type rdf:resource="#ETAI"/>
         <Creditos rdf:datatype="&xsd;decimal">1,9</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
     </owl:Thing>
     
 
@@ -627,6 +633,10 @@
     <owl:Thing rdf:about="#AF-FISICA-L">
         <rdf:type rdf:resource="#L"/>
         <Creditos rdf:datatype="&xsd;decimal">0,7</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
     </owl:Thing>
     
 
@@ -663,7 +673,153 @@
     <T rdf:about="#AF-FISICA-T">
         <rdf:type rdf:resource="&owl;Thing"/>
         <Creditos rdf:datatype="&xsd;decimal">0,2</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
     </T>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-CP -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-CP">
+        <rdf:type rdf:resource="#CP"/>
+        <Creditos rdf:datatype="&xsd;decimal">4,6</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-CT -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-CT">
+        <rdf:type rdf:resource="#CT"/>
+        <Creditos rdf:datatype="&xsd;decimal">3,6</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-EG -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-EG">
+        <rdf:type rdf:resource="#EG"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-ETAI -->
+
+    <ETAI rdf:about="#AF-MATEMATICAS-ETAI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">5,5</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </ETAI>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-L -->
+
+    <L rdf:about="#AF-MATEMATICAS-L">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+    </L>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-PA -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-PA">
+        <rdf:type rdf:resource="#PA"/>
+        <Creditos rdf:datatype="&xsd;decimal">4,9</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-PO -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-PO">
+        <rdf:type rdf:resource="#PO"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-S/T -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-S/T">
+        <rdf:type rdf:resource="#S/T"/>
+        <Creditos rdf:datatype="&xsd;decimal">3,7</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-T -->
+
+    <owl:Thing rdf:about="#AF-MATEMATICAS-T">
+        <rdf:type rdf:resource="#T"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,5</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-AlgebraLineal -->
+
+    <Asignatura rdf:about="#AS-AlgebraLineal">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">1er semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Sistemas de ecuaciones lineales
+Calculo matricial
+Espacios vectoriales
+Geometr&#237;a del plano y del espacio</Contenidos>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-Calculo -->
+
+    <owl:Thing rdf:about="#AS-Calculo">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">2o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Sucesiones y series num&#233;ricas
+Series de potencias
+Funciones de una o varias variables.. L&#237;mites y continuidad
+Diferenciabilidad, optimizaci&#243;n e integraci&#243;n</Contenidos>
+    </owl:Thing>
     
 
 
@@ -679,6 +835,52 @@
 Teor&#237;a de circuitos
 Dispositivos semiconductores
 Electr&#243;nica de conmutaci&#243;n</Contenidos>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-Logica -->
+
+    <Asignatura rdf:about="#AS-Logica">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">1er semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >L&#243;gica proposicional y de primer orden: sintaxis y sem&#225;ntica
+Sistemas de deducci&#243;n
+Demostraci&#243;n autom&#225;tica y resoluci&#243;n
+Fundamentos de la programaci&#243;n l&#243;gica</Contenidos>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-MatematicaDiscretaI -->
+
+    <Asignatura rdf:about="#AS-MatematicaDiscretaI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">1er semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Estructuras discretas b&#225;sicas
+&#193;lgebras de Boole
+Aritm&#233;tica entera y modular
+Combinatoria</Contenidos>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-MatematicaDiscretaII -->
+
+    <Asignatura rdf:about="#AS-MatematicaDiscretaII">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">2o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">3</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Relaciones de recurrencia y funciones generatrices
+Teor&#237;a de grafos</Contenidos>
     </Asignatura>
     
 
@@ -1393,7 +1595,7 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
 -Aplicar las herramientas de simulaci&#243;n el&#233;ctrica y dise&#241;o relacionadas con el proceso tecnol&#243;gico de fabricaci&#243;n de circuitos CMOS.
 -Manejar la instrumentaci&#243;n de medida y an&#225;lisis empleada en sistemas electr&#243;nicos.</ResultadosDelAprendizaje>
         <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
-        <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
+        <CaracterMateria rdf:datatype="&xsd;string">Basico</CaracterMateria>
         <Coordinacion rdf:datatype="&rdfs;Literal"
             >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
         <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
@@ -1419,6 +1621,66 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <MA_seImparteMediante rdf:resource="#MD-LM"/>
         <MA_seImparteMediante rdf:resource="#MD-RE"/>
     </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-MATEMATICAS -->
+
+    <Materia rdf:about="#MA-MATEMATICAS">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
+            >- Pruebas: objetivas (verdadero/falso, elecci&#243;n m&#250;ltiple, emparejamiento de elementos&#8230;), de respuesta corta.
+- Pruebas: de respuesta larga, de desarrollo.
+- Trabajos y proyectos.
+- Sistemas de Autoevaluaci&#243;n (oral, escrita, individual, en grupo).</SistemasDeEvaluacion>
+        <ResultadosDelAprendizaje rdf:datatype="&rdfs;Literal"
+            >- Representar conocimiento por medio de sistemas formales.
+- Ser capaz de demostrar teoremas mediante l&#243;gica matem&#225;tica.
+- Ser capaz de utilizar algoritmos y estrategias para la demostraci&#243;n autom&#225;tica.
+- Conocer las estructuras discretas b&#225;sicas de la Inform&#225;tica: Conjuntos, funciones, relaciones, grafos, &#225;lgebras de Boole, grupos y cuerpos finitos y sus aplicaciones.
+- Saber operar en aritm&#233;tica entera y modular y sus aplicaciones a la inform&#225;tica.
+- Conocer los principios b&#225;sicos de la combinatoria y saber aplicar la resoluci&#243;n de recurrencias a problemas combinatorios.
+- Conocer, comprender y aplicar los conceptos, t&#233;cnicas y algoritmos b&#225;sicos de la teor&#237;a de grafos. Conocer y saber aplicar las t&#233;cnicas de las funciones generatrices.
+- Conocer y manejar las t&#233;cnicas del c&#225;lculo de l&#237;mites, sucesiones y series funcionales, de los infinit&#233;simos y su aplicaci&#243;n al estudio de la complejidad de algoritmos.
+- Utilizar con rigor, en la resoluci&#243;n de problemas, las t&#233;cnicas de continuidad, diferenciabilidad, integraci&#243;n y optimizaci&#243;n de funciones reales de varias variables.
+- Resolver sistemas de ecuaciones lineales. Conocer y manejar las propiedades de los espacios vectoriales y sus aplicaciones a la inform&#225;tica.
+- Utilizar las matrices para la representaci&#243;n y manejo de datos y transformaciones, as&#237; como su aplicaci&#243;n a la geometr&#237;a del plano y del espacio. C&#225;lculo de autovalores y autovectores y sus aplicaciones a la inform&#225;tica.
+- Modelar matem&#225;ticamente problemas reales y conocer las t&#233;cnicas para resolverlos.
+- Utilizar diversas t&#233;cnicas para la resoluci&#243;n de problemas con ayuda de software matem&#225;tico.</ResultadosDelAprendizaje>
+        <CreditosECTS rdf:datatype="&xsd;int">27</CreditosECTS>
+        <Coordinacion rdf:datatype="&rdfs;Literal"
+            >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
+        <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
+            >Materia compuesta por 5 asignaturas programadas en el 1&#186; y 2&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
+        <CaracterMateria rdf:datatype="&xsd;string">Mixto</CaracterMateria>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-CP"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-CT"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-EG"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-ETAI"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-L"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-PA"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-PO"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-S/T"/>
+        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-T"/>
+        <MA_constaDe rdf:resource="#AS-AlgebraLineal"/>
+        <MA_constaDe rdf:resource="#AS-Calculo"/>
+        <MA_constaDe rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
+        <MA_constaDe rdf:resource="#AS-Logica"/>
+        <MA_constaDe rdf:resource="#AS-MatematicaDiscretaI"/>
+        <MA_constaDe rdf:resource="#AS-MatematicaDiscretaII"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-01/21"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-05"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-06"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-07/08/09/10/16/17"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-19"/>
+        <MA_seImparteMediante rdf:resource="#MD-ABP"/>
+        <MA_seImparteMediante rdf:resource="#MD-AC"/>
+        <MA_seImparteMediante rdf:resource="#MD-EC"/>
+        <MA_seImparteMediante rdf:resource="#MD-LM"/>
+        <MA_seImparteMediante rdf:resource="#MD-RE"/>
+    </Materia>
     
 
 
@@ -1601,6 +1863,17 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
      -->
 
     <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#MD-EC"/>
+            <rdf:Description rdf:about="#MD-AOP"/>
+            <rdf:Description rdf:about="#MD-AC"/>
+            <rdf:Description rdf:about="#MD-RE"/>
+            <rdf:Description rdf:about="#MD-LM"/>
+            <rdf:Description rdf:about="#MD-ABP"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="#ActividadFormativa"/>
@@ -1613,15 +1886,18 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="#MD-EC"/>
-            <rdf:Description rdf:about="#MD-AOP"/>
-            <rdf:Description rdf:about="#MD-AC"/>
-            <rdf:Description rdf:about="#MD-RE"/>
-            <rdf:Description rdf:about="#MD-LM"/>
-            <rdf:Description rdf:about="#MD-ABP"/>
-        </owl:distinctMembers>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CP"/>
+            <rdf:Description rdf:about="#CT"/>
+            <rdf:Description rdf:about="#EG"/>
+            <rdf:Description rdf:about="#ETAI"/>
+            <rdf:Description rdf:about="#L"/>
+            <rdf:Description rdf:about="#PA"/>
+            <rdf:Description rdf:about="#PO"/>
+            <rdf:Description rdf:about="#S/T"/>
+            <rdf:Description rdf:about="#T"/>
+        </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
@@ -1697,20 +1973,6 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
             <rdf:Description rdf:about="#CE-03/04"/>
             <rdf:Description rdf:about="#CG-03/04"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="#CP"/>
-            <rdf:Description rdf:about="#CT"/>
-            <rdf:Description rdf:about="#EG"/>
-            <rdf:Description rdf:about="#ETAI"/>
-            <rdf:Description rdf:about="#L"/>
-            <rdf:Description rdf:about="#PA"/>
-            <rdf:Description rdf:about="#PO"/>
-            <rdf:Description rdf:about="#S/T"/>
-            <rdf:Description rdf:about="#T"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
