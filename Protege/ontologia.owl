@@ -553,10 +553,10 @@
 
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-EG -->
 
-    <owl:Thing rdf:about="#AF-FISICA-EG">
-        <rdf:type rdf:resource="#EG"/>
+    <EG rdf:about="#AF-FISICA-EG">
+        <rdf:type rdf:resource="&owl;Thing"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
-    </owl:Thing>
+    </EG>
     
 
 
@@ -1543,6 +1543,20 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         </owl:members>
     </rdf:Description>
     <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CP"/>
+            <rdf:Description rdf:about="#CT"/>
+            <rdf:Description rdf:about="#EG"/>
+            <rdf:Description rdf:about="#ETAI"/>
+            <rdf:Description rdf:about="#L"/>
+            <rdf:Description rdf:about="#PA"/>
+            <rdf:Description rdf:about="#PO"/>
+            <rdf:Description rdf:about="#S/T"/>
+            <rdf:Description rdf:about="#T"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="#MD-EC"/>
@@ -1627,20 +1641,6 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
             <rdf:Description rdf:about="#CE-03/04"/>
             <rdf:Description rdf:about="#CG-03/04"/>
         </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="#CP"/>
-            <rdf:Description rdf:about="#CT"/>
-            <rdf:Description rdf:about="#EG"/>
-            <rdf:Description rdf:about="#ETAI"/>
-            <rdf:Description rdf:about="#L"/>
-            <rdf:Description rdf:about="#PA"/>
-            <rdf:Description rdf:about="#PO"/>
-            <rdf:Description rdf:about="#S/T"/>
-            <rdf:Description rdf:about="#T"/>
-        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
