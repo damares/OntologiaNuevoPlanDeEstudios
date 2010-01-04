@@ -44,12 +44,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_esValidaParaEnse&#241;arUna -->
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_esValidaParaEnse&#241;ar -->
 
-    <owl:ObjectProperty rdf:about="#AF_esValidaParaEnse&#241;arUna">
+    <owl:ObjectProperty rdf:about="#AF_esValidaParaEnse&#241;ar">
         <rdfs:domain rdf:resource="#ActividadFormativa"/>
         <owl:inverseOf rdf:resource="#MA_seAprendeMediante"/>
         <rdfs:range rdf:resource="#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_otorgaCompetenciasEspecificas -->
+
+    <owl:ObjectProperty rdf:about="#AF_otorgaCompetenciasEspecificas">
+        <rdfs:domain rdf:resource="#ActividadFormativa"/>
+        <rdfs:range rdf:resource="#CompetenciaEspecifica"/>
     </owl:ObjectProperty>
     
 
@@ -83,6 +92,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CO_esAdquiridaMediante -->
+
+    <owl:ObjectProperty rdf:about="#CO_esAdquiridaMediante">
+        <owl:inverseOf rdf:resource="#AF_otorgaCompetenciasEspecificas"/>
+        <rdfs:range rdf:resource="#ActividadFormativa"/>
+        <rdfs:domain rdf:resource="#CompetenciaEspecifica"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CO_esOtorgadaPor -->
 
     <owl:ObjectProperty rdf:about="#CO_esOtorgadaPor">
@@ -111,11 +130,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_otorgaCompetencias -->
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_otorgaCompetenciasGenerales -->
 
-    <owl:ObjectProperty rdf:about="#MA_otorgaCompetencias">
+    <owl:ObjectProperty rdf:about="#MA_otorgaCompetenciasGenerales">
         <owl:inverseOf rdf:resource="#CO_esOtorgadaPor"/>
-        <rdfs:range rdf:resource="#Competencia"/>
+        <rdfs:range rdf:resource="#CompetenciaGeneral"/>
         <rdfs:domain rdf:resource="#Materia"/>
     </owl:ObjectProperty>
     
@@ -225,6 +244,26 @@
                 </owl:oneOf>
             </rdf:Description>
         </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Contenidos -->
+
+    <owl:DatatypeProperty rdf:about="#Contenidos">
+        <rdfs:domain rdf:resource="#Asignatura"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesAsignatura"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#Coordinacion -->
+
+    <owl:DatatypeProperty rdf:about="#Coordinacion">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -340,6 +379,16 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ResultadosDelAprendizaje -->
 
     <owl:DatatypeProperty rdf:about="#ResultadosDelAprendizaje">
+        <rdfs:domain rdf:resource="#Materia"/>
+        <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#SistemasDeEvaluacion -->
+
+    <owl:DatatypeProperty rdf:about="#SistemasDeEvaluacion">
         <rdfs:domain rdf:resource="#Materia"/>
         <rdfs:subPropertyOf rdf:resource="#PropiedadesMateria"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
@@ -547,6 +596,10 @@
     <CT rdf:about="#AF-FISICA-CT">
         <rdf:type rdf:resource="&owl;Thing"/>
         <Creditos rdf:datatype="&xsd;decimal">1,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
     </CT>
     
 
@@ -618,6 +671,12 @@
 
     <Asignatura rdf:about="#AS-FundamentosFisicosYTecnologicosDeLaInformatica">
         <rdf:type rdf:resource="&owl;Thing"/>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >
+Electromagnetismo
+Teor&#237;a de circuitos
+Dispositivos semiconductores
+Electr&#243;nica de conmutaci&#243;n</Contenidos>
         <UbicacionTemporal rdf:datatype="&xsd;string">1er semestre</UbicacionTemporal>
         <Extension rdf:datatype="&xsd;int">6</Extension>
         <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
@@ -1336,15 +1395,27 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
 -Manejar la instrumentaci&#243;n de medida y an&#225;lisis empleada en sistemas electr&#243;nicos.</ResultadosDelAprendizaje>
         <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
         <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
+        <Coordinacion rdf:datatype="&rdfs;Literal"
+            >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
+        <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
+            >Se van a utilizar los siguientes m&#233;todos de evaluaci&#243;n:
+- Pruebas objetivas (verdadero/falso, elecci&#243;n m&#250;ltiple, emparejamiento de elementos&#8230;), de respuesta corta
+- Pruebas de respuesta larga, de desarrollo
+- Informes/memorias de pr&#225;cticas
+- Pruebas de ejecuci&#243;n de tareas reales y/o simuladas</SistemasDeEvaluacion>
         <DuracionYUbicacion
             >Materia compuesta por 1 asignatura programada en el 1er semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
+        <MA_seAprendeMediante rdf:resource="#AF-FISICA-CT"/>
+        <MA_seAprendeMediante rdf:resource="#AF-FISICA-ETAI"/>
+        <MA_seAprendeMediante rdf:resource="#AF-FISICA-L"/>
+        <MA_seAprendeMediante rdf:resource="#AF-FISICA-T"/>
         <MA_constaDe rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
-        <MA_otorgaCompetencias rdf:resource="#CG-01/21"/>
-        <MA_otorgaCompetencias rdf:resource="#CG-02/CE-45"/>
-        <MA_otorgaCompetencias rdf:resource="#CG-03/04"/>
-        <MA_otorgaCompetencias rdf:resource="#CG-05"/>
-        <MA_otorgaCompetencias rdf:resource="#CG-06"/>
-        <MA_otorgaCompetencias rdf:resource="#CG-19"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-01/21"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-05"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-06"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-19"/>
         <MA_seImparteMediante rdf:resource="#MD-ABP"/>
         <MA_seImparteMediante rdf:resource="#MD-LM"/>
         <MA_seImparteMediante rdf:resource="#MD-RE"/>
@@ -1543,20 +1614,6 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="#CP"/>
-            <rdf:Description rdf:about="#CT"/>
-            <rdf:Description rdf:about="#EG"/>
-            <rdf:Description rdf:about="#ETAI"/>
-            <rdf:Description rdf:about="#L"/>
-            <rdf:Description rdf:about="#PA"/>
-            <rdf:Description rdf:about="#PO"/>
-            <rdf:Description rdf:about="#S/T"/>
-            <rdf:Description rdf:about="#T"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="#MD-EC"/>
@@ -1641,6 +1698,20 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
             <rdf:Description rdf:about="#CE-03/04"/>
             <rdf:Description rdf:about="#CG-03/04"/>
         </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CP"/>
+            <rdf:Description rdf:about="#CT"/>
+            <rdf:Description rdf:about="#EG"/>
+            <rdf:Description rdf:about="#ETAI"/>
+            <rdf:Description rdf:about="#L"/>
+            <rdf:Description rdf:about="#PA"/>
+            <rdf:Description rdf:about="#PO"/>
+            <rdf:Description rdf:about="#S/T"/>
+            <rdf:Description rdf:about="#T"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
