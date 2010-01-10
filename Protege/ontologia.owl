@@ -9,7 +9,6 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY Ontology1260008768250 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#" >
     <!ENTITY S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#S/" >
-    <!ENTITY AF-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-S/" >
     <!ENTITY CG-13 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-13/" >
     <!ENTITY CG-02 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/" >
     <!ENTITY AF-FISICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-S/" >
@@ -20,9 +19,8 @@
 
 <rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xml:base="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl"
-     xmlns:S="&Ontology1260008768250;S/"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:AF-S="&Ontology1260008768250;AF-S/"
+     xmlns:S="&Ontology1260008768250;S/"
      xmlns:Ontology1260008768250="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:AF-MATEMATICAS-S="&Ontology1260008768250;AF-MATEMATICAS-S/"
@@ -48,9 +46,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_esValidaParaEnse&#241;ar -->
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_esValidaParaEnsenar -->
 
-    <owl:ObjectProperty rdf:about="#AF_esValidaParaEnse&#241;ar">
+    <owl:ObjectProperty rdf:about="#AF_esValidaParaEnsenar">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="#ActividadFormativa"/>
         <owl:inverseOf rdf:resource="#MA_seAprendeMediante"/>
         <rdfs:range rdf:resource="#Materia"/>
@@ -61,6 +60,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF_otorgaCompetenciasEspecificas -->
 
     <owl:ObjectProperty rdf:about="#AF_otorgaCompetenciasEspecificas">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="#ActividadFormativa"/>
         <rdfs:range rdf:resource="#CompetenciaEspecifica"/>
     </owl:ObjectProperty>
@@ -70,6 +70,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AL_seMatriculaEn -->
 
     <owl:ObjectProperty rdf:about="#AL_seMatriculaEn">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="#Alumno"/>
         <rdfs:range rdf:resource="#Asignatura"/>
     </owl:ObjectProperty>
@@ -79,6 +80,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-esRequisitoPara -->
 
     <owl:ObjectProperty rdf:about="#AS-esRequisitoPara">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <owl:inverseOf rdf:resource="#AS-tieneComoRequisito"/>
         <rdfs:range rdf:resource="#Asignatura"/>
         <rdfs:domain rdf:resource="#Asignatura"/>
@@ -89,6 +91,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-tieneComoRequisito -->
 
     <owl:ObjectProperty rdf:about="#AS-tieneComoRequisito">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:range rdf:resource="#Asignatura"/>
         <rdfs:domain rdf:resource="#Asignatura"/>
     </owl:ObjectProperty>
@@ -98,6 +101,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS_estaMatriculado -->
 
     <owl:ObjectProperty rdf:about="#AS_estaMatriculado">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <owl:inverseOf rdf:resource="#AL_seMatriculaEn"/>
         <rdfs:range rdf:resource="#Alumno"/>
         <rdfs:domain rdf:resource="#Asignatura"/>
@@ -108,6 +112,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS_formaParteDe -->
 
     <owl:ObjectProperty rdf:about="#AS_formaParteDe">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="#Asignatura"/>
         <owl:inverseOf rdf:resource="#MA_constaDe"/>
         <rdfs:range rdf:resource="#Materia"/>
@@ -118,6 +123,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CO_esAdquiridaMediante -->
 
     <owl:ObjectProperty rdf:about="#CO_esAdquiridaMediante">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <owl:inverseOf rdf:resource="#AF_otorgaCompetenciasEspecificas"/>
         <rdfs:range rdf:resource="#ActividadFormativa"/>
         <rdfs:domain rdf:resource="#CompetenciaEspecifica"/>
@@ -128,7 +134,8 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CO_esOtorgadaPor -->
 
     <owl:ObjectProperty rdf:about="#CO_esOtorgadaPor">
-        <rdfs:domain rdf:resource="#Competencia"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="#CompetenciaGeneral"/>
         <rdfs:range rdf:resource="#Materia"/>
     </owl:ObjectProperty>
     
@@ -137,6 +144,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CO_seAdquiereParaCumplir -->
 
     <owl:ObjectProperty rdf:about="#CO_seAdquiereParaCumplir">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="#Competencia"/>
         <owl:inverseOf rdf:resource="#OG_seCumpleMedianteLaAdquisicionDe"/>
         <rdfs:range rdf:resource="#ObjetivoGeneral"/>
@@ -147,6 +155,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_constaDe -->
 
     <owl:ObjectProperty rdf:about="#MA_constaDe">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="#Asignatura"/>
         <rdfs:domain rdf:resource="#Materia"/>
     </owl:ObjectProperty>
@@ -156,6 +165,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_otorgaCompetenciasGenerales -->
 
     <owl:ObjectProperty rdf:about="#MA_otorgaCompetenciasGenerales">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <owl:inverseOf rdf:resource="#CO_esOtorgadaPor"/>
         <rdfs:range rdf:resource="#CompetenciaGeneral"/>
         <rdfs:domain rdf:resource="#Materia"/>
@@ -166,6 +176,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_seAprendeMediante -->
 
     <owl:ObjectProperty rdf:about="#MA_seAprendeMediante">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="#ActividadFormativa"/>
         <rdfs:domain rdf:resource="#Materia"/>
     </owl:ObjectProperty>
@@ -175,6 +186,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA_seImparteMediante -->
 
     <owl:ObjectProperty rdf:about="#MA_seImparteMediante">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <owl:inverseOf rdf:resource="#ME_utilizadoEn"/>
         <rdfs:domain rdf:resource="#Materia"/>
         <rdfs:range rdf:resource="#MetodoDocente"/>
@@ -185,6 +197,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#ME_utilizadoEn -->
 
     <owl:ObjectProperty rdf:about="#ME_utilizadoEn">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="#Materia"/>
         <rdfs:domain rdf:resource="#MetodoDocente"/>
     </owl:ObjectProperty>
@@ -194,6 +207,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#OG_seCumpleMedianteLaAdquisicionDe -->
 
     <owl:ObjectProperty rdf:about="#OG_seCumpleMedianteLaAdquisicionDe">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="#Competencia"/>
         <rdfs:domain rdf:resource="#ObjetivoGeneral"/>
     </owl:ObjectProperty>
@@ -612,7 +626,7 @@
         <Creditos rdf:datatype="&xsd;decimal">1,8</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
-        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ESTADISTICA"/>
     </owl:Thing>
     
 
@@ -626,7 +640,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-05"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
-        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ESTADISTICA"/>
     </owl:Thing>
     
 
@@ -635,7 +649,13 @@
 
     <owl:Thing rdf:about="#AF-ESTADISTICA-EG">
         <rdf:type rdf:resource="#EG"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ESTADISTICA-EG"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -646,7 +666,7 @@
         <Creditos rdf:datatype="&xsd;decimal">3,6</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-05"/>
-        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ESTADISTICA"/>
     </ETAI>
     
 
@@ -657,6 +677,11 @@
         <rdf:type rdf:resource="#L"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ESTADISTICA-L"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -668,8 +693,22 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-05"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-43"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
-        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ESTADISTICA"/>
     </PA>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-PO -->
+
+    <PO rdf:about="#AF-ESTADISTICA-PO">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
+    </PO>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ESTADISTICA-PO"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -679,6 +718,11 @@
         <rdf:type rdf:resource="#S/T"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ESTADISTICA-S/T"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -688,7 +732,7 @@
         <rdf:type rdf:resource="#T"/>
         <Creditos rdf:datatype="&xsd;decimal">0,1</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
-        <AF_esValidaParaEnseñar rdf:resource="#MA-ESTADISTICA"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ESTADISTICA"/>
     </owl:Thing>
     
 
@@ -699,6 +743,11 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </CP>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-FISICA-CP"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -711,6 +760,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-FISICA"/>
     </CT>
     
 
@@ -721,6 +771,11 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </EG>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-FISICA-EG"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -733,6 +788,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-FISICA"/>
     </owl:Thing>
     
 
@@ -746,6 +802,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-FISICA"/>
     </owl:Thing>
     
 
@@ -765,6 +822,11 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </PO>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-FISICA-PO"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -774,6 +836,11 @@
         <rdf:type rdf:resource="#S/T"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-FISICA-S/T"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -786,6 +853,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-26/27"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-30"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-FISICA"/>
     </T>
     
 
@@ -800,6 +868,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -813,6 +882,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -823,6 +893,11 @@
         <rdf:type rdf:resource="#EG"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-MATEMATICAS-EG"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -836,6 +911,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </ETAI>
     
 
@@ -848,6 +924,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </L>
     
 
@@ -861,6 +938,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -871,6 +949,11 @@
         <rdf:type rdf:resource="#PO"/>
         <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-MATEMATICAS-PO"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -883,6 +966,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -896,6 +980,7 @@
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-06"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -912,7 +997,18 @@
 Calculo matricial
 Espacios vectoriales
 Geometr&#237;a del plano y del espacio</Contenidos>
+        <AS_formaParteDe rdf:resource="#MA-MATEMATICAS"/>
     </Asignatura>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-AlgebraLineal"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-AlgebraLineal"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -928,7 +1024,18 @@ Geometr&#237;a del plano y del espacio</Contenidos>
 Series de potencias
 Funciones de una o varias variables.. L&#237;mites y continuidad
 Diferenciabilidad, optimizaci&#243;n e integraci&#243;n</Contenidos>
+        <AS_formaParteDe rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-Calculo"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-Calculo"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -944,7 +1051,18 @@ Diferenciabilidad, optimizaci&#243;n e integraci&#243;n</Contenidos>
 Teor&#237;a de circuitos
 Dispositivos semiconductores
 Electr&#243;nica de conmutaci&#243;n</Contenidos>
+        <AS_formaParteDe rdf:resource="#MA-FISICA"/>
     </Asignatura>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -960,7 +1078,18 @@ Electr&#243;nica de conmutaci&#243;n</Contenidos>
 Sistemas de deducci&#243;n
 Demostraci&#243;n autom&#225;tica y resoluci&#243;n
 Fundamentos de la programaci&#243;n l&#243;gica</Contenidos>
+        <AS_formaParteDe rdf:resource="#MA-MATEMATICAS"/>
     </Asignatura>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-Logica"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-Logica"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -976,7 +1105,20 @@ Fundamentos de la programaci&#243;n l&#243;gica</Contenidos>
 &#193;lgebras de Boole
 Aritm&#233;tica entera y modular
 Combinatoria</Contenidos>
+        <AS-esRequisitoPara rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
+        <AS-esRequisitoPara rdf:resource="#AS-ProbabilidadesYEstadisticaII"/>
+        <AS_formaParteDe rdf:resource="#MA-MATEMATICAS"/>
     </Asignatura>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-MatematicaDiscretaI"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-MatematicaDiscretaI"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -990,7 +1132,18 @@ Combinatoria</Contenidos>
         <Contenidos rdf:datatype="&rdfs;Literal"
             >Relaciones de recurrencia y funciones generatrices
 Teor&#237;a de grafos</Contenidos>
+        <AS_formaParteDe rdf:resource="#MA-MATEMATICAS"/>
     </Asignatura>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-MatematicaDiscretaII"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-MatematicaDiscretaII"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -1011,6 +1164,16 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
         <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaI"/>
         <AS_formaParteDe rdf:resource="#MA-ESTADISTICA"/>
     </Asignatura>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -1031,6 +1194,16 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
         <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaI"/>
         <AS_formaParteDe rdf:resource="#MA-ESTADISTICA"/>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-ProbabilidadesYEstadisticaII"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AS-ProbabilidadesYEstadisticaII"/>
+        <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
+        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -1836,16 +2009,13 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <CaracterMateria rdf:datatype="&xsd;string">Mixto</CaracterMateria>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-CP"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-CT"/>
-        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-EG"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-ETAI"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-L"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-PA"/>
-        <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-PO"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-S/T"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-T"/>
         <MA_constaDe rdf:resource="#AS-AlgebraLineal"/>
         <MA_constaDe rdf:resource="#AS-Calculo"/>
-        <MA_constaDe rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
         <MA_constaDe rdf:resource="#AS-Logica"/>
         <MA_constaDe rdf:resource="#AS-MatematicaDiscretaI"/>
         <MA_constaDe rdf:resource="#AS-MatematicaDiscretaII"/>
@@ -2044,16 +2214,123 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
      -->
 
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="#ActividadFormativa"/>
-            <rdf:Description rdf:about="#Alumno"/>
-            <rdf:Description rdf:about="#Asignatura"/>
-            <rdf:Description rdf:about="#Competencia"/>
-            <rdf:Description rdf:about="#Materia"/>
-            <rdf:Description rdf:about="#MetodoDocente"/>
-            <rdf:Description rdf:about="#ObjetivoGeneral"/>
-        </owl:members>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#AF-MATEMATICAS-S/T"/>
+            <rdf:Description rdf:about="#AF-FISICA-ETAI"/>
+            <rdf:Description rdf:about="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
+            <rdf:Description rdf:about="#MA-ESTADISTICA"/>
+            <rdf:Description rdf:about="#CE-24"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-PA"/>
+            <rdf:Description rdf:about="#CE-11"/>
+            <rdf:Description rdf:about="#Obj05"/>
+            <rdf:Description rdf:about="#AF-FISICA-S/T"/>
+            <rdf:Description rdf:about="#MA-MATEMATICAS"/>
+            <rdf:Description rdf:about="#Obj10"/>
+            <rdf:Description rdf:about="#AF-FISICA-PO"/>
+            <rdf:Description rdf:about="#CE-12/16"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-CP"/>
+            <rdf:Description rdf:about="#CE-35"/>
+            <rdf:Description rdf:about="#CE-31"/>
+            <rdf:Description rdf:about="#Obj02"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-EG"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-CP"/>
+            <rdf:Description rdf:about="#AF-FISICA-CT"/>
+            <rdf:Description rdf:about="#MD-EC"/>
+            <rdf:Description rdf:about="#CE-39"/>
+            <rdf:Description rdf:about="#CE-50"/>
+            <rdf:Description rdf:about="#CE-36"/>
+            <rdf:Description rdf:about="#CE-37"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-PO"/>
+            <rdf:Description rdf:about="#CE-19/20"/>
+            <rdf:Description rdf:about="#Obj01"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-PA"/>
+            <rdf:Description rdf:about="#CE-47"/>
+            <rdf:Description rdf:about="#CE-06"/>
+            <rdf:Description rdf:about="#CE-44"/>
+            <rdf:Description rdf:about="#CE-38"/>
+            <rdf:Description rdf:about="#MD-LM"/>
+            <rdf:Description rdf:about="#CE-09"/>
+            <rdf:Description rdf:about="#CE-42"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-ETAI"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-T"/>
+            <rdf:Description rdf:about="#CE-40"/>
+            <rdf:Description rdf:about="#Obj06"/>
+            <rdf:Description rdf:about="#CG-19"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-L"/>
+            <rdf:Description rdf:about="#MA-FISICA"/>
+            <rdf:Description rdf:about="#CE-10"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-CT"/>
+            <rdf:Description rdf:about="#CG-03/04"/>
+            <rdf:Description rdf:about="#CG-11/12/20"/>
+            <rdf:Description rdf:about="#CE-41"/>
+            <rdf:Description rdf:about="#AS-Calculo"/>
+            <rdf:Description rdf:about="#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="#MD-RE"/>
+            <rdf:Description rdf:about="#Obj08"/>
+            <rdf:Description rdf:about="#AF-FISICA-EG"/>
+            <rdf:Description rdf:about="#CE-25"/>
+            <rdf:Description rdf:about="#CE-14/15"/>
+            <rdf:Description rdf:about="#CE-29"/>
+            <rdf:Description rdf:about="#CE-17"/>
+            <rdf:Description rdf:about="#CG-02/CE-45"/>
+            <rdf:Description rdf:about="#AF-FISICA-T"/>
+            <rdf:Description rdf:about="#CE-46"/>
+            <rdf:Description rdf:about="#AS-ProbabilidadesYEstadisticaII"/>
+            <rdf:Description rdf:about="#CE-23"/>
+            <rdf:Description rdf:about="#CG-13/CE-55"/>
+            <rdf:Description rdf:about="#MD-AC"/>
+            <rdf:Description rdf:about="#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="#CE-51"/>
+            <rdf:Description rdf:about="#CE-32"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-CT"/>
+            <rdf:Description rdf:about="#Obj07"/>
+            <rdf:Description rdf:about="#CG-06"/>
+            <rdf:Description rdf:about="#MD-ABP"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-L"/>
+            <rdf:Description rdf:about="#CE-49"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-PO"/>
+            <rdf:Description rdf:about="#CG-05"/>
+            <rdf:Description rdf:about="#CG-01/21"/>
+            <rdf:Description rdf:about="#CG-07/08/09/10/16/17"/>
+            <rdf:Description rdf:about="#CE-05"/>
+            <rdf:Description rdf:about="#CE-07"/>
+            <rdf:Description rdf:about="#AS-ProbabilidadesYEstadisticaI"/>
+            <rdf:Description rdf:about="#AF-FISICA-CP"/>
+            <rdf:Description rdf:about="#Obj04"/>
+            <rdf:Description rdf:about="#CE-43"/>
+            <rdf:Description rdf:about="#MD-AOP"/>
+            <rdf:Description rdf:about="#CE-26/27"/>
+            <rdf:Description rdf:about="#Obj11"/>
+            <rdf:Description rdf:about="#CE-53/54"/>
+            <rdf:Description rdf:about="#CE-34"/>
+            <rdf:Description rdf:about="#CG-22"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-EG"/>
+            <rdf:Description rdf:about="#AF-MATEMATICAS-ETAI"/>
+            <rdf:Description rdf:about="#CE-08"/>
+            <rdf:Description rdf:about="#Obj03"/>
+            <rdf:Description rdf:about="#AS-MatematicaDiscretaI"/>
+            <rdf:Description rdf:about="#CE-52"/>
+            <rdf:Description rdf:about="#AS-MatematicaDiscretaII"/>
+            <rdf:Description rdf:about="#Obj09"/>
+            <rdf:Description rdf:about="#CE-56"/>
+            <rdf:Description rdf:about="#CE-22"/>
+            <rdf:Description rdf:about="#CE-02"/>
+            <rdf:Description rdf:about="#CE-48"/>
+            <rdf:Description rdf:about="#CE-28"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-T"/>
+            <rdf:Description rdf:about="#AF-FISICA-PA"/>
+            <rdf:Description rdf:about="#AS-Logica"/>
+            <rdf:Description rdf:about="#CE-21"/>
+            <rdf:Description rdf:about="#CE-33"/>
+            <rdf:Description rdf:about="#AS-AlgebraLineal"/>
+            <rdf:Description rdf:about="#AF-ESTADISTICA-S/T"/>
+            <rdf:Description rdf:about="#CE-01"/>
+            <rdf:Description rdf:about="#CE-30"/>
+            <rdf:Description rdf:about="#CE-13/18"/>
+            <rdf:Description rdf:about="#CE-03/04"/>
+            <rdf:Description rdf:about="#AF-FISICA-L"/>
+        </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
@@ -2070,90 +2347,16 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="#MD-EC"/>
-            <rdf:Description rdf:about="#MD-AOP"/>
-            <rdf:Description rdf:about="#MD-AC"/>
-            <rdf:Description rdf:about="#MD-RE"/>
-            <rdf:Description rdf:about="#MD-LM"/>
-            <rdf:Description rdf:about="#MD-ABP"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="#CG-11/12/20"/>
-            <rdf:Description rdf:about="#CE-41"/>
-            <rdf:Description rdf:about="#CG-24/25/26/27"/>
-            <rdf:Description rdf:about="#Obj08"/>
-            <rdf:Description rdf:about="#CE-24"/>
-            <rdf:Description rdf:about="#CE-14/15"/>
-            <rdf:Description rdf:about="#CE-25"/>
-            <rdf:Description rdf:about="#CE-29"/>
-            <rdf:Description rdf:about="#CE-17"/>
-            <rdf:Description rdf:about="#CG-02/CE-45"/>
-            <rdf:Description rdf:about="#CE-11"/>
-            <rdf:Description rdf:about="#Obj05"/>
-            <rdf:Description rdf:about="#Obj10"/>
-            <rdf:Description rdf:about="#CE-46"/>
-            <rdf:Description rdf:about="#CE-23"/>
-            <rdf:Description rdf:about="#CE-12/16"/>
-            <rdf:Description rdf:about="#CE-35"/>
-            <rdf:Description rdf:about="#CG-13/CE-55"/>
-            <rdf:Description rdf:about="#CG-14/15/18/23"/>
-            <rdf:Description rdf:about="#CE-51"/>
-            <rdf:Description rdf:about="#CE-32"/>
-            <rdf:Description rdf:about="#CE-31"/>
-            <rdf:Description rdf:about="#Obj02"/>
-            <rdf:Description rdf:about="#Obj07"/>
-            <rdf:Description rdf:about="#CG-06"/>
-            <rdf:Description rdf:about="#CE-49"/>
-            <rdf:Description rdf:about="#CE-39"/>
-            <rdf:Description rdf:about="#CE-50"/>
-            <rdf:Description rdf:about="#CE-36"/>
-            <rdf:Description rdf:about="#CG-01/21"/>
-            <rdf:Description rdf:about="#CG-05"/>
-            <rdf:Description rdf:about="#CG-07/08/09/10/16/17"/>
-            <rdf:Description rdf:about="#CE-37"/>
-            <rdf:Description rdf:about="#CE-05"/>
-            <rdf:Description rdf:about="#CE-07"/>
-            <rdf:Description rdf:about="#CE-19/20"/>
-            <rdf:Description rdf:about="#Obj04"/>
-            <rdf:Description rdf:about="#CE-43"/>
-            <rdf:Description rdf:about="#Obj01"/>
-            <rdf:Description rdf:about="#CE-26/27"/>
-            <rdf:Description rdf:about="#Obj11"/>
-            <rdf:Description rdf:about="#CE-53/54"/>
-            <rdf:Description rdf:about="#CE-47"/>
-            <rdf:Description rdf:about="#CE-06"/>
-            <rdf:Description rdf:about="#CE-44"/>
-            <rdf:Description rdf:about="#CE-38"/>
-            <rdf:Description rdf:about="#CE-34"/>
-            <rdf:Description rdf:about="#CE-09"/>
-            <rdf:Description rdf:about="#CG-22"/>
-            <rdf:Description rdf:about="#CE-08"/>
-            <rdf:Description rdf:about="#Obj03"/>
-            <rdf:Description rdf:about="#CE-42"/>
-            <rdf:Description rdf:about="#CE-52"/>
-            <rdf:Description rdf:about="#Obj09"/>
-            <rdf:Description rdf:about="#CE-56"/>
-            <rdf:Description rdf:about="#CE-22"/>
-            <rdf:Description rdf:about="#CE-02"/>
-            <rdf:Description rdf:about="#CE-48"/>
-            <rdf:Description rdf:about="#CE-40"/>
-            <rdf:Description rdf:about="#CE-28"/>
-            <rdf:Description rdf:about="#Obj06"/>
-            <rdf:Description rdf:about="#CE-21"/>
-            <rdf:Description rdf:about="#CE-33"/>
-            <rdf:Description rdf:about="#CG-19"/>
-            <rdf:Description rdf:about="#CE-01"/>
-            <rdf:Description rdf:about="#CE-10"/>
-            <rdf:Description rdf:about="#CE-30"/>
-            <rdf:Description rdf:about="#CE-13/18"/>
-            <rdf:Description rdf:about="#CE-03/04"/>
-            <rdf:Description rdf:about="#CG-03/04"/>
-        </owl:distinctMembers>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#ActividadFormativa"/>
+            <rdf:Description rdf:about="#Alumno"/>
+            <rdf:Description rdf:about="#Asignatura"/>
+            <rdf:Description rdf:about="#Competencia"/>
+            <rdf:Description rdf:about="#Materia"/>
+            <rdf:Description rdf:about="#MetodoDocente"/>
+            <rdf:Description rdf:about="#ObjetivoGeneral"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
