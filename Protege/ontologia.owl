@@ -112,6 +112,7 @@
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS_formaParteDe -->
 
     <owl:ObjectProperty rdf:about="#AS_formaParteDe">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="#Asignatura"/>
         <owl:inverseOf rdf:resource="#MA_constaDe"/>
@@ -1002,12 +1003,12 @@ Geometr&#237;a del plano y del espacio</Contenidos>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AS-AlgebraLineal"/>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
-        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
     </owl:NegativePropertyAssertion>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AS-AlgebraLineal"/>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
-        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
     </owl:NegativePropertyAssertion>
     
 
@@ -1029,12 +1030,12 @@ Diferenciabilidad, optimizaci&#243;n e integraci&#243;n</Contenidos>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AS-Calculo"/>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
-        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
     </owl:NegativePropertyAssertion>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AS-Calculo"/>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
-        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
     </owl:NegativePropertyAssertion>
     
 
@@ -1167,12 +1168,12 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
-        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
     </owl:NegativePropertyAssertion>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
-        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+        <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
     </owl:NegativePropertyAssertion>
     
 
@@ -1925,6 +1926,13 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
             >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
         <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
             >Materia compuesta por 1 asignatura programada en el 2&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas.</DuracionYUbicacion>
+        <MA_seAprendeMediante rdf:resource="#AF-ESTADISTICA-CP"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ESTADISTICA-CT"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ESTADISTICA-ETAI"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ESTADISTICA-PA"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ESTADISTICA-T"/>
+        <MA_constaDe rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
+        <MA_constaDe rdf:resource="#AS-ProbabilidadesYEstadisticaII"/>
         <MA_otorgaCompetenciasGenerales rdf:resource="#CG-01/21"/>
         <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
         <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
@@ -1935,6 +1943,36 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
         <MA_seImparteMediante rdf:resource="#MD-LM"/>
         <MA_seImparteMediante rdf:resource="#MD-RE"/>
     </Materia>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ESTADISTICA-S/T"/>
+        <owl:sourceIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AC"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ESTADISTICA-EG"/>
+        <owl:sourceIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ESTADISTICA-PO"/>
+        <owl:sourceIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ESTADISTICA-L"/>
+        <owl:sourceIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AOP"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -1975,6 +2013,46 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <MA_seImparteMediante rdf:resource="#MD-LM"/>
         <MA_seImparteMediante rdf:resource="#MD-RE"/>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-FISICA-EG"/>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-FISICA-S/T"/>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AOP"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AC"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-FISICA-CP"/>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-FISICA-PO"/>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-EC"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-FISICA-PA"/>
+        <owl:sourceIndividual rdf:resource="#MA-FISICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -2032,6 +2110,21 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <MA_seImparteMediante rdf:resource="#MD-LM"/>
         <MA_seImparteMediante rdf:resource="#MD-RE"/>
     </Materia>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-MATEMATICAS-EG"/>
+        <owl:sourceIndividual rdf:resource="#MA-MATEMATICAS"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-MATEMATICAS-PO"/>
+        <owl:sourceIndividual rdf:resource="#MA-MATEMATICAS"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-MATEMATICAS"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AOP"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -2041,6 +2134,9 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <rdf:type rdf:resource="&owl;Thing"/>
         <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
             >Aprendizaje basado en problemas o pr&#225;cticas</DescripcionMetodoDocente>
+        <ME_utilizadoEn rdf:resource="#MA-ESTADISTICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-FISICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-MATEMATICAS"/>
     </MetodoDocente>
     
 
@@ -2051,7 +2147,18 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <rdf:type rdf:resource="#MetodoDocente"/>
         <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
             >Aprendizaje cooperativo, en grupo</DescripcionMetodoDocente>
+        <ME_utilizadoEn rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+        <owl:sourceIndividual rdf:resource="#MD-AC"/>
+        <owl:assertionProperty rdf:resource="#ME_utilizadoEn"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#MA-ESTADISTICA"/>
+        <owl:sourceIndividual rdf:resource="#MD-AC"/>
+        <owl:assertionProperty rdf:resource="#ME_utilizadoEn"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -2062,6 +2169,11 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
             >Aprendizaje orientado a proyectos</DescripcionMetodoDocente>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+        <owl:sourceIndividual rdf:resource="#MD-AOP"/>
+        <owl:assertionProperty rdf:resource="#ME_utilizadoEn"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -2071,7 +2183,14 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <rdf:type rdf:resource="#MetodoDocente"/>
         <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
             >Estudio de casos</DescripcionMetodoDocente>
+        <ME_utilizadoEn rdf:resource="#MA-ESTADISTICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#MA-FISICA"/>
+        <owl:sourceIndividual rdf:resource="#MD-EC"/>
+        <owl:assertionProperty rdf:resource="#ME_utilizadoEn"/>
+    </owl:NegativePropertyAssertion>
     
 
 
@@ -2081,6 +2200,9 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <rdf:type rdf:resource="#MetodoDocente"/>
         <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
             >M&#233;todo expositivo / Lecci&#243;n magistral</DescripcionMetodoDocente>
+        <ME_utilizadoEn rdf:resource="#MA-ESTADISTICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-FISICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -2091,6 +2213,9 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
         <rdf:type rdf:resource="#MetodoDocente"/>
         <DescripcionMetodoDocente rdf:datatype="&rdfs;Literal"
             >Resoluci&#243;n de ejercicios y problemas</DescripcionMetodoDocente>
+        <ME_utilizadoEn rdf:resource="#MA-ESTADISTICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-FISICA"/>
+        <ME_utilizadoEn rdf:resource="#MA-MATEMATICAS"/>
     </owl:Thing>
     
 
@@ -2335,6 +2460,18 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#ActividadFormativa"/>
+            <rdf:Description rdf:about="#Alumno"/>
+            <rdf:Description rdf:about="#Asignatura"/>
+            <rdf:Description rdf:about="#Competencia"/>
+            <rdf:Description rdf:about="#Materia"/>
+            <rdf:Description rdf:about="#MetodoDocente"/>
+            <rdf:Description rdf:about="#ObjetivoGeneral"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="#CP"/>
             <rdf:Description rdf:about="#CT"/>
             <rdf:Description rdf:about="#EG"/>
@@ -2344,18 +2481,6 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
             <rdf:Description rdf:about="#PO"/>
             <rdf:Description rdf:about="#S/T"/>
             <rdf:Description rdf:about="#T"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="#ActividadFormativa"/>
-            <rdf:Description rdf:about="#Alumno"/>
-            <rdf:Description rdf:about="#Asignatura"/>
-            <rdf:Description rdf:about="#Competencia"/>
-            <rdf:Description rdf:about="#Materia"/>
-            <rdf:Description rdf:about="#MetodoDocente"/>
-            <rdf:Description rdf:about="#ObjetivoGeneral"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
