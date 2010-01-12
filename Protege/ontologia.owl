@@ -19,6 +19,7 @@
     <!ENTITY AF-ESTADISTICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-S/" >
     <!ENTITY AF-PROGRAMACION-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-PROGRAMACION-S/" >
     <!ENTITY AS-LenguajesFormales "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-LenguajesFormales," >
+    <!ENTITY AF-INGENIERIADELSOFTWARE-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-S/" >
     <!ENTITY AS-ProgramacionDeclarativa "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-ProgramacionDeclarativa:" >
 ]>
 
@@ -36,6 +37,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:CG-02="&Ontology1260008768250;CG-02/"
      xmlns:AF-FISICA-S="&Ontology1260008768250;AF-FISICA-S/"
+     xmlns:AF-INGENIERIADELSOFTWARE-S="&Ontology1260008768250;AF-INGENIERIADELSOFTWARE-S/"
      xmlns:AF-PROGRAMACION-S="&Ontology1260008768250;AF-PROGRAMACION-S/"
      xmlns:CG-13="&Ontology1260008768250;CG-13/"
      xmlns:AF-EMPRESA-S="&Ontology1260008768250;AF-EMPRESA-S/"
@@ -473,12 +475,18 @@
                                                 <rdf:rest>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="&rdf;List"/>
-                                                        <rdf:first>6o semestre</rdf:first>
+                                                        <rdf:first>5o semestre</rdf:first>
                                                         <rdf:rest>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="&rdf;List"/>
-                                                                <rdf:first>7o semestre</rdf:first>
-                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>6o semestre</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first>7o semestre</rdf:first>
+                                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
                                                             </rdf:Description>
                                                         </rdf:rest>
                                                     </rdf:Description>
@@ -665,7 +673,7 @@
 
     <CP rdf:about="#AF-EMPRESA-CP">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">1</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">1</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-11"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-31"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-46"/>
@@ -684,7 +692,7 @@
 
     <CT rdf:about="#AF-EMPRESA-CT">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">3</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">3</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-11"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-31"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-46"/>
@@ -703,7 +711,7 @@
 
     <owl:Thing rdf:about="#AF-EMPRESA-EG">
         <rdf:type rdf:resource="#EG"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-EMPRESA-EG"/>
@@ -717,7 +725,7 @@
 
     <owl:Thing rdf:about="#AF-EMPRESA-ETAI">
         <rdf:type rdf:resource="#ETAI"/>
-        <Creditos rdf:datatype="&xsd;int">4,6</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">4,6</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-11"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-31"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-46"/>
@@ -736,7 +744,7 @@
 
     <owl:Thing rdf:about="#AF-EMPRESA-L">
         <rdf:type rdf:resource="#L"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-EMPRESA-L"/>
@@ -750,7 +758,7 @@
 
     <PA rdf:about="#AF-EMPRESA-PA">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0,9</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0,9</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-11"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-31"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-46"/>
@@ -769,7 +777,7 @@
 
     <PO rdf:about="#AF-EMPRESA-PO">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </PO>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-EMPRESA-PO"/>
@@ -783,7 +791,7 @@
 
     <S:T rdf:about="#AF-EMPRESA-S/T">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </S:T>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-EMPRESA-S/T"/>
@@ -797,7 +805,7 @@
 
     <owl:Thing rdf:about="#AF-EMPRESA-T">
         <rdf:type rdf:resource="#T"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-EMPRESA-T"/>
@@ -811,7 +819,7 @@
 
     <CP rdf:about="#AF-ENGLISH-CP">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">1</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">1</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
@@ -823,7 +831,7 @@
 
     <owl:Thing rdf:about="#AF-ENGLISH-CT">
         <rdf:type rdf:resource="#CT"/>
-        <Creditos rdf:datatype="&xsd;int">1,8</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">1,8</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
@@ -835,7 +843,7 @@
 
     <EG rdf:about="#AF-ENGLISH-EG">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </EG>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-ENGLISH-EG"/>
@@ -849,7 +857,7 @@
 
     <ETAI rdf:about="#AF-ENGLISH-ETAI">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">2,2</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">2,2</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
     </ETAI>
@@ -860,7 +868,7 @@
 
     <L rdf:about="#AF-ENGLISH-L">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </L>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-ENGLISH-L"/>
@@ -874,7 +882,7 @@
 
     <owl:Thing rdf:about="#AF-ENGLISH-PA">
         <rdf:type rdf:resource="#PA"/>
-        <Creditos rdf:datatype="&xsd;int">0,2</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0,2</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
     </owl:Thing>
@@ -885,7 +893,7 @@
 
     <owl:Thing rdf:about="#AF-ENGLISH-PO">
         <rdf:type rdf:resource="#PO"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-ENGLISH-PO"/>
@@ -899,7 +907,7 @@
 
     <S:T rdf:about="#AF-ENGLISH-S/T">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </S:T>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-ENGLISH-S/T"/>
@@ -913,7 +921,7 @@
 
     <T rdf:about="#AF-ENGLISH-T">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0,2</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0,2</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
@@ -1164,7 +1172,7 @@
 
     <CP rdf:about="#AF-INFORMATICA-CP">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </CP>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-CP"/>
@@ -1178,7 +1186,7 @@
 
     <owl:Thing rdf:about="#AF-INFORMATICA-CT">
         <rdf:type rdf:resource="#CT"/>
-        <Creditos rdf:datatype="&xsd;int">2</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">2</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-08"/>
@@ -1193,7 +1201,7 @@
 
     <owl:Thing rdf:about="#AF-INFORMATICA-EG">
         <rdf:type rdf:resource="#EG"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-EG"/>
@@ -1207,7 +1215,7 @@
 
     <owl:Thing rdf:about="#AF-INFORMATICA-ETAI">
         <rdf:type rdf:resource="#ETAI"/>
-        <Creditos rdf:datatype="&xsd;int">3,1</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">3,1</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-08"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-10"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
@@ -1220,7 +1228,7 @@
 
     <owl:Thing rdf:about="#AF-INFORMATICA-L">
         <rdf:type rdf:resource="#L"/>
-        <Creditos rdf:datatype="&xsd;int">3,6</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">3,6</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-08"/>
@@ -1235,7 +1243,7 @@
 
     <owl:Thing rdf:about="#AF-INFORMATICA-PA">
         <rdf:type rdf:resource="#PA"/>
-        <Creditos rdf:datatype="&xsd;int">0,7</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0,7</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-10"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
     </owl:Thing>
@@ -1246,7 +1254,7 @@
 
     <owl:Thing rdf:about="#AF-INFORMATICA-PO">
         <rdf:type rdf:resource="#PO"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </owl:Thing>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-PO"/>
@@ -1260,7 +1268,7 @@
 
     <S:T rdf:about="#AF-INFORMATICA-S/T">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0</Creditos>
     </S:T>
     <owl:NegativePropertyAssertion>
         <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-S/T"/>
@@ -1274,9 +1282,164 @@
 
     <T rdf:about="#AF-INFORMATICA-T">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">0,5</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">0,5</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
         <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
+    </T>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-CP -->
+
+    <CP rdf:about="#AF-INGENIERIADELSOFTWARE-CP">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">2,4</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-09"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-22"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-28"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-42"/>
+    </CP>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-CT -->
+
+    <owl:Thing rdf:about="#AF-INGENIERIADELSOFTWARE-CT">
+        <rdf:type rdf:resource="#CT"/>
+        <Creditos rdf:datatype="&xsd;decimal">4,3</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-09"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-28"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-32"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-33"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-36"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-37"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-42"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-EG -->
+
+    <EG rdf:about="#AF-INGENIERIADELSOFTWARE-EG">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">1,4</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-32"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-33"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-36"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-37"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </EG>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-ETAI -->
+
+    <ETAI rdf:about="#AF-INGENIERIADELSOFTWARE-ETAI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">3,5</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-09"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-21"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-25"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-32"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-33"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-36"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-37"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-42"/>
+    </ETAI>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-L -->
+
+    <L rdf:about="#AF-INGENIERIADELSOFTWARE-L">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+    </L>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-PA -->
+
+    <PA rdf:about="#AF-INGENIERIADELSOFTWARE-PA">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">8,4</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-09"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-21"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-22"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-25"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-28"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-32"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-33"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-34"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-36"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-37"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-38"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-39"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </PA>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-PO -->
+
+    <owl:Thing rdf:about="#AF-INGENIERIADELSOFTWARE-PO">
+        <rdf:type rdf:resource="#PO"/>
+        <Creditos rdf:datatype="&xsd;decimal">1,1</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-28"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-S/T -->
+
+    <owl:Thing rdf:about="#AF-INGENIERIADELSOFTWARE-S/T">
+        <rdf:type rdf:resource="#S/T"/>
+        <Creditos rdf:datatype="&xsd;decimal">3,3</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-09"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-21"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-25"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-32"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-34"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-41"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-52"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-53/54"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INGENIERIADELSOFTWARE-T -->
+
+    <T rdf:about="#AF-INGENIERIADELSOFTWARE-T">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;decimal">0,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-09"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-21"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-23"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-25"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-28"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-34"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-41"/>
     </T>
     
 
@@ -1434,7 +1597,7 @@
 
     <CT rdf:about="#AF-PROGRAMACION-CT">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <Creditos rdf:datatype="&xsd;int">5</Creditos>
+        <Creditos rdf:datatype="&xsd;decimal">5</Creditos>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-01"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
         <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
@@ -1630,6 +1793,26 @@ An&#225;lisis de terminaci&#243;n, correcci&#243;n y complejidad.</Contenidos>
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-BasesDeDatos -->
+
+    <owl:Thing rdf:about="#AS-BasesDeDatos">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">3er semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Modelos de datos
+Dise&#241;o l&#243;gico de bases de datos
+Manipulaci&#243;n de bases de datos
+Modelo relacional</Contenidos>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <AS-tieneComoRequisito rdf:resource="#AS-AlgoritmosYEstructuraDeDatos"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-Logica"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaI"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaII"/>
+    </owl:Thing>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-Calculo -->
 
     <owl:Thing rdf:about="#AS-Calculo">
@@ -1734,6 +1917,81 @@ Certificaci&#243;n.</Contenidos>
         <AS-tieneComoRequisito rdf:resource="#AS-AdministracionYGestionDeEmpresas"/>
         <AS_formaParteDe rdf:resource="#MA-EMPRESA"/>
     </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-IngenieriaDelSoftwareI -->
+
+    <Asignatura rdf:about="#AS-IngenieriaDelSoftwareI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <UbicacionTemporal rdf:datatype="&xsd;string">6o semestre</UbicacionTemporal>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Requisitos.
+T&#233;cnicas de an&#225;lisis y dise&#241;o software.
+Criterios de dise&#241;o software
+Arquitecturas software</Contenidos>
+        <AS-tieneComoRequisito rdf:resource="#AS-ProgramacionII"/>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-IngenieriaDelSoftwareII -->
+
+    <Asignatura rdf:about="#AS-IngenieriaDelSoftwareII">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <UbicacionTemporal rdf:datatype="&xsd;string">7o semestre</UbicacionTemporal>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Trabajo en equipo en proyecto pr&#225;ctico de desarrollo
+Gesti&#243;n de Calidad
+Gesti&#243;n de Configuraci&#243;n
+Administraci&#243;n de Proyectos Software</Contenidos>
+        <AS-tieneComoRequisito rdf:resource="#AS-BasesDeDatos"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-IngenieriaDelSoftwareI"/>
+    </Asignatura>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-InteligenciaArtificial -->
+
+    <owl:Thing rdf:about="#AS-InteligenciaArtificial">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">5o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Formalizaci&#243;n de problemas reales
+Formalismos de representaci&#243;n del conocimiento y sus sistemas de inferencia asociados
+Descripci&#243;n de una soluci&#243;n a un problema inform&#225;tico de forma abstracta
+Algoritmos no convencionales para resolver problemas</Contenidos>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <AS-tieneComoRequisito rdf:resource="#AS-Logica"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaI"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-MatematicaDiscretaII"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-ProbabilidadesYEstadisticaII"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-InteraccionPersona-Ordenador -->
+
+    <owl:Thing rdf:about="#AS-InteraccionPersona-Ordenador">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">5o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Ergonom&#237;a, usabilidad y dise&#241;o centrado en el usuario
+Accesibilidad y dise&#241;o para todos
+Estilos y dispositivos de interacci&#243;n
+An&#225;lisis y evaluaci&#243;n de la usabilidad y accesibilidad
+Prototipado de bajo coste</Contenidos>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <AS-tieneComoRequisito rdf:resource="#AS-ProbabilidadesYEstadisticaI"/>
+        <AS-tieneComoRequisito rdf:resource="#AS-ProbabilidadesYEstadisticaII"/>
+    </owl:Thing>
     
 
 
@@ -3075,6 +3333,73 @@ refactorizaci&#243;n, etc.
         <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
         <owl:targetIndividual rdf:resource="#MD-AC"/>
     </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-INGENIERIADELSOFTWARE -->
+
+    <Materia rdf:about="#MA-INGENIERIADELSOFTWARE">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <ResultadosDelAprendizaje rdf:datatype="&rdfs;Literal"
+            >- Dise&#241;o, creaci&#243;n, consulta y manipulaci&#243;n de repositorios de datos, e integraci&#243;n con aplicaciones del sistema.
+- Configuraci&#243;n, administraci&#243;n, uso y optimizaci&#243;n de sistemas gestores de bases de datos relacionales.
+- Aplicar t&#233;cnicas para representar conocimientos.
+- Aplicar t&#233;cnicas de inferencia.
+- Dise&#241;ar y construir sistemas inform&#225;ticos capaces de resolver problemas para los que no se conoce soluci&#243;n.
+- Capacidad de llevar a cabo la definici&#243;n y gesti&#243;n de requisitos.
+- Capacidad de aplicar t&#233;cnicas para el an&#225;lisis, dise&#241;o y desarrollo de un sistema software.
+- Destrezas y criterios para el dise&#241;o y desarrollo de software.
+- Aplicaci&#243;n de los principios, m&#233;todos, gu&#237;as y est&#225;ndares del dise&#241;o centrado en el usuario y del dise&#241;o para todos en el dise&#241;o de la interacci&#243;n persona-ordenador.
+- Comprensi&#243;n de las posibilidades y limitaciones de los distintos estilos y dispositivos de interacci&#243;n.
+- Comprensi&#243;n del procesamiento de la informaci&#243;n y las limitaciones y diversidad de los seres humanos en su interacci&#243;n con sistemas inform&#225;ticos.
+- An&#225;lisis y evaluaci&#243;n de la usabilidad y accesibilidad de sistemas interactivos.
+- Elaboraci&#243;n de prototipos de bajo coste para evaluaci&#243;n del dise&#241;o de la interacci&#243;n persona-ordenador.
+- T&#233;cnicas de trabajo en equipo en proyectos software.
+- Aplicaci&#243;n de actividades de control y de aseguramiento de la calidad del software, y gesti&#243;n de la calidad del software.
+- Aplicaci&#243;n de actividades de estimaci&#243;n, Planificaci&#243;n, monitorizaci&#243;n y control de proyectos software.
+- Aplicaci&#243;n de actividades de gesti&#243;n de la configuraci&#243;n del software.
+- Generaci&#243;n de productos y artefactos en el contexto de un proyecto software.</ResultadosDelAprendizaje>
+        <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
+            >- Pruebas: objetivas (verdadero/falso, elecci&#243;n m&#250;ltiple, emparejamiento de elementos&#8230;), de respuesta corta.
+- Pruebas: de respuesta larga, de desarrollo.
+- Pruebas orales (individual, en grupo, presentaci&#243;n de temas-trabajos&#8230;)
+- Informes/memorias de pr&#225;cticas.
+- Trabajos y proyectos.</SistemasDeEvaluacion>
+        <CreditosECTS rdf:datatype="&xsd;int">30</CreditosECTS>
+        <Coordinacion rdf:datatype="&rdfs;Literal"
+            >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
+        <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
+            >Materia compuesta por 5 asignaturas programadas en el 3&#186;, 5&#186;, 6&#186; y 7&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
+        <CaracterMateria rdf:datatype="&xsd;string">Obligatoria</CaracterMateria>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-CP"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-CT"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-EG"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-ETAI"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-L"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-PA"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-PO"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-S/T"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INGENIERIADELSOFTWARE-T"/>
+        <MA_constaDe rdf:resource="#AS-BasesDeDatos"/>
+        <MA_constaDe rdf:resource="#AS-IngenieriaDelSoftwareI"/>
+        <MA_constaDe rdf:resource="#AS-IngenieriaDelSoftwareII"/>
+        <MA_constaDe rdf:resource="#AS-InteligenciaArtificial"/>
+        <MA_constaDe rdf:resource="#AS-InteraccionPersona-Ordenador"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-01/21"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-05"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-06"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-07/08/09/10/16/17"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-11/12/20"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-19"/>
+        <MA_seImparteMediante rdf:resource="#MD-ABP"/>
+        <MA_seImparteMediante rdf:resource="#MD-AC"/>
+        <MA_seImparteMediante rdf:resource="#MD-AOP"/>
+        <MA_seImparteMediante rdf:resource="#MD-EC"/>
+        <MA_seImparteMediante rdf:resource="#MD-LM"/>
+        <MA_seImparteMediante rdf:resource="#MD-RE"/>
+    </Materia>
     
 
 
