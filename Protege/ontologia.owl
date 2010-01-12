@@ -12,6 +12,8 @@
     <!ENTITY CG-13 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-13/" >
     <!ENTITY CG-02 "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#CG-02/" >
     <!ENTITY AF-FISICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-FISICA-S/" >
+    <!ENTITY AF-ENGLISH-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-S/" >
+    <!ENTITY AF-INFORMATICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-S/" >
     <!ENTITY AF-MATEMATICAS-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-S/" >
     <!ENTITY AF-ESTADISTICA-S "http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ESTADISTICA-S/" >
 ]>
@@ -29,6 +31,8 @@
      xmlns:CG-02="&Ontology1260008768250;CG-02/"
      xmlns:AF-FISICA-S="&Ontology1260008768250;AF-FISICA-S/"
      xmlns:CG-13="&Ontology1260008768250;CG-13/"
+     xmlns:AF-INFORMATICA-S="&Ontology1260008768250;AF-INFORMATICA-S/"
+     xmlns:AF-ENGLISH-S="&Ontology1260008768250;AF-ENGLISH-S/"
      xmlns:AF-ESTADISTICA-S="&Ontology1260008768250;AF-ESTADISTICA-S/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about=""/>
@@ -264,12 +268,18 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first rdf:datatype="&xsd;string">Basico</rdf:first>
+                        <rdf:first>Basica</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first rdf:datatype="&xsd;string">Mixto</rdf:first>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>Mixta</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>Obligatoria</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
@@ -439,12 +449,18 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="&rdf;List"/>
-                        <rdf:first rdf:datatype="&xsd;string">1er semestre</rdf:first>
+                        <rdf:first>1er semestre</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first rdf:datatype="&xsd;string">2o semestre</rdf:first>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>2o semestre</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>6o semestre</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
@@ -512,7 +528,6 @@
 
     <owl:Class rdf:about="#CompetenciaEspecifica">
         <rdfs:subClassOf rdf:resource="#Competencia"/>
-        <owl:disjointWith rdf:resource="#CompetenciaGeneral"/>
     </owl:Class>
     
 
@@ -617,6 +632,120 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-CP -->
+
+    <CP rdf:about="#AF-ENGLISH-CP">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">1</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
+    </CP>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-CT -->
+
+    <owl:Thing rdf:about="#AF-ENGLISH-CT">
+        <rdf:type rdf:resource="#CT"/>
+        <Creditos rdf:datatype="&xsd;int">1,8</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-EG -->
+
+    <EG rdf:about="#AF-ENGLISH-EG">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </EG>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ENGLISH-EG"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ENGLISH"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-ETAI -->
+
+    <ETAI rdf:about="#AF-ENGLISH-ETAI">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">2,2</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
+    </ETAI>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-L -->
+
+    <L rdf:about="#AF-ENGLISH-L">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </L>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ENGLISH-L"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ENGLISH"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-PA -->
+
+    <owl:Thing rdf:about="#AF-ENGLISH-PA">
+        <rdf:type rdf:resource="#PA"/>
+        <Creditos rdf:datatype="&xsd;int">0,2</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-PO -->
+
+    <owl:Thing rdf:about="#AF-ENGLISH-PO">
+        <rdf:type rdf:resource="#PO"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ENGLISH-PO"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ENGLISH"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-S/T -->
+
+    <S:T rdf:about="#AF-ENGLISH-S/T">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </S:T>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-ENGLISH-S/T"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-ENGLISH"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-ENGLISH-T -->
+
+    <T rdf:about="#AF-ENGLISH-T">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0,2</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-56"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CG-13/CE-55"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-ENGLISH"/>
+    </T>
     
 
 
@@ -859,6 +988,127 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-CP -->
+
+    <CP rdf:about="#AF-INFORMATICA-CP">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </CP>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-CP"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-CT -->
+
+    <owl:Thing rdf:about="#AF-INFORMATICA-CT">
+        <rdf:type rdf:resource="#CT"/>
+        <Creditos rdf:datatype="&xsd;int">2</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-08"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-10"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-EG -->
+
+    <owl:Thing rdf:about="#AF-INFORMATICA-EG">
+        <rdf:type rdf:resource="#EG"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-EG"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-ETAI -->
+
+    <owl:Thing rdf:about="#AF-INFORMATICA-ETAI">
+        <rdf:type rdf:resource="#ETAI"/>
+        <Creditos rdf:datatype="&xsd;int">3,1</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-08"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-10"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-L -->
+
+    <owl:Thing rdf:about="#AF-INFORMATICA-L">
+        <rdf:type rdf:resource="#L"/>
+        <Creditos rdf:datatype="&xsd;int">3,6</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-02"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-03/04"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-08"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-10"/>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-PA -->
+
+    <owl:Thing rdf:about="#AF-INFORMATICA-PA">
+        <rdf:type rdf:resource="#PA"/>
+        <Creditos rdf:datatype="&xsd;int">0,7</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-10"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-PO -->
+
+    <owl:Thing rdf:about="#AF-INFORMATICA-PO">
+        <rdf:type rdf:resource="#PO"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-PO"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-S/T -->
+
+    <S:T rdf:about="#AF-INFORMATICA-S/T">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0</Creditos>
+    </S:T>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#AF-INFORMATICA-S/T"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:targetIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-INFORMATICA-T -->
+
+    <T rdf:about="#AF-INFORMATICA-T">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <Creditos rdf:datatype="&xsd;int">0,5</Creditos>
+        <AF_otorgaCompetenciasEspecificas rdf:resource="#CE-13/18"/>
+        <AF_esValidaParaEnsenar rdf:resource="#MA-INFORMATICA"/>
+    </T>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AF-MATEMATICAS-CP -->
 
     <owl:Thing rdf:about="#AF-MATEMATICAS-CP">
@@ -1040,6 +1290,23 @@ Diferenciabilidad, optimizaci&#243;n e integraci&#243;n</Contenidos>
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-EnglishForProfessionalAndAcademicCommunications -->
+
+    <owl:Thing rdf:about="#AS-EnglishForProfessionalAndAcademicCommunications">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <UbicacionTemporal rdf:datatype="&xsd;string">6o semestre</UbicacionTemporal>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Listening and Speaking
+Academic Reading
+Academic Writing
+Linguistic competence</Contenidos>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Obligatoria</CaracterAsignatura>
+        <AS_formaParteDe rdf:resource="#MA-ENGLISH"/>
+    </owl:Thing>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-FundamentosFisicosYTecnologicosDeLaInformatica -->
 
     <Asignatura rdf:about="#AS-FundamentosFisicosYTecnologicosDeLaInformatica">
@@ -1052,6 +1319,7 @@ Diferenciabilidad, optimizaci&#243;n e integraci&#243;n</Contenidos>
 Teor&#237;a de circuitos
 Dispositivos semiconductores
 Electr&#243;nica de conmutaci&#243;n</Contenidos>
+        <AS-esRequisitoPara rdf:resource="#AS-SistemasDigitales"/>
         <AS_formaParteDe rdf:resource="#MA-FISICA"/>
     </Asignatura>
     <owl:NegativePropertyAssertion>
@@ -1205,6 +1473,42 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
         <owl:assertionProperty rdf:resource="#AS_formaParteDe"/>
         <owl:targetIndividual rdf:resource="#MA-MATEMATICAS"/>
     </owl:NegativePropertyAssertion>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-ProgramacionI -->
+
+    <owl:Thing rdf:about="#AS-ProgramacionI">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">1er semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Conceptos b&#225;sicos de programaci&#243;n.
+Modelos conceptuales para el desarrollo de programas (datos y problemas).
+Modelos de computaci&#243;n recursivo e iterativo.
+Metodolog&#237;a de programaci&#243;n.
+Herramientas para el desarrollo de programas.</Contenidos>
+        <AS_formaParteDe rdf:resource="#MA-INFORMATICA"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#AS-SistemasDigitales -->
+
+    <owl:Thing rdf:about="#AS-SistemasDigitales">
+        <rdf:type rdf:resource="#Asignatura"/>
+        <UbicacionTemporal rdf:datatype="&xsd;string">2o semestre</UbicacionTemporal>
+        <Extension rdf:datatype="&xsd;int">6</Extension>
+        <CaracterAsignatura rdf:datatype="&xsd;string">Basica</CaracterAsignatura>
+        <Contenidos rdf:datatype="&rdfs;Literal"
+            >Sistemas combinacionales.
+Sistemas secuenciales.
+Aritm&#233;ticos.
+Memorias.</Contenidos>
+        <AS-tieneComoRequisito rdf:resource="#AS-FundamentosFisicosYTecnologicosDeLaInformatica"/>
+        <AS_formaParteDe rdf:resource="#MA-INFORMATICA"/>
+    </owl:Thing>
     
 
 
@@ -1907,6 +2211,81 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-ENGLISH -->
+
+    <owl:Thing rdf:about="#MA-ENGLISH">
+        <rdf:type rdf:resource="#Materia"/>
+        <ResultadosDelAprendizaje rdf:datatype="&rdfs;Literal"
+            >- Comunicarse de forma eficaz tanto formal como informalmente bien en grupo o de forma individual, mediante el uso de las TIC.
+- Exponer temas profesionales de modo claro, preciso y coherente, teniendo en cuenta el tipo de audiencia.
+- Recopilar y sintetizar coherentemente informaci&#243;n de fuentes bibliogr&#225;ficas.
+- Redactar distintos tipos de textos seg&#250;n las convenciones propias de cada tipo textual.</ResultadosDelAprendizaje>
+        <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
+            >- Pruebas: objetivas (verdadero/falso, elecci&#243;n m&#250;ltiple, emparejamiento de elementos&#8230;), de respuesta corta.
+- Pruebas: de respuesta larga, de desarrollo.
+- Pruebas orales (individual, en grupo, presentaci&#243;n de temas-trabajos&#8230;)
+- Pruebas de ejecuci&#243;n de tareas reales y/o simuladas.</SistemasDeEvaluacion>
+        <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
+        <Coordinacion rdf:datatype="&rdfs;Literal"
+            >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
+        <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
+            >Materia compuesta por 1 asignatura programada en el 7&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas.</DuracionYUbicacion>
+        <CaracterMateria rdf:datatype="&xsd;string">Obligatoria</CaracterMateria>
+        <MA_seAprendeMediante rdf:resource="#AF-ENGLISH-CP"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ENGLISH-CT"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ENGLISH-ETAI"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ENGLISH-PA"/>
+        <MA_seAprendeMediante rdf:resource="#AF-ENGLISH-T"/>
+        <MA_constaDe rdf:resource="#AS-EnglishForProfessionalAndAcademicCommunications"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-05"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-06"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-07/08/09/10/16/17"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-13/CE-55"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-24/25/26/27"/>
+        <MA_seImparteMediante rdf:resource="#MD-ABP"/>
+        <MA_seImparteMediante rdf:resource="#MD-AC"/>
+        <MA_seImparteMediante rdf:resource="#MD-LM"/>
+    </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AOP"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ENGLISH-EG"/>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ENGLISH-S/T"/>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ENGLISH-PO"/>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-EC"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seImparteMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-RE"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-ENGLISH-L"/>
+        <owl:sourceIndividual rdf:resource="#MA-ENGLISH"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-ESTADISTICA -->
 
     <Materia rdf:about="#MA-ESTADISTICA">
@@ -1921,7 +2300,7 @@ T&#233;cnicas de Inferencia No Param&#233;trica</Contenidos>
 - Ajuste de modelos a un conjunto de datos.
 - Manejar t&#233;cnicas b&#225;sicas de inferencia estad&#237;stica.</ResultadosDelAprendizaje>
         <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
-        <CaracterMateria rdf:datatype="&xsd;string">Basico</CaracterMateria>
+        <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
         <Coordinacion rdf:datatype="&rdfs;Literal"
             >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
         <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
@@ -1987,7 +2366,7 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
 -Aplicar las herramientas de simulaci&#243;n el&#233;ctrica y dise&#241;o relacionadas con el proceso tecnol&#243;gico de fabricaci&#243;n de circuitos CMOS.
 -Manejar la instrumentaci&#243;n de medida y an&#225;lisis empleada en sistemas electr&#243;nicos.</ResultadosDelAprendizaje>
         <CreditosECTS rdf:datatype="&xsd;int">6</CreditosECTS>
-        <CaracterMateria rdf:datatype="&xsd;string">Basico</CaracterMateria>
+        <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
         <Coordinacion rdf:datatype="&rdfs;Literal"
             >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
         <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
@@ -2056,6 +2435,84 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-INFORMATICA -->
+
+    <owl:Thing rdf:about="#MA-INFORMATICA">
+        <rdf:type rdf:resource="#Materia"/>
+        <ResultadosDelAprendizaje rdf:datatype="&rdfs;Literal"
+            >- Dise&#241;ar y analizar un sistema digital (combinacional y secuencial) y su construcci&#243;n en tecnolog&#237;a CMOS.
+- Especificar y simular el funcionamiento de sistemas digitales mediante lenguajes de descripci&#243;n hardware.
+- Destreza en el uso de todo tipo de herramientas (software o metodol&#243;gicas y conceptuales) necesarias para el correcto y eficaz desarrollo de software, incluyendo entornos, librer&#237;as, depuradores, herramientas de modelado, documentaci&#243;n, control de versiones,
+refactorizaci&#243;n, etc.
+- Poseer destrezas fundamentales de la programaci&#243;n que permitan la implementaci&#243;n de los algoritmos y las estructuras de datos.
+- Conocimiento y aplicaci&#243;n de algoritmos y estructuras de datos b&#225;sico, as&#237; como las t&#233;cnicas y m&#233;todos generales para su dise&#241;o.</ResultadosDelAprendizaje>
+        <SistemasDeEvaluacion rdf:datatype="&rdfs;Literal"
+            >- Pruebas objetivas (verdadero/falso, elecci&#243;n m&#250;ltiple, emparejamiento de elementos&#8230;), de respuesta corta.
+- Pruebas de respuesta larga, de desarrollo.
+- Informes/memorias de pr&#225;cticas.
+- Trabajos y proyectos.
+- Pruebas de ejecuci&#243;n de tareas reales y/o simuladas.</SistemasDeEvaluacion>
+        <CreditosECTS rdf:datatype="&xsd;int">12</CreditosECTS>
+        <CaracterMateria rdf:datatype="&xsd;string">Basica</CaracterMateria>
+        <Coordinacion rdf:datatype="&rdfs;Literal"
+            >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
+        <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
+            >Materia compuesta por 2 asignaturas programadas en el 1&#186; y 2&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
+        <MA_seAprendeMediante rdf:resource="#AF-INFORMATICA-CT"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INFORMATICA-ETAI"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INFORMATICA-L"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INFORMATICA-PA"/>
+        <MA_seAprendeMediante rdf:resource="#AF-INFORMATICA-T"/>
+        <MA_constaDe rdf:resource="#AS-ProgramacionI"/>
+        <MA_constaDe rdf:resource="#AS-SistemasDigitales"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-01/21"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-02/CE-45"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-03/04"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-05"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-06"/>
+        <MA_otorgaCompetenciasGenerales rdf:resource="#CG-19"/>
+        <MA_seImparteMediante rdf:resource="#MD-ABP"/>
+        <MA_seImparteMediante rdf:resource="#MD-LM"/>
+        <MA_seImparteMediante rdf:resource="#MD-RE"/>
+    </owl:Thing>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-EC"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AOP"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-INFORMATICA-CP"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-INFORMATICA-EG"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-INFORMATICA-PO"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:targetIndividual rdf:resource="#AF-INFORMATICA-S/T"/>
+        <owl:assertionProperty rdf:resource="#AF_esValidaParaEnsenar"/>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+    </owl:NegativePropertyAssertion>
+    <owl:NegativePropertyAssertion>
+        <owl:sourceIndividual rdf:resource="#MA-INFORMATICA"/>
+        <owl:assertionProperty rdf:resource="#MA_seAprendeMediante"/>
+        <owl:targetIndividual rdf:resource="#MD-AC"/>
+    </owl:NegativePropertyAssertion>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl#MA-MATEMATICAS -->
 
     <Materia rdf:about="#MA-MATEMATICAS">
@@ -2084,7 +2541,7 @@ semiconductores empleados en la construcci&#243;n de sistemas digitales.
             >La coordinaci&#243;n en esta materia se va llevar a cabo por medio de la Comisi&#243;n de Coordinaci&#243;n Vertical establecida para la misma, tal y como se describe en la secci&#243;n 5. Planificaci&#243;n de las ense&#241;anzas.</Coordinacion>
         <DuracionYUbicacion rdf:datatype="&rdfs;Literal"
             >Materia compuesta por 5 asignaturas programadas en el 1&#186; y 2&#186; semestre, tal y como se recoge a continuaci&#243;n en la tabla de asignaturas</DuracionYUbicacion>
-        <CaracterMateria rdf:datatype="&xsd;string">Mixto</CaracterMateria>
+        <CaracterMateria rdf:datatype="&xsd;string">Mixta</CaracterMateria>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-CP"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-CT"/>
         <MA_seAprendeMediante rdf:resource="#AF-MATEMATICAS-ETAI"/>
