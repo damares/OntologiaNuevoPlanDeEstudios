@@ -8,3 +8,41 @@
  
  
 11 de Enero de 2010
+
+- Repositorio creado.
+- Ontologia completa y probada.
+- Las ideas presentadas se centra en modelizar. Para "ampliar miras" se va a buscar en internet plicaciones automáticas para protegé, que vengan en forma de pugins, web, bb.dd., etc.
+- Se va a crear una jerarquía de modelos, cada uno contenido en el anterior, de esta forma:
+	plan.owl|upm.owl|fi.owl|implementacion.owl
+- Para ello hay que buscar las fuentes de todo ello, comenzando por la ley, y llegando al plan de estudios de una facultad, pasando por la normativa de la universidad, de MEC y del EEES.
+- Angel: Facilitar a Daniel el pdf de modalidades y métodos. 
+- Tareas:
+	1. Recopilar toda la documentación arriba indicada
+	2. Preparar el esqueleto del libro en LaTex. Posible esquema:
+		- Intro
+		- Ontología
+		- Instancias
+		- Jerarquia (refinamiento desde la ley hasta los planes)
+		- Aplicaciones (automaticas)
+		- Conclusiones
+	3. Buscar un título.
+- Próxima reunión: 22/03/2010 16:30 en el despacho de Angel.
+
+22/03/2010
+
+- Plugins para protegé:
+	- ChangeView. http://code.google.com/p/co-ode-owl-plugins/wiki/ChangeView. Permite comparar ontologías para encontrar diferencias.
+	- DL-Learner. http://dl-learner.org/Projects/DLLearner. Herramienta para aprendizaje automático supervisado.
+	- OWL Lint. http://protegewiki.stanford.edu/index.php/OWL_Lint. Herramienta para test de ontologías.
+	- OWL2UML. http://protegewiki.stanford.edu/index.php/OWL2UML. Crea diagramas UML a partir de ontologias OWL
+	- OWLDoc. http://protegewiki.stanford.edu/index.php/OWLDoc. Crea un set de documentos html.
+	- Ontology-browser. http://code.google.com/p/ontology-browser/. Más completo que el anterior.
+	- OWLPropViz. http://protegewiki.stanford.edu/index.php/OWLPropViz. Visor de object propoerties.
+	- Outline and Existential Tree Views. http://protegewiki.stanford.edu/index.php/Outline_and_Existential_Tree_Views. Muestra árboles creados a partir de la 			estructura de una clase. También a la inversa.
+	- TaxonomyCutAndPaste. http://code.google.com/p/co-ode-owl-plugins/wiki/TaxonomyCutAndPaste. Extrae partes de la jerarquia en texto, para pegar donde se 		necesite.
+	- Cloud Views. http://protegewiki.stanford.edu/index.php/Cloud_Views. Permite visulaizar la ontología como una nube de tags con peso.
+	- Almacenar la ontologia en bd. http://protegewiki.stanford.edu/index.php/Working_with_the_Database_Backend_in_OWL
+
+- Documentos encontrados:
+	- Información sobre el título de Graduado FI [001]
+	-
