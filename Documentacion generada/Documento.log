@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.4.2)  24 APR 2010 18:00
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.4.28)  2 MAY 2010 18:51
 entering extended mode
 **C:/Documentos/Facultad/TFC/OntologiaNuevoPlanDeEstudios/Documentacion*generada/Documento.tex
 ("C:/Documentos/Facultad/TFC/OntologiaNuevoPlanDeEstudios/Documentacion generada/Documento.tex"
-LaTeX2e <2005/12/01>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german, ngerman, german-x-2009-06-19, ngerm
-an-x-2009-06-19, french, loaded.
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, spanish, french, loaded.
 ("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\size12.clo"
@@ -23,42 +22,67 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Archivos de programa\MiKTeX 2.8\tex\generic\babel\babel.sty"
+Package: babel 2008/07/06 v3.8l The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Archivos de programa\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Archivos de programa\MiKTeX 2.8\tex\generic\babel\spanish.ldf"
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+("C:\Archivos de programa\MiKTeX 2.8\tex\generic\babel\babel.def"
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
 ("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 ("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\Documento.aux"
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\cuerpo.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 9.
+(Font)              <14.4> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 9.
+(Font)              <7> on input line 10.
  [1
 
-{C:/Documents and Settings/All Users/Datos de programa/MiKTeX/2.8/pdftex/config/pdftex.map}]
+{C:/Documents and Settings/Administrador/Configuración local/Datos de programa/MiKTeX/2.8/pdftex/config/pdftex.map}]
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\Documento.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 3.
 )
 \tf@toc=\write3
  [1
@@ -66,16 +90,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\cuerpo.tex"
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\introduccion.tex"
-Chapter 1.
+Cap\'{\i }tulo 1.
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\eees.tex"
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
-
-("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [2
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\historia.tex" [2
 
 
 ]
@@ -83,83 +100,105 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 21.
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[][]\OT1/cmr/m/n/10 Puede con-sul-tarse la lista de uni-ver-si-dades en http://www.magna-
+[][]\OT1/cmr/m/n/10 Puede con-sul-tar-se la lis-ta de uni-ver-si-da-des en http://www.magna-
  []
 
-) ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\motivacion.tex"
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologias.tex"
-Overfull \hbox (8.35957pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/14.4 Extraer mo-ti-va-ciones propias del uso de on-tologas 
- []
-
-) ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\unificar.tex" [3])
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\marco.tex"
-Overfull \hbox (3.42955pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/14.4 Marco unifi-cado para a~nadir (open world as-sump-
- []
-
-) ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\hipotesis.tex")
+[3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
+ ("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
+ [5] [6]))
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\motivacion.tex"
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologias.tex" [7])
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\unificar.tex")
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\marco.tex" [8])
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\hipotesis.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\critica.tex"))
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\objetivos.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologia.tex" [4]
-Chapter 2.
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologia.tex" [9]
+Cap\'{\i }tulo 2.
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\explicacion.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\instancia.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\generalizacion.tex" [5
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\generalizacion.tex" [10
 
 ]
-Chapter 3.
+Cap\'{\i }tulo 3.
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\quien.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\jerarquia.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\test.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\aplicaciones.tex" [6
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\aplicaciones.tex" [11
 
 ]
-Chapter 4.
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ideas.tex"
-Overfull \hbox (10.7699pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/17.28 Mencionar nues-tras ideas so-bre como sacar
- []
-
-) ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\razonamiento.tex"
-Overfull \hbox (0.76381pt too wide) in paragraph at lines 1--1
-\OT1/cmr/bx/n/17.28 cuen-tres una in-con-sis-ten-cia al ir me-tiendo
- []
-
-) ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\visualizacion.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\conclusiones.tex" [7
+Cap\'{\i }tulo 4.
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ideas.tex")
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\razonamiento.tex")
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\visualizacion.tex"))
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\conclusiones.tex" [12
 
 ]
-Chapter 5.
-)) [8
+Cap\'{\i }tulo 5.
+)) [13
 
 ] ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\Documento.bbl"
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
-[]\OT1/cmr/m/n/12 Universidad de Bolo-nia.  Magna charta uni-ver-si-ta-tum.
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+[]\OT1/cmr/m/n/12 Universidad de Bo-lo-nia.  Mag-na char-ta uni-ver-si-ta-tum.
  []
 
-) [9
+
+Underfull \hbox (badness 7777) in paragraph at lines 14--19
+[]\OT1/cmr/m/n/12 Claude Allegre, Lui-gi Ber-lin-guer, Tes-sa Blacks-to-ne, y Jurgen
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 14--19
+\OT1/cmr/m/n/12 Ruett-gers.  De-cla-ra-cion de la sor-bo-na.  http://www.unef.fr/delia-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
+\OT1/cmr/m/n/12 CMS/index/article[]id-1773/topic[]id-132,159,163/declaration-de-la-
+ []
+
+
+Overfull \hbox (145.51158pt too wide) in paragraph at lines 21--26
+[]\OT1/cmr/m/n/12 Declaracion de bo-lo-nia.  http://www.educacion.es/dctm/mepsyd/educacion/universidades/educacion-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+\OT1/cmr/m/n/12 superior-universitaria/espacio-europeo-educacion-superior-eees/proceso-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+\OT1/cmr/m/n/12 bolonia/declaracionbolonia.pdf?documentId=0901e72b800486ef, Ju-nio
+ []
+
+) [14
 
 
 ] ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\Documento.aux"
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\cuerpo.aux")) ) 
 Here is how much of TeX's memory you used:
- 407 strings out of 495285
- 9491 string characters out of 3179712
- 51254 words of memory out of 3000000
- 3596 multiletter control sequences out of 15000+200000
- 9414 words of font info for 33 fonts, out of 3000000 for 9000
+ 1038 strings out of 495291
+ 17438 string characters out of 3180523
+ 68233 words of memory out of 3000000
+ 4221 multiletter control sequences out of 15000+200000
+ 9761 words of font info for 34 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 31i,8n,20p,1215b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,8n,27p,1232b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Archivos de programa
 /MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm
 /cmr10.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Archivos de programa/MiKTeX 
 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb
 ><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Documento.pdf (10 pages, 101163 bytes).
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Documento.pdf (15 pages, 133479 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
