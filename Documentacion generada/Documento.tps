@@ -4,8 +4,8 @@ Version=2
 
 [SessionInfo]
 ActiveTab=0
-FrameCount=5
-ActiveFrame=4
+FrameCount=6
+ActiveFrame=5
 
 [Frame0]
 Columns=1
@@ -126,8 +126,8 @@ TopSubLine=0
 [Frame4]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-4
@@ -140,14 +140,43 @@ Class=CLatexEdit
 Document=objetivos.tex
 
 [Frame4_Row0]
-cyCur=607
+cyCur=337
 cyMin=10
 
 [Frame4_Col0]
-cxCur=1411
+cxCur=1295
 cxMin=10
 
 [Frame4_View0,0]
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
+
+[Frame5]
+Columns=1
+Rows=1
+Flags=2
+ShowCmd=3
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-4
+MaxPos.y=-54
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=1333
+NormalPos.bottom=425
+Class=CLatexEdit
+Document=protege.tex
+
+[Frame5_Row0]
+cyCur=607
+cyMin=10
+
+[Frame5_Col0]
+cxCur=1411
+cxMin=10
+
+[Frame5_View0,0]
 Cursor.row=0
 Cursor.column=0
 TopSubLine=0
