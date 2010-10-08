@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.4.28)  2 MAY 2010 18:51
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.4.28)  25 JUL 2010 13:42
 entering extended mode
 **C:/Documentos/Facultad/TFC/OntologiaNuevoPlanDeEstudios/Documentacion*generada/Documento.tex
 ("C:/Documentos/Facultad/TFC/OntologiaNuevoPlanDeEstudios/Documentacion generada/Documento.tex"
@@ -113,34 +113,39 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [5] [6]))
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\motivacion.tex"
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologias.tex" [7])
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\unificar.tex")
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\marco.tex" [8])
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\hipotesis.tex")
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\unificar.tex" [8])
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\marco.tex")
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\hipotesis.tex"
+LaTeX Font Info:    Try loading font information for U+lasy on input line 5.
+
+("C:\Archivos de programa\MiKTeX 2.8\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+))
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\critica.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\objetivos.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologia.tex" [9]
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\objetivos.tex" [9]))
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ontologia.tex" [10]
 Cap\'{\i }tulo 2.
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\explicacion.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\instancia.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\generalizacion.tex" [10
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\generalizacion.tex" [11
 
 ]
 Cap\'{\i }tulo 3.
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\quien.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\jerarquia.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\test.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\aplicaciones.tex" [11
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\aplicaciones.tex" [12
 
 ]
 Cap\'{\i }tulo 4.
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\ideas.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\razonamiento.tex")
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\visualizacion.tex"))
-("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\conclusiones.tex" [12
+("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\conclusiones.tex" [13
 
 ]
 Cap\'{\i }tulo 5.
-)) [13
+)) [14
 
 ] ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\Documento.bbl"
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
@@ -177,17 +182,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--26
 \OT1/cmr/m/n/12 bolonia/declaracionbolonia.pdf?documentId=0901e72b800486ef, Ju-nio
  []
 
-) [14
+) [15
 
 
 ] ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\Documento.aux"
 ("C:\Documentos\Facultad\TFC\OntologiaNuevoPlanDeEstudios\Documentacion generada\cuerpo.aux")) ) 
 Here is how much of TeX's memory you used:
- 1038 strings out of 495291
- 17438 string characters out of 3180523
- 68233 words of memory out of 3000000
- 4221 multiletter control sequences out of 15000+200000
- 9761 words of font info for 34 fonts, out of 3000000 for 9000
+ 1051 strings out of 495291
+ 17784 string characters out of 3180523
+ 70233 words of memory out of 3000000
+ 4230 multiletter control sequences out of 15000+200000
+ 9867 words of font info for 35 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,8n,27p,1232b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Archivos de programa
@@ -195,10 +200,11 @@ Here is how much of TeX's memory you used:
 /cmr10.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Archivos de programa/MiKTeX 
 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb
 ><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Documento.pdf (15 pages, 133479 bytes).
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Archivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Arc
+hivos de programa/MiKTeX 2.8/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on Documento.pdf (16 pages, 141770 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
