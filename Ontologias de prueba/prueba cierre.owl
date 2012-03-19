@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1326024693661 "http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:Ontology1326024693661="http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#tiene_aletas -->
+
+    <owl:ObjectProperty rdf:about="&Ontology1326024693661;tiene_aletas"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#aletas -->
+
+    <owl:Class rdf:about="&Ontology1326024693661;aletas">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#lugar -->
+
+    <owl:Class rdf:about="&Ontology1326024693661;lugar">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#pez -->
+
+    <owl:Class rdf:about="&Ontology1326024693661;pez">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1326024693661;tiene_aletas"/>
+                <owl:allValuesFrom rdf:resource="&Ontology1326024693661;aletas"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1326024693661;tiene_aletas"/>
+                <owl:someValuesFrom rdf:resource="&Ontology1326024693661;aletas"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#aleta_axial -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1326024693661;aleta_axial">
+        <rdf:type rdf:resource="&Ontology1326024693661;aletas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#aleta_caudal -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1326024693661;aleta_caudal">
+        <rdf:type rdf:resource="&Ontology1326024693661;aletas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#aleta_dorsal -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1326024693661;aleta_dorsal">
+        <rdf:type rdf:resource="&Ontology1326024693661;aletas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#mero -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1326024693661;mero">
+        <tiene_aletas rdf:resource="&Ontology1326024693661;aleta_axial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1326024693661.owl#oceano -->
+
+    <owl:NamedIndividual rdf:about="&Ontology1326024693661;oceano">
+        <rdf:type rdf:resource="&Ontology1326024693661;lugar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1326024693661;aleta_axial"/>
+            <rdf:Description rdf:about="&Ontology1326024693661;aleta_caudal"/>
+            <rdf:Description rdf:about="&Ontology1326024693661;aleta_dorsal"/>
+            <rdf:Description rdf:about="&Ontology1326024693661;mero"/>
+            <rdf:Description rdf:about="&Ontology1326024693661;oceano"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Ontology1326024693661;aletas"/>
+            <rdf:Description rdf:about="&Ontology1326024693661;lugar"/>
+            <rdf:Description rdf:about="&Ontology1326024693661;pez"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
