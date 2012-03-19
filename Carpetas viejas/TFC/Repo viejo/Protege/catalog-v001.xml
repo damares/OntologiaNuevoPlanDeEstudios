@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=file:/Z:/Documents/Facultad/TFC/Protege/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1308257739089" name="http://www.semanticweb.org/ontologies/2009/11/Ontology1260008768250.owl" uri="ontologia.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1308257739089" name="http://www.semanticweb.org/ontologies/2009/11/Ontology1261322342187.owl" uri="Pizzas.owl"/>
-    </group>
-</catalog>
