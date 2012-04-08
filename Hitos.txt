@@ -52,3 +52,4 @@ CASO: Si ponemos las object prperties como disjuntas, los razonadores (todos) ca
 
 CASO: Por problemas con los razonadores, no podemos imponer restricciones muy numerosas del tipo CO_seAdquiereParaCumplir_OG min 100 Objetivo_General pues el razonador se hace excesivamente lento. Probado en varias maquinas, la más potente un amd x6.
 
+CASo: No es posible encontrar forma alguna para, de forma automática, poder computar productos escalares o sumatorios
