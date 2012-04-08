@@ -473,13 +473,34 @@
 
     <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Actividad_Formativa -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Actividad_Formativa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Actividad_Formativa">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AF_utilizadaParaImpartir_MA"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AF_utilizadaParaImpartir_MA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Asignatura -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Asignatura">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_formaParteDe_MA"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_formaParteDe_MA"/>
@@ -558,14 +579,14 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_otorgaCompetenciasGenerales_CG"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Competencia_General"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Competencia"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_otorgaCompetenciasGenerales_CG"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Competencia"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Competencia_General"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
@@ -574,7 +595,21 @@
 
     <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Metodo_Docente -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Metodo_Docente"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Metodo_Docente">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#ME_utilizadoParaImpartir_MA"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#ME_utilizadoParaImpartir_MA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
