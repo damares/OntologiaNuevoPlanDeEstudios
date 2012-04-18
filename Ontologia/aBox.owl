@@ -57,15 +57,149 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.7</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-EG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-EG">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.7</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ETAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.3</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-L"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PO">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2.1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ST"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-EG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-EG"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ETAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">4.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-L"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.9</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PO"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ST"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-T"/>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CP -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CP"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CT"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -77,7 +211,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-ETAI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-ETAI"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2.2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -89,7 +225,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-PA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-PA"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -107,19 +245,25 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-T -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-T"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CP -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CP"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CT"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -131,7 +275,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-ETAI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-ETAI"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -143,7 +289,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-PA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-PA"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -161,7 +309,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-T -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-T"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -173,7 +323,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-CT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-CT"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -185,13 +337,17 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-ETAI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-ETAI"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.9</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-L -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-L"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-L">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.7</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -215,7 +371,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-T -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-T"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -227,7 +385,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-CT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-CT"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -239,19 +399,25 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-ETAI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-ETAI"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-L -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-L"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-L">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-PA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-PA"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.7</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -269,19 +435,97 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-T -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-T"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.5</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2.4</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">4.3</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-EG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-EG">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.4</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ETAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.5</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-L">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">8.4</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PO">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ST">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.3</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CP -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CP"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">4.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CT -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CT"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -293,19 +537,25 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ETAI -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ETAI"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">5.5</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-L -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-L"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-L">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-PA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-PA"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">4.9</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -317,13 +567,219 @@
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ST -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ST"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ST">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3.7</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-T -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-T"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.5</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">5</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-EG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-EG">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ETAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-L">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">3</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">4</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PO">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ST">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.4</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2.0</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-EG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-EG"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-ETAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-ETAI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-L"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PO">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">12.0</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-ST"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-T"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CP">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.8</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CT">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">6.0</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-EG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-EG">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2.1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ETAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ETAI">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">7.9</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-L -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-L">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.1</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PA">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.7</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PO">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">2.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ST">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">0.6</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-T">
+        <Ontology1322242361907:AF_Créditos rdf:datatype="&xsd;decimal">1.0</Ontology1322242361907:AF_Créditos>
+    </owl:NamedIndividual>
     
 
 
@@ -1339,6 +1795,10 @@ Geometría del plano y del espacio</Ontology1322242361907:AS_Contenidos>
  Pruebas de respuesta larga, de desarrollo.
  Pruebas orales (individual, en grupo, presentación de temas-trabajos…).
  Pruebas de ejecución de tareas reales y/o simuladas.</Ontology1322242361907:MA_Evaluación>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PA"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
@@ -1378,6 +1838,11 @@ Geometría del plano y del espacio</Ontology1322242361907:AS_Contenidos>
  Pruebas: de respuesta larga, de desarrollo.
  Pruebas orales (individual, en grupo, presentación de temas-trabajos…)
  Pruebas de ejecución de tareas reales y/o simuladas.</Ontology1322242361907:MA_Evaluación>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
         <Ontology1322242361907:MA_otorgaCompetenciasGenerales_CG rdf:resource="&CG-13;CE55"/>
         <Ontology1322242361907:MA_otorgaCompetenciasGenerales_CG rdf:resource="&CG-2;CE45"/>
@@ -1409,6 +1874,11 @@ enseñanzas.</Ontology1322242361907:MA_Coordinación>
  Manejar la sintaxis probabilística basada en conceptos del cálculo.
  Ajuste de modelos a un conjunto de datos.
  Manejar técnicas básicas de inferencia estadística.</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
@@ -1444,6 +1914,10 @@ enseñanzas.</Ontology1322242361907:MA_Coordinación>
  Analizar la estructura y funcionamiento delos dispositivos electrónicos semiconductores empleados en la construcción de sistemas digitales.
  Aplicar las herramientas de simulación eléctrica y diseño relacionadas con el proceso tecnológico de fabricación de circuitos CMOS.
  Manejar la instrumentación de medida y análisis empleada en sistemas electrónicos.</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-L"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
@@ -1480,6 +1954,11 @@ enseñanzas.</Ontology1322242361907:MA_Coordinación>
 refactorización, etc.
  Poseer destrezas fundamentales de la programación que permitan la implementación de los algoritmos y las estructuras de datos.
  Conocimiento y aplicación de algoritmos y estructuras de datos básico, así como las técnicas y métodos generales para su diseño.</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-L"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
@@ -1514,6 +1993,13 @@ enseñanzas.</Ontology1322242361907:MA_Coordinación>
  Analizar y evaluar la estructura interna del computador: modos de direccionamiento, sistemas de representación, rutas de datos, sistema de entrada/salida, periféricos y lenguaje ensamblador.
  Aplicar las mejoras proporcionadas por las modificaciones de la arquitectura von Neumann: algoritmos, características y modo de funcionamiento de la jerarquía de memorias, máquinas segmentadas, computadores superescalares, multiprocesadores, etc.
  Utilizar los conceptos y herramientas de evaluación de un sistema informático, caracterización de la carga y dimensionamiento del mismo para el ciclo de vida de un sistema informático.</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-EG"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PO"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
@@ -1562,6 +2048,15 @@ enseñanzas.</Ontology1322242361907:MA_Coordinación>
  Pruebas orales (individual, en grupo, presentación de temas-trabajos…)
  Informes/memorias de prácticas.
  Trabajos y proyectos.</Ontology1322242361907:MA_Evaluación>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-EG"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-L"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PO"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ST"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
@@ -1624,6 +2119,13 @@ enseñanzas.</Ontology1322242361907:MA_Coordinación>
  Utilizar las matrices para la representación y manejo de datos y transformaciones, así como su aplicación a la geometría del plano y del espacio. Cálculo de autovalores y autovectores y sus aplicaciones a la informática.
  Modelar matemáticamente problemas reales y conocer las técnicas para resolverlos.
  Utilizar diversas técnicas para la resolución de problemas con ayuda de software matemático.</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-L"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ST"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
@@ -1741,6 +2243,15 @@ Para la Movilidad Internacional:
  Especificar propiedades relativas a la ejecución concurrente de un sistema SW.
  Desarrollar aplicaciones concurrentes, en al menos un lenguaje ampliamente utilizado, como puede ser Java.
  Analizar propiedades y riesgos atribuibles a la ejecución concurrente de un sistema SW.</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-EG"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-L"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PO"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ST"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
@@ -1807,6 +2318,15 @@ conectividad y capacidad dados por el cliente, utilizando las tecnologías, los 
  Modelar la organización de los servicios en términos de composición, coreografías y orquestaciones.
  Diseñar aplicaciones distribuidas con los mecanismos tecnológicos de bajo y alto nivel disponibles.
  Seleccionar, parametrizar y extender servicios distribuidos para un entorno específico (servicios de nombrado, de datos, de almacenamiento, de gestión, etc.).</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CP"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-EG"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ETAI"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-L"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PA"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PO"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ST"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-T"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
@@ -1862,6 +2382,8 @@ preguntas y realizando presentaciones.
  Decidir el posicionamiento del producto.
  Identificar oportunidades para el desarrollo de nuevos productos de Internet.
  Aplicar técnicas de mercadeo y de promoción de productos y servicios y su distribución a través de distintos canales de TI (Internet, autómatas, telefonía móvil, y medios audiovisuales).</Ontology1322242361907:MA_Resultados>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CT"/>
+        <Ontology1322242361907:MA_seImparteSegun_AF rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PO"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
         <Ontology1322242361907:MA_otorgaCompetenciasEspecificas_CE rdf:resource="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
@@ -2150,327 +2672,6 @@ Esta metodología -también conocida como lección (lecture)- se centra fundamen
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
-            <rdf:Description rdf:about="&CG-13;CE55"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
-            <rdf:Description rdf:about="&CG-2;CE45"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
-            <rdf:Description rdf:about="&CG-13;CE55"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
-            <rdf:Description rdf:about="&CG-2;CE45"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-English_for_professional_and_academic_communication"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Informática"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
-            <rdf:Description rdf:about="&CG-13;CE55"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
-            <rdf:Description rdf:about="&CG-2;CE45"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
-            <rdf:Description rdf:about="&CG-13;CE55"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
-            <rdf:Description rdf:about="&CG-2;CE45"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Empresa"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-English_for_professional_and_academic_communication"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Informática"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Ingeniería_de_computadores"/>
-            <rdf:Description rdf:about="&MA-Ingeniería_del_software;_sistemas_de_información_y_sistemas_inteligentes"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Optatividad"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Programación"/>
-            <rdf:Description rdf:about="&MA-Sistemas_operativos;_sistemas_distribuidos_y_redes"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Trabajo_fin_de_grado"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Administración_y_Gestión_de_Empresas"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Algoritmos_y_Estructura_de_Datos"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Arquitectura_de_Computadores"/>
@@ -2652,6 +2853,551 @@ Esta metodología -también conocida como lección (lecture)- se centra fundamen
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
+            <rdf:Description rdf:about="&CG-13;CE55"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
+            <rdf:Description rdf:about="&CG-2;CE45"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
+            <rdf:Description rdf:about="&CG-13;CE55"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
+            <rdf:Description rdf:about="&CG-2;CE45"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
+            <rdf:Description rdf:about="&CG-13;CE55"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
+            <rdf:Description rdf:about="&CG-2;CE45"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-English_for_professional_and_academic_communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Informática"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
+            <rdf:Description rdf:about="&CG-13;CE55"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
+            <rdf:Description rdf:about="&CG-2;CE45"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Empresa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-English_for_professional_and_academic_communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Informática"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Ingeniería_de_computadores"/>
+            <rdf:Description rdf:about="&MA-Ingeniería_del_software;_sistemas_de_información_y_sistemas_inteligentes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Optatividad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Programación"/>
+            <rdf:Description rdf:about="&MA-Sistemas_operativos;_sistemas_distribuidos_y_redes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Trabajo_fin_de_grado"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ04"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ05"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ06"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ07"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ08"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ09"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ11"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Computadores-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Empresa-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-English-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Estadística-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Física-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Informática-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Ingeniería-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Matemáticas-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Programación-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Proyecto-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-CT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-EG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ETAI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-ST"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AF-Sistemas-T"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Administración_y_Gestión_de_Empresas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Algoritmos_y_Estructura_de_Datos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Arquitectura_de_Computadores"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Base_de_Datos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Concurrencia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Cálculo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-English_for_Professional_and_Academic_Communications"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Estructura_de_Computadores"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Fundamentos_físicos_y_tecnológicos_de_la_informática"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Gestión_de_procesos_de_Tecnologías_de_la_Información"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Ingeniería_del_Software_I"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Ingeniería_del_Software_II"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Inteligencia_Artificial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Interacción_Persona-_Ordenador"/>
+            <rdf:Description rdf:about="&AS-Lenguajes_Formales;_Autómatas_y_Computabilidad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Lógica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Matemática_Discreta_I"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Matemática_Discreta_II"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Probabilidades_y_Estadística_I"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Probabilidades_y_Estadística_II"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Procesadores_de_Lenguajes"/>
+            <rdf:Description rdf:about="&AS-Programación_Declarativa;_Lógica_y_Restricciones"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Programación_I"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Programación_II"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Programación_para_sistemas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Redes_de_Computadores"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Seguridad_de_las_TI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Sistemas_Digitales"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Sistemas_Distribuidos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Sistemas_Operativos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Sistemas_Orientados_a_Servicios"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#AS-Álgebra_Lineal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-11"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-12/16"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-13/18"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-14/15"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-19/20"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-24"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-25"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-28"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-29"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-30"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-31"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-32"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-33"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-34"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-35"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-36"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-37"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-38"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-39"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-40"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-41"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-42"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-43"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-44"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-46"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-47"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-48"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-49"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-50"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-51"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-52"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-53/54"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-56"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CE-9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-1/21"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-11/12/20"/>
+            <rdf:Description rdf:about="&CG-13;CE55"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-14/15/18/23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-19"/>
+            <rdf:Description rdf:about="&CG-2;CE45"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-22"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-24/25/26/27"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-3/4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#CG-7/8/9/10/16/17"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Empresa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-English_for_professional_and_academic_communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Estadística"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Física"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Informática"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Ingeniería_de_computadores"/>
+            <rdf:Description rdf:about="&MA-Ingeniería_del_software;_sistemas_de_información_y_sistemas_inteligentes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Matemáticas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Optatividad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Programación"/>
+            <rdf:Description rdf:about="&MA-Sistemas_operativos;_sistemas_distribuidos_y_redes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#MA-Trabajo_fin_de_grado"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#ME-Aprendizaje_basado_en_problemas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#ME-Aprendizaje_cooperativo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#ME-Aprendizaje_orientado_a_proyectos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#ME-Estudio_de_casos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#ME-Lección_magistral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#ME-Resolución_de_ejercicios_y_problemas"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ01"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ02"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/0/Ontology1325932256384.owl#OBJ03"/>
