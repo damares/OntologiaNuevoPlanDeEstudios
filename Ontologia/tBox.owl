@@ -210,6 +210,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AF_Créditos">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Actividad_Formativa"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="&xsd;decimal"/>
@@ -228,6 +229,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_Carácter">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Asignatura"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -258,6 +260,7 @@
     <!-- http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_Contenidos -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_Contenidos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Asignatura"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -267,6 +270,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_Extensión">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Asignatura"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="&xsd;decimal"/>
@@ -285,6 +289,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_Ubicación">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Asignatura"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -346,6 +351,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#CO_Descripción">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Competencia"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -355,6 +361,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_Carácter">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -392,6 +399,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_Coordinación">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -401,6 +409,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_Créditos">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:onDatatype rdf:resource="&xsd;decimal"/>
@@ -419,6 +428,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_Duración_Y_Ubicación">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -428,6 +438,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_Evaluación">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -437,6 +448,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#MA_Resultados">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -446,6 +458,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#ME_Descripción">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Metodo_Docente"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -455,6 +468,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#OG_Descripción">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Objetivo_General"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -497,14 +511,14 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_formaParteDe_MA"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#AS_formaParteDe_MA"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:isDefinedBy>Una asignatura ha de pertenecer a una y sólo una materia. AS_formaParteDe_MA some Materia</rdfs:isDefinedBy>
@@ -519,14 +533,14 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#CO_seAdquiereParaCumplir_OG"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Objetivo_General"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Objetivo_General"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#CO_seAdquiereParaCumplir_OG"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Objetivo_General"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Objetivo_General"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
@@ -599,14 +613,14 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#ME_utilizadoParaImpartir_MA"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#ME_utilizadoParaImpartir_MA"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2011/10/Ontology1322242361907.owl#Materia"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
@@ -622,5 +636,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.2.5.1912) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
