@@ -1,0 +1,32 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Opción AH: total body de libros de Springer "embutido" en A5, para
+% %% imprimir en Prog con boolet a on y ver en el monitor a dual
+\documentclass[draft]{report}
+\usepackage[a5paper,total={12cm,18.8cm},includefoot,vratio=2:1,showframe]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+\usepackage{todonotes}
+\begin{document}
+% Aquí el título
+\bibliographystyle{unsrt}
+\title{{\Huge Uso de ontologías para la implantación del EEES en las titulaciones de grado }
+\author{Daniel Martínez Esteban} }
+\date{25/04/2012}
+\maketitle
+\tableofcontents
+\input{introduccion}
+\input{ontologia}
+\input{generalizacion}
+\input{aplicaciones}
+\input{conclusiones}
+%\input{bibliografia}
+\bibliography{bib}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-PDF-mode: t
+%%% ispell-local-dictionary: "castellano"
+%%% End: 
