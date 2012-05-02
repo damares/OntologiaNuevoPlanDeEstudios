@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.6.18)  25 APR 2012 20:15
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.6.18)  28 APR 2012 20:59
 entering extended mode
 **C:/Users/Daniel/Documents/TFC/Documentacion*generada/TFC.tex
 ("C:/Users/Daniel/Documents/TFC/Documentacion generada/TFC.tex"
@@ -544,12 +544,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ("C:\Users\Daniel\Documents\TFC\Documentacion generada\introduccion.tex"
 [2]
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation `MCO:WEB' on page 3 undefined on input line 11.
-
-
-LaTeX Warning: Citation `UNIBOL:MCU-98' on page 3 undefined on input line 13.
-
 [3
 
 ]
@@ -558,14 +552,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
 //www.magna-
  []
 
-[4]
-
-LaTeX Warning: Citation `UNISOR:DS-98' on page 5 undefined on input line 33.
-
-
-LaTeX Warning: Citation `UNIBOL:DB-99' on page 5 undefined on input line 39.
-
-[5]
+[4] [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -573,64 +560,14 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [6] [7]
-
-LaTeX Warning: Citation `GRUBER:93' on page 8 undefined on input line 95.
-
-
-LaTeX Warning: Citation `WEIGAND:97' on page 8 undefined on input line 95.
-
 [8] [9]
-
-LaTeX Warning: Citation `Stanford-Protege:WEB' on page 10 undefined on input li
-ne 124.
-
 LaTeX Font Info:    Try loading font information for U+lasy on input line 125.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-
-LaTeX Warning: Citation `W3C-OWL:WEB' on page 10 undefined on input line 125.
-
-
-LaTeX Warning: Citation `Stanford-BMIR:WEB' on page 10 undefined on input line 
-125.
-
-
-LaTeX Warning: Citation `Stanford-MED:WEB' on page 10 undefined on input line 1
-25.
-
-
-LaTeX Warning: Citation `Stanford-OWL_Lint:WEB' on page 10 undefined on input l
-ine 129.
-
-
-LaTeX Warning: Citation `Stanford-OETV:WEB' on page 10 undefined on input line 
-130.
-
-
-LaTeX Warning: Citation `Stanford-CV:WEB' on page 10 undefined on input line 13
-1.
-
-[10]
-
-LaTeX Warning: Citation `UniManchester-OB:WEB' on page 11 undefined on input li
-ne 132.
-
-
-LaTeX Warning: Citation `Stanford-OWLDoc:WEB' on page 11 undefined on input lin
-e 133.
-
-
-LaTeX Warning: Citation `Stanford-OWL2UML:WEB' on page 11 undefined on input li
-ne 134.
-
-[11] [12]) ("C:\Users\Daniel\Documents\TFC\Documentacion generada\ontologia.tex
-" [13]
+) [10] [11]
+[12]) ("C:\Users\Daniel\Documents\TFC\Documentacion generada\ontologia.tex"
+[13]
 Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `Stanford-Protege:WEB' on page 14 undefined on input li
-ne 4.
-
 ) ("C:\Users\Daniel\Documents\TFC\Documentacion generada\generalizacion.tex"
 [14
 
@@ -728,34 +665,28 @@ Underfull \hbox (badness 3861) in paragraph at lines 75--77
  $\OT1/cmtt/m/n/10 http : / /
  []
 
-) [20] ("C:\Users\Daniel\Documents\TFC\Documentacion generada\TFC.aux")
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [20] ("C:\Users\Daniel\Documents\TFC\Documentacion generada\TFC.aux") ) 
 Here is how much of TeX's memory you used:
- 11354 strings out of 494053
- 213634 string characters out of 3148600
- 259125 words of memory out of 3000000
- 14398 multiletter control sequences out of 15000+200000
+ 11356 strings out of 494053
+ 213666 string characters out of 3148600
+ 259201 words of memory out of 3000000
+ 14400 multiletter control sequences out of 15000+200000
  9727 words of font info for 35 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 63i,9n,74p,1159b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on TFC.pdf (21 pages, 205863 bytes).
+ 63i,9n,74p,1153b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on TFC.pdf (21 pages, 207210 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
