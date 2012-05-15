@@ -1,0 +1,439 @@
+\chapter{Introducción}
+
+  \section{Espacio europeo}
+    El Espacio Europeo de Educación Superior (EEES en adelante) es un ambicioso
+    proyecto puesto en marcha a nivel europeo para armonizar los diferentes sistemas
+    universitarios europeos, y dotar de una mayor agilidad a unviersidades y alumnos
+    mediante el intercambio de ideas y personas. 
+
+    No tiene como objetivo estandarizar los diversos sistemas de educación superior
+    sino aumentar su compatibilidad y comparabilidad. 
+
+    \subsection{Historia}
+
+      \subsubsection{Charta Magna Universitatum}
+	En el año 1986, la Universidad de Bolonia realiza una propuesta a las más
+	antiguas universidades europeas de crear una carta magna europea que recoja los
+	valores tradicionales de la universidad y que aboge por la difusión de sus
+	bondades. Esta idea tuvo una gran acogida por las universidades, que durante una
+	reunión delebrada en Junio de 1987 en la propia Universidad de Bolonia a la que
+	asistieron más de 80 delegados de diferentes universidades europeas, eligieron
+	una comisión de ocho miembros encargados de confeccionar la Carta Magna. Esta
+	comisíón estaba compuesta por el Presidente de la Conferencia Europea de
+	Rectores, los rectores de las universidades de Bolonia, Paris I, Lauven,
+	Barcelona, el profesor D.Guiseppe Caputo (Universidad de Bolonia), el profesor
+	D.Manuel Nuñez Encabo (Presidente de la sub-comisión universitaria de la
+	Asamblea Parlamentaria del Consejo Europeo. \cite{MCO:WEB}. El dcocumento estaba
+	concluido en 1988, y fue ratificado por todos los rectores asistentes a la
+	celebración del 
+	nonacentésimo aniversario de su fundación.
+
+	En esa Carta Magna \cite{UNIBOL:MCU-98} se considera que:
+	\begin{itemize}
+	  \item El porvenir de la humanidad depende del desarrollo cultural, ciéntífico y
+	  técnico y que el epicentro de este desarrollo son las universidades.
+	  \item La obligación que la Universidad contrae con la Humanidad de difundir ese
+	  conocimiento para las nuevas generaciones, exige de la sociedad un esfuerzo
+	  adicional en la formación de sus ciudadanos.
+	  \item La Universidad debe ser garante de la educación y formación de las
+	  generaciones venideras de modo que éstas contribuyan al equilibrio del entorno
+	  natural y de la vida.
+	\end{itemize}
+	
+	Con estos hechos y objetivos, la Carta Magna proclama los cuatro principios
+	fundamentales que sustentan desde entonces la vocación de la Universidad. Estos
+	principios son:
+	\begin{itemize}
+	  \item Independencia moral y científica frente al poder político, económico e
+	  ideológico.
+	  \item Indivisibilidad entre actividad docente y actividad investigadora.
+	  \item Libertad de investigación, enseñanza y formación. La universidad es un
+	  lugar de encuentro entre personas con la capacidad de transmitir el saber y
+	  ampliarlo con los medios puestos a su alcance para la investigación y el
+	  desarrollo (profesores) y personas que tienen el derecho, la capacidad y la
+	  voluntad de enriquecerse con ello.
+	  \item Eliminación de cualquier frontera geográfica o política y fomento del
+	  conocimiento intercultural.
+	\end{itemize}
+	
+	Buscando cumplir esos muy ilustres objetivos, finaliza la carta magna
+	manifestando la necesidad de alentar la movilidad de profesores y alumnos y de
+	establecer una equivalencia, no sólo en materia de títulos, sino también de
+	estatutos, de exámenes, y de concesión de Becas, e insta a los rectores
+	firmantes a trabajar para que los Estados y organismos públicos implicados
+	colaboren en el cumplimiento de las metas acordadas.
+
+	Actualmente, la Charta Magna Universitatum ha sido suscrita por 660
+	universidades de 78 países\footnote{Puede consultarse la lista de universidades
+	en http://www.magna-charta.org/magna\_universities.html}. 
+
+      \subsubsection{Declaración de La Sorbona}
+	Posteriormente a la ratificación de la Charta Magna Universitatum, el 25 de Mayo
+	de 1998 los ministros de educación de Francia, Alemania, Italia y Reino Unido se
+	reúnen en La Sorbona (París) y dictan una declaración conjunta que venía a dar
+	un sustento político a la declaración recogida en la Charta Magna Universitatum.
+
+	En la Declaración de La Sorbona \cite{UNISOR:DS-98}, realizada en el
+	septuacentésimo trigésimo primer aniversario de su fundación, los ministros de
+	educación de los países arriba mencionados vienen a reconocer que Europa es una
+	realidad supranacional, con un gran potencial humano gracias a los siglos de
+	tradición universitaria, y promueve la creación de un marco eurpeo donde las
+	entidades nacionales y los intereses comunes puedan relacionarse y reforzarse
+	para el beneficio de Europa. Reconoce la pérdida de movilidad de los estudiantes
+	y el empobrecimiento que eso causa a la sociedad, por lo que aboga por una
+	vuelta al modelo clásico, donde el alumno pueda enriquecerse con estudios
+	realizados en otras realidades sociales.
+
+	Establece como sistema de facto el aceptado actualmente (dividido en dos ciclos,
+	llamados aqui universitario y de posgrado donde se realizará una elección entre
+	una titulación de master o una de doctorado más extensa.) y fija el sistema de
+	créditos ECTS como el óptimo para lograr la comparabilidad y convalidación entre
+	diferentes países. 
+
+      \subsubsection{Declaración de Bolonia}
+	El 19 de Junio de 1999 se firma en la Universidad de Bolonia (detonante de todo
+	el proceso con su Cartha Magna Universitatum) el documento que da nombre al
+	proceso de convergencia hacia un Espacio Europeo de Educación Superior (Proceso
+	de Bolonia). 
+	La declaración de Bolonia \cite{UNIBOL:DB-99} fué firmada por 29 ministros con
+	competencias en educación superior. Supuso el espaldarazo definitivo a la
+	creación del Espacio Europeo de Educación Superior. La Declaración de Bolonia
+	fue redactada con la vista puesta en la Charta Magna Universitatum, pero sobre
+	todo, en la Declaración de la Sorbona firmada el año anterior y que constituye
+	el primer espaldarazo político a la creación de un área Europea de Educación
+	Superior.
+
+	En ella se insiste de nuevo en la realidad supranacional en que se ha ido
+	convirtiendo Europa, y de la concienciación creciente de la sociedad de la
+	necesidad de construir un Europa con una sólida base intelectual, cultural,
+	social y científico-tecnológica. 
+
+	La declaración de Bolonia fija como meta última para Europa el lograr establecer
+	un Área Europea de Educación Superior, y promocionar el sistema Europeo de
+	enseñanza superior en el resto del mundo. Para lograr alcanzar estas metas
+	propuestas, se establecen seis objetivos a cumplir a medio plazo (antes de la
+	primera década del siglo XXI) que son:
+	\begin{itemize}
+	  \item Adopción de un sistema de titulaciones fácilmente comprendible y
+	  comparable, gracias a la creación del Suplemento del Diploma, de modo que se
+	  facilite la obtención de empleo dentro del marco Europeo y la competitividad de
+	  su sistema educativo superior.
+	  \item Creación de un sistema basado en dos ciclos, diplomatura(pregrado) y
+	  licenciatura(grado), de modo que sólo se pueda acceder al segundo ciclo una vez
+	  se haya superado satisfactoriamente el primero, con un periodo mínimo de tres
+	  años. El diploma obtenido después del primer ciclo será reconocido en el mercado
+	  laboral como un nivel adecuado de preparación. El segundo ciclo conducirá a la
+	  obtención del título de master o doctorado.
+	  \item Establecimiento de un sistema de créditos para propiciar la movilidad del
+	  alumnado. Estos créditos además, se podrán obtener por la realización de
+	  actividades no lectivas, siempre en el modo en que esté estipulado por la
+	  universidad receptora.
+	  \item Promoción de una movilidad efectiva, venciendo las trabas existentes a la
+	  libre circulación, y prestando especial atención a:
+
+	  \begin{itemize}
+	  \item el acceso a estudios y otras oportunidades de formación y servicios
+	  relacionados de los alumnos.
+	  \item reconocimiento y valoración de los periodos de estancia de los profesores,
+	  investigadores y personal de administración en instituciones europeas de
+	  investigación, enseñanza y formación, todo ello sin prejuicio de sus derechos
+	  estatutarios.
+	  \end{itemize}
+
+	  \item incremento de la cooperación Europea para asegurar la calidad de la
+	  enseñanza, para lo cual se deberán desarrollar criterios y metodologías
+	  comparables.
+	  \item Adecuación de las dimensiones Europeas de educación superior que tengan
+	  como objetivo el desarrollo curricular, cooperación interinstitucional, mejora
+	  de los esquemas de movilidad y de los programas integrados de estudio, formación
+	  e investigación.
+	\end{itemize}
+
+	Termina la declaración de Bolonia indicando que la creación del Área Europea de
+	Educación Superior se logrará respetando las singularidades de cada país,
+	la diversidad de lenguas, culturas, los diferentes sistemas de educación
+	nacional y la autonomía de las Universidades, y establece un calendario de
+	reuniones para realizar un seguimiento del proceso de implantación del área
+	Europea de Educacion Superior.
+
+    \subsection{El EEES en la actualidad}
+    Desde el año 1999 y cada dos años, se viene celebrando con regularidad una
+    Cumbre Ministerial para hacer balance del progreso realizado en la implantanción
+    del Área Europea de Educación Superior, y establecer metas a cumplir de cara a
+    la celebración de la próxima Cumbre. 
+
+    El encargado de organizar estas cumbres es el BFUG (Bolonia Follow-Up Group). El
+    BFUG es el encargado de organizar las cumbres ministeriales y de elaborar el
+    plan de trabajo, calendario de seminarios y otras actividades de interés para
+    todos los participantes en el proceso. El BFUG está presidido por el país a
+    cargo de la Presidencia de turno de la Unión Europea y estacompuesto por los
+    ministerios afectados por el Proceso Bolonia de los 47 países integrantes de
+    Bolonia, la Comisión Europea y varias organizaciones europeas, como la
+    Asociación de Universidades Europeas (EUA\footnote{http://www.eua.be/}) o el
+    Centro Europeo de la UNESCO para la educación superior
+    (UNESCO-CEPES\footnote{http://www.cepes.ro/}), estás últimas como miembros
+    únicamente consultivos.
+
+    Las Cumbres Ministeriales celebradas hasta la fecha han sido Praga
+    2001\footnote{http://www.bologna.msmt.cz/PragueSummit/index.html}, Berlin
+    2003\footnote{http://www.bologna-berlin2003.de/}, Bergen
+    2005\footnote{http://www.bologna-bergen2005.no/}, Londres
+    2007\footnote{http://www.bologna-bergen2005.no/} y Lovaina
+    2009\footnote{http://www.ond.vlaanderen.be/hogeronderwijs/bologna/}. En esta
+    última cumbre se fijaron las prioridades para el Área Europea de Educación
+    Superior, a cunplir en el próximo decenio, que son:
+    \begin{itemize}
+    \item Acceso equitativo para todos los grupos sociales
+    \item Reconocimiento de las habilidades y competencias obtenidas fuera del marco
+    puramente académico.
+    \item Acceso al mercado laboral.
+    \item Enseñanza centrada en el alumno.
+    \item Educación, Investigación e Innovación.
+    \item Cooperación internacional.
+    \item Movilidad del alumnado y profesorado.
+    \item Recogida de información, para un mejor seguimiento de la implantación de
+    Bolonia.
+    \item Herramientas transparentes para la comparación de titulaciones.
+    \item Financiación de las Universidades.
+    \end{itemize}
+    También se solicita al BFUG que prepare un plan de actuación para poder avanzar
+    en las prioriades marcardas, y se le pide de manera específica que:
+    \begin{itemize}
+    \item defina unos indicadores para medir la movilidad de alumnos y profesores.
+    \item considere el modo de que se pueda lograr una mobilidad equilibrada, con un
+    flujo total neutro, dentro del Área Europea de Educación Superior.
+    \item controle el desarrollo de mecanismos de transparencia para ser estudiados
+    en la próxima Conferencia de Ministros que tendrá lugar en Bucarest en Abril de
+    2012.
+    \item cree una red que dé soporte a la expansión de Bolonia fuera del Área
+    Europea de Educación Superior, haciendo un uso óptimo de las estructuras ya en
+    funcionamiento.
+    \item siga desarrollando recomendaciones para el análisis de los distintos
+    planes nacionales para el reconocimiento de créditos.
+    \end{itemize}
+
+    Con motivo del aniversario de la Conferencia de Bolonia, en el que se fijaban
+    unos objetivos a cumplir antes de 2010, se celebró el pasado 11 y 12 de Marzo de
+    2010 un encuentro entre los países participantes en el Proceso de Bolonia para
+    lanzar definitivamente el Área Europea de Educación Superior, comprometiéndose
+    todos ellos a cumplir los objetivos marcados en Lovaina 2009 en la fecha
+    prevista (2019). Este encuentro viene a plasmar el compromiso firme de los
+    países participantes y las instituciones educativas contenidas en ellos con los
+    principios acordados 11 años antes en la Universidad de Bolonia.
+
+  \section{Motivación}
+
+  \subsection{Ontologías}
+  Una ontología no es un vocabulario ni un diccionario donde figuran las
+  definiciones de los conceptos utilizados. Una ontología es un mapa donde
+  conceptos y significados se entrecruzan. Se trata de una forma de representación
+  del conocimiento que permite tener un entendimiento común y compartido de un
+  dominio, de modo que diferentes personas o sistemas puedan compartir una misma
+  visión de ese dominio. 
+
+  Existen varias definiciones formales de Ontología. Varios autores refieren la
+  definición tal y como a la facilita Tom Gruber\cite{GRUBER:93}. Según esa
+  definición, una ontología es una especificación de una conceptualización. Otra
+  definición más concreta es la ofrecida por Weigand\cite{WEIGAND:97}, según el
+  cual una ontología es una base de datos que describe los conceptos del mundo o
+  algún subdominio, algunas de sus propiedades, y como se relacionan cada uno de
+  los conceptos. Para un sistema basado en el conocimiento, podemos asumir que
+  sólo existe aquello que podemos representar, y que todo aquello que no pertenece
+  al dominio de la ontología, no existe. 
+
+  El uso de ontologías implica por tanto la definición de un vocabulario y reglas
+  gramaticales que relacionen los vocablos. Estas reglas gramaticales nos
+  permitirán realizar preguntas a la ontología cuyas respuestas deberán ser,
+  forzosamente, coherentes con las definiciones y constantes de la ontología.
+  Todas estas propiedades de las ontologías nos permitirán:
+  \begin{itemize}
+  \item Intercambar datos entre diferentes sistemas.
+  \item Crear servicios de consulta.
+  \item Crear bases de conocimiento reusables.
+  \item Ofrecer servicios para facilitar la interoperabilidad entre diversos
+  sistemas y bases de datos.
+  \end{itemize}
+  Todas estas propiedades se pueden resumir diciendo que el uso de ontologías nos
+  permitirá especificar una representación del modelo de datos a un nivel superior
+  al del diseño de bases de datos específicas, lo que permitirá la exportación,
+  traducción, consulta y unificación de la información a través de sistemas y
+  servicios desarrollados de manera independiente.
+
+  \subsection{Unificar conocimiento en un marco único y formal}
+  El uso de ontologías para la especificación del conocimiento nos permitirá
+  trabajar con una única represetnación del conocimiento, válida para todos los
+  actores involucrados en el proceso de educación. Esta visión única y global nos
+  permitirá que quienes quieran que sean las personas que precisen trabajar sobre
+  el conocimiento representado compartirán todas ellas una misma visión de
+  conjunto.
+  De manera adicional, se logra que los conceptos utilizados en la descripción del
+  conocimiento estén definidos de manera precisa en la propia ontología, con lo
+  que se elimina la necesidad de acudir a fuentes externas, y por tanto se unifica
+  el significado de los conceptos introducidos.
+  De este modo, al unificar la representación del conocimiento y las significación
+  de sus conceptos, logramos crear un marco único y formal, que posibilita:
+  \begin{itemize}
+  \item la eliminación de ambigüedades, al trabajar todos los agentes sobre un
+  mismo marco de representación.
+  \item un rápido intercambio de ideas, ya que se elimina la necesidad de
+  "traducción".
+  \item dotar al modelo de conocimiento de una elevada adaptabilidad a cambios
+  futuros, pues las bases han sido creadas sin ambigüedades ni incertidumbres.
+  \end{itemize}
+
+  \subsection{Marco unificado}
+  %{Marco unificado para añadir (open world assumption OWA) y extraer
+  información.}
+  Aqui tengo que hablar con Ángel, porque no sé muy bien qué poner aqui. Busca en
+  internet.
+
+  \subsection{Hipótesis: herramientas automáticas}
+  Como ya hemos hablado antes, la utilización de un marco unificado para la
+  representación del conocimiento, nos permite homogeneizar el marco del
+  conocimiento del caso de estudio, de modo que sistema y usuarios comparten la
+  misma visión de ese mundo modelizado.
+  Esta unficación del marco de conocimiento nos es muy útil a la hora de utilizar
+  herramientas que, de forma automática, realicen las más variadas tareas sobre el
+  marco creado, como pueden ser la extracción de información o la inferencia.
+  Este marco único se ha modelado utilizando la aplicación
+  Protegè\cite{Stanford-Protege:WEB}. 
+  Protegè es un editor de ontologías libre, con una filosofía "`open source"' que
+  además soporta varios formatos, entre los que destaca OWL\cite{W3C-OWL:WEB}.
+  Protegè ha sido desarrollado por el centro de investigación informática y
+  biomédica\cite{Stanford-BMIR:WEB} de la Escuela Universitaria de Medicina de la
+  universidad de  Standford\cite{Stanford-MED:WEB}, con la colaboración de DARPA,
+  eBay, National Cancer Institute, National Institute of Standards and Technology,
+  National Library of Medicine y National Science Foundation, entre otros.
+  Gracias al formato OWL soportado por Protegè, a su filosofía de software libre,
+  y a los apoyos recibidos por parte de diversas instituciones como las arriba
+  mencionadas, existen multitud de herramientas disponibles para trabajar de
+  manera automática con las ontologías creadas por Protegè, ya sea en forma de
+  plug-in's o en forma de herramientas que trabajan directamente sobre la
+  ontología en formato OWL.
+  Entre la legión de herramientas encontradas, destacamos:
+  \begin{itemize}
+  \item OWL-Lint\cite{Stanford-OWL_Lint:WEB}. Herramienta para el test automático
+  de ontologías para depuración, control de calidad, etc.
+  \item Outline and Existential Tree Views\cite{Stanford-OETV:WEB}. Herramienta
+  que nos permite la navegación a través de una ontología, no sólo mediante el uso
+  de la relación existencial es-un.
+  \item Cloud Views \cite{Stanford-CV:WEB}. Herramienta que permite visualizar la
+  ontología como una nube de tags, cada uno con su correspondiente peso basado en
+  distintos criterios (profundidad, uso, ...).
+  \item Ontology browser\cite{UniManchester-OB:WEB}. Herramienta que permite la
+  navegación a través de la ontología, y que construye los documentos html de
+  manera dinámica.
+  \item OWLDoc\cite{Stanford-OWLDoc:WEB}. Herramienta que genera un conjunto de
+  páginas html (la mayoría estáticas) para su publicación en web.
+  \item OWL2UML\cite{Stanford-OWL2UML:WEB}. Herramienta que crea un diagrama UML
+  que representa la ontología activa.
+  \end{itemize}
+
+  \subsection{Crítica al sistema de hojas de cálculo disgregadas (disgregación de
+  la información, redundancia, incoherencia, etc.)}
+  Con la llegada del nuevo plan de estudios, fue necesario redistribuir las horas
+  docentes de cada asignatura (Créditos ECTS) en función del número de horas que
+  el alumno debía dedicar a ella para adquirir las competencias definidas por el
+  plan de estudios. Con la finalidad de facilitar esta transción hacia una visión
+  "`alumno"' del grado, se crearon unas hojas de cálculo destinadas a aglutinar
+  toda la información relativa a las asignaturas de un departamento y a distribuir
+  las horas lectivas de cada asignatura. Este archivo de excel, consta de 8 hojas
+  de cálculo, las siguientes:
+  \begin{itemize}
+  \item Hoja 1: Consta de una pequeña nota con la definición de los diferentes
+  métodos docentes.
+  \item Hoja 2: Consta de una pequeña reseña con la definición de las diferentes
+  actividades formativas
+  \item Hoja 3: En esta hoja, denominada "`Plantilla Alumnos"' se recogen
+  diferentes estadísticas sobre los alumnos, los años que tardan en finalizar los
+  estudios y previsiones sobre el rendimiento de los alumnos.
+  \item Hoja 4: En esta hoja, llamada Plantilla Prof-Dept, se dividen los grupos
+  de alumnos en cuatro clases, dependiendo del número de alumnos en cada grupo.
+  Luego, en función del número de profesores presente en el departamento y su
+  disponibilidad, la hoja calcula el total de horas disponibles para la docencia.
+  \item Hoja 5: En la quinta hoja del libro de excel, llamada "`Plantilla ACT y
+  MET"', se recoge, en una misma hoja de cálculo, los datos de la asignatura
+  (nombre, número de créditos, etc), prerequisitos, número de horas de cada
+  actividad formativa, métodos docentes aplicados, número de horas dedicadas a la
+  preparación de la evaluación de cada métodos evaluador, y capacidades adquiridas
+  por el alumno tras cursar esta asignatura. Al final, la hoja recoge el total de
+  horas utilizadas por el alumno y las transforma en créditos ECTS.
+  Adicionalmente, debajo de este cuadro, aparecen repartidas las horas de docencia
+  y las horas destinadas a evaluación por el departamento.
+  \item Hoja 6: Angel, puede ser esto otra versión de la hoja anterior??
+  \item Hoja 7: En esta séptima hoja, llamada "`Plantilla C\_ESPECIFICAS"' vienen
+  recogidas todas las competencias específicas del plan de estudios, el número de
+  horas dedicadas a cada actividad formativa, las actividades formativas que
+  permiten al alumno adquirir cada capacidad y el nivel adquirido por el alumno a
+  la finalización de la asignatura.
+  \item Hoja 8: En esta última hoja del fichero, "`Resultado C\_Generales"', se
+  recoge en una tabla todas las competencias generales que se pueden adquirir en
+  el curso de la titulación, junto con el número de horas dedicadas a cada
+  actividad formativa para la adquisición de cada competencia. Una última columna
+  nos indicará el total de horas dedicadas a la adquisición de cada competencia.
+  \end{itemize}
+
+  Como primer apunte al método empleado, podríamos subrayar el uso de una
+  herramienta como es la hoja de cálculo para un fín que no es el propio. Como
+  consecuencia, tenemos tablas ineficientes, con muchos datos, campos con texto
+  mezclados con números, y que a primera vista resultan muy poco claras. Este
+  sistema de hojas de cálculo es claramente ineficiente, y su principal problema
+  es la ausencia de un criterio definido a la hora de definir conceptos. Toda la
+  información queda embarullada y mezclada, y resulta muy difícil rellenar las
+  hojas para una única asignatura, de modo que rellenar los datos completos de
+  toda una materia o incluso un grado resulta una tarea excesivamente dificultosa.
+  (¿SE PODRÍAN ADJUNTAR LAS HOJAS DE CÁLCULO A MODO DE MUESTRA?)
+
+  En resumen, el sistema de hojas de cálculo empleado adolece de:
+  - Falta de precisión en los conceptos
+  - Inexistencia de límites en la asignación de horas de trabajo a las
+  asiganturas, quedando supeditada la corrección de la asignación de horas al buen
+  hacer de la persona que rellena hoja.
+  - Falta de control en la adquisición de competencias, quedando de nuevo
+  supeditado al buen hacer de la persona que rellene las hojas de cálculo.
+  - Exceso de información en cada hoja de cálculo. Por ejemplo, en las
+  competencias específicas y generales se muestran las de todo el plan de
+  estudios, en lugar de tan solo las competencias que deban ser adquiridas al
+  cursar dicha asignatura.
+  - Inexistencia de realación entras las asignaturas y la materia en que se
+  engloban.
+  - Invisibilidad del resto del plan. La asignatura cursada forma parte de una
+  materia y esa materia de un plan de estudios. Esa relación debe estar plasmada,
+  dado que no son conceptos aislados, si no que están muy estrechamente ligadas.
+
+  Además de estas carencias, poniendo la vista en un medio-largo plazo, resulta a
+  priori muy complicado la automatización de tareas como puedan ser la asignación
+  de horas a cada departamento o profesor, el cambio en alguna competencia del
+  plan de estudios, o la inclusión de alguna materia o asignatura. Es necesario
+  construir las bases de manera que en un futuro la ampliación del sistema o la
+  modificación del universo de trabajo resulte cómoda y eficiente.
+
+  \section{Objetivos}
+  Los objetivos principales del presente documento son:
+
+  - Crear un marco único y formal de conocimiento de modo que todos los conceptos
+  sean inequívocos y cualquier persona, aún a pesar de no estar familiarizada con
+  la estructura de un plan de estudios pueda consultar, añadir y modificar
+  información al sistema. Este marco único garantizará que toda la información
+  incluida en el sistema sea coherente con el conocimiento modelado.
+  - Mejora de la presentación de la información, de modo que sea sólo sea visible
+  aquella que tenga significado en el contexto de trabajo.
+  - Relacionar las asignaturas, con las materias, el plan de estudios y la
+  normativa que rige la educación superior, de modo que tanto desde un punto de
+  vista mas generalista o más específico, el usuario conozca dónde está
+  trabajando, y cómo se relaciona la información visualizada con el resto del
+  universo modelado.
+
+  Con estos objetivos cumplidos, estaremos sentando las bases para tener un
+  sistema estable y acotado, de modo que podamos:
+  - Ampliar el modelo de conocimiento hacia otroas planes de estudios, incluidos
+  aquellos cursados en universidades extranjeras adheridas al marco europeo de
+  educación superior.
+  - Crear o aplicar herramientas automáticas al conocimiento modelado, que
+  faciliten el trabajo con la información contenida.
+
+  Además, con toda la documentación generada, será una tarea sencilla la
+  modificación del marco de conocimiento para adpatarlo a nuevas leyes o
+  nomrativas europeas para que si éstas cambian en un futuro, las herramientas
+  desarrolladas y la información contenida sea fácilmente portable hacia el nuevo
+  marco educativo.

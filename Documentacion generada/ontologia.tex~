@@ -111,7 +111,7 @@ conocimientos o metodologías).
     Las materias se imparten según dictan ciertos métodos docentes considerados adecuados por los docentes de la titulación. Estos métodos docentes pueden ser complementarios entre sí, y en ningún caso son excluyeentes entre ellos.
     \item MA\_seImparteSegún\_AF.
     Dominio: 	Materia.
-    Rango: 	Actividad\_Formativa.
+    Rango: 	Actividad_Formativa.
     Inversa: 	AF\_utilizadaParaImpartir\_MA.
     Las materias se imparten realizando ciertas activides formativas definidas por los docentes de la materia. Los créditos de docencia de esa materia, deben estar por tanto distribuidos entre las distintas actividades formativas. Al igual que ocurre con los métodos docentes, las diferentes actividades formativas no son excluyentes entre sí, sino complementarios.
     \item AS\_esRequisitoPara\_AS.

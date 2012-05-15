@@ -56,12 +56,13 @@ CASO: Algunas asignaturas, al hablar de sus requisitos no queda claro si se trat
 
 CASO: Falta por modelar las asignaturas optativas(tienen como requisitos TODAS las asignaturas que componen el primer, segundo y para algunas tercer curso) y el TFG con el requisito de haber superado todas las asignaturas.
 
-CASO: Si ponemos las object prperties como disjuntas, los razonadores (todos) causan una excepción. No dan error, si no que el razonador falla por una excepción. No se ha encontrado documentación relativa a esta fallo, pero dado que todas las object properties vana a tener dominios y ranges distintos, el propio razonador inferirá que son distintas. Igual ocurre cuando se incorpora la restricción de que los individuos actividad formativa sean distintos unos de otros. La gran cantidad de condiciones incorporadas (recordemos que se trata del producto escalar de las actividades formativas sobre las materias).
+CASO: Si ponemos las object prperties como disjuntas, los razonadores (todos) causan una excepción. No dan error, si no que el razonador falla por una excepción. No se ha encontrado documentación relativa a esta fallo, pero dado que todas las object properties vana a tener dominios y ranges distintos, el propio razonador inferirá que son distintas.
 
 CASO: Por problemas con los razonadores, no podemos imponer restricciones muy numerosas del tipo CO_seAdquiereParaCumplir_OG min 100 Objetivo_General pues el razonador se hace excesivamente lento. Probado en varias maquinas, la más potente un amd x6.
 
 CASo: No es posible encontrar forma alguna para, de forma automática, poder computar productos escalares o sumatorios
 
 CASO: En la materia física aparece la competencia específica CE-18, pero únicamente figura en la lista de competencias la CE-13/18
+
 
 

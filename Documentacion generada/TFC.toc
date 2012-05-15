@@ -1,0 +1,29 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\'on}{3}
+\contentsline {section}{\numberline {1.1}Espacio europeo}{3}
+\contentsline {subsection}{\numberline {1.1.1}Historia}{3}
+\contentsline {subsubsection}{Charta Magna Universitatum}{3}
+\contentsline {subsubsection}{Declaraci\'on de La Sorbona}{5}
+\contentsline {subsubsection}{Declaraci\'on de Bolonia}{5}
+\contentsline {subsection}{\numberline {1.1.2}El EEES en la actualidad}{7}
+\contentsline {section}{\numberline {1.2}Motivaci\'on}{8}
+\contentsline {subsection}{\numberline {1.2.1}Ontolog\IeC {\'\i }as}{8}
+\contentsline {subsection}{\numberline {1.2.2}Unificar conocimiento en un marco \'unico y formal}{9}
+\contentsline {subsection}{\numberline {1.2.3}Marco unificado}{10}
+\contentsline {subsection}{\numberline {1.2.4}Hip\'otesis: herramientas autom\'aticas}{10}
+\contentsline {subsection}{\numberline {1.2.5}Cr\IeC {\'\i }tica al sistema de hojas de c\'alculo disgregadas (disgregaci\'on de la informaci\'on, redundancia, incoherencia, etc.)}{11}
+\contentsline {section}{\numberline {1.3}Objetivos}{13}
+\contentsline {chapter}{\numberline {2}Ontolog\IeC {\'\i }a de nuestro plan de grado}{15}
+\contentsline {section}{\numberline {2.1}Herramienta utilizada:Prot\'eg\'e}{15}
+\contentsline {section}{\numberline {2.2}Introducci\'on al documento de trabajo}{15}
+\contentsline {section}{\numberline {2.3}Explicaci\'on de la ontolog\IeC {\'\i }a}{17}
+\contentsline {section}{\numberline {2.4}Instancia UPM (varios ejemplos?)}{23}
+\contentsline {chapter}{\numberline {3}Generalizaci\'on}{24}
+\contentsline {section}{\numberline {3.1}Intro: \IeC {\textquestiondown }qui\'en puede usar esta ontolog\IeC {\'\i }a? \IeC {\textquestiondown }La UCM? S\IeC {\'\i }, no, pq, etc.}{24}
+\contentsline {section}{\numberline {3.2}Idea: jerarquia (refinamiento desde la ley hasta los planes)}{24}
+\contentsline {section}{\numberline {3.3}Test: Instancia UCM?}{24}
+\contentsline {chapter}{\numberline {4}Aplicaciones (autom\'aticas)}{25}
+\contentsline {section}{\numberline {4.1}Mencionar nuestras ideas sobre c\'omo sacar partido a esto}{25}
+\contentsline {section}{\numberline {4.2}Ejemplo de razonamiento (puede que encuentres una inconsistencia al ir metiendo la info en la ontolog\IeC {\'\i }a,ap\'untalo).}{26}
+\contentsline {section}{\numberline {4.3}Ejemplo de vis. de la informaci\'on (html).}{26}
+\contentsline {chapter}{\numberline {5}Conclusiones}{27}
