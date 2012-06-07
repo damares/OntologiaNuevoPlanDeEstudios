@@ -1,0 +1,148 @@
+\chapter{Ontología de nuestro plan de grado}
+
+\section{Herramienta utilizada:Protégé}
+Protégé\cite{Stanford-Protege:WEB} es un framework para la edición de ontologías de código abierto. Las ontologías creadas con protégé se pueden exportar a muy diversos formatos, entre los cuales se incluyen RDF(S), OWL e incluso esquemas XML.
+Protégé está construido en Java y admite extensiones creadas por los usuarios por lo que constituye una excelente base para el desarrollo de aplicaciones o prototipos.
+Adicionalmente, Protégé cuenta con amplica comunidad de usuarios (desarrolladores, docentes, estudiantes e instituciones gubernamentales y corporaciones privadas) que utilizan Protégé como base de conocimiento en áreas tan diversas como la biomedicina o la adquisicion de conocimiento.
+
+\section{Introducción al documento de trabajo}
+Para crear la ontología, se ha partido del documento \cite{FIUPM-MemoAneca}. Este documento es el remitido a ANECA\footnote{Agencia Nacional de Evaluación de Calidad y Acreditación - www.aneca.es} para su validación de acuerdo a las normas especificadas en el marco europeo. Aneca, como miembro de ENQA\footnote{European Association for Quality Assurance in Higher Education - www.enqa.eu}, EQAR\footnote{Eurpean Quality Assurance Register for Higher Education - www.eqar.eu} y INQAAHE\footnote{International Network for Quality Assurance Agencies in Higher Education - www.inqaahe.org} es el encargado de validar los planes de estudios y de certificar el cumplimiento de los requisitos marcados por Bolonia.
+
+Con el propósito de poder comprender mejor la construcción de la ontología, vamos a comenzar haciendo un pequeño resumen de los puntos 3 y 5, referidos a los objetivos del título y a la planificación de las enseñanzas.
+
+\begin{itemize}
+
+ \item Objetivos del título. Los objetivos generales del título son la adquisición por parte del egresado, de unos níveles mínimos de adquisición de una serie de capacidades, competencias y destrezas generales. Los objetivos van a fijar las capacidades mínimas de todo alumno al finalizar los estudios.
+ 
+ \item Competencias generales y específicas. Estas capacidades, objetivos en la denominación dada por el documento, son adquiridas por el alumno mediante la adquisición de diversas compentencias, en distintos grados. La adquisición programada de estas competencias es lo que permitirá al alumno cumplir con los objetivos establecidos para el plan de estudios, y poder afrontar las diversas situaciones que en su vida laboral deberá afrontar. Las competencias se diferencian entre ellas según sean específicas de un título (aquellas que definen procedimientos y actitudes propias de una título) o generales si lo que definen son competenciase carácter general, aplicables a varios títulos. 
+ En cuanto al nivel de adquisición de cada comeptencia, se asumirá que el alumno alcanza un nivel de adquisición óptimo, de acuerdo a los objetivos propuestos, conforme va cursando las distintas asignaturas que le van otorgando esas competencias. Es tarea del evaluador, comprobar que el grado de adquisición de competencias por parte del alumno es el adecuado.
+
+ \item Materias. El curso de las diferentes materias, debe asegurar la adquisición de todas las competencias, tanto específicas como generales, definidas en el perfil del título. El trabajo fin de carrera será considerado como una materia más. La materia optatividad, no consta de ninguna asignatura, para facilitar una rápida reacción ante cualquier cambio tecnológico, profesional o formativo que se produzca.
+ 
+ \item Asignaturas. Debido a limitaciones del lenguaje, no se tendrán en cuenta limitaciones sobre la extensión de las asignaturas en créditos, limitaciones sobre la multiplicidad de los créditos, ni se hablará acerca de las horas reales a que equivale cada crédito ECTS. 
+ Tampoco se controlará el número de asignaturas programadas por semestre, ni se determinará qué número de créditos estan destinados a la adquisición de competencias transversales. Tampoco se controlará la correcta distribución de créditos por semestres, ni por asignaturas básicas, obligatorias u optativas. 
+ Las asignaturas optativas quedan, por el momento, fuera del alcance de este trabajo, por no estar definidas en el documento remitido a ANECA. Se verá con más detalle más adelante cuando se traten los individuos de que consta la ontología.
+ Tal y como se especifica en el documento, la inclusión de asignaturas como requisitos de terceras, no especifica una obligatoriedad al uso, y no limita el curso de unas asignaturas antes que otras, sino que es meramente una recomendación del itinerario curricular que debería seguir el alumno.
+ \end{itemize}
+  
+  
+Como ya se comentó al describir el lenguaje OWL, el propósito de la ontología es lograr una descripción única del mundo que se está modelando. Haciendo una analogía con la linguistica, podríamos decir que las ontologías se utilizan para comprobar la sintaxis, pero no es válida para comprobar la semántica del lenguaje. Por tanto, es posible introducir restricciones del tipo `toda asignatura debe pertenecer a una materia`, o `las competencias satisfacen los objetivos estavlecidos sobre el plan de estudios`, pero no es posible decir, en OWL `la suma de los créditos de una materia debe ser igual a la suma de los créditos de todas las asignaturas que lo componen`, o `las asignaturas básicas deben sumar 60 créditos`.
+
+\section{Explicación de la ontología}
+
+Las ontologías OWL e protegé están compuestas por clases, propiedades e individuos. Las ontologías OWL incluyen además operadores, como unión, intersección o negación, lo que nos permite, además de describir conceptos, definirlos. De este modo, los conceptos más complejos pueden construirse sobre definiciones de otros más simples, lo que facilita la concepción y mantenimiento de estos sistemas. 
+Además, el uso de ontologías OWL-DL, nos permite el uso de herramientas automáticas para comprobar que todas las sentencias y definiciones que conforman el lenguaje son consistentes, además de poder razonar qué individuos encajan en qué descripciones, o si la jerarquía establecida es consistente con los individuos presentes y sus descriupciones.
+Primeramente se mostrarán las clases, pero no se hablará de sus relaciones ni de los individuos que la componen. Posteriormente se tratarán la propiedades de los objetos (sus relaciones), y por último se entrará a detalle con los individuos que componen la ontología, explicando las relaciones, clases y propiedades de ellos.
+
+\begin{itemize}
+
+  \item Clases de la ontología.
+  Las clases se pueden definir en protegé como conjuntos que contienen individuos. Las clases se describen utilizando descripciones formales que definen inequívocamente los requisitos de pertenencia a una clase. 
+  Las clases se organizan en conjuntos de superclases y subclases, que forma la taxonomía de nuestro universo en observación. Esta taxonomía puede ser obtenida de manera automática por un razonador, que también puede comprobar su consistencia.
+  Se han definido siete clases para la creación de nuestra ontología.	
+    \begin{enumerate}
+      \item Objetivo\_General.
+      Con la clase Objetivo\_General queremos definir el conjunto de individuos que componen los objetivos generales del título. Esta clase no cuenta con ninguna definición, ya que los objetivos generales vienen definidos en el título. El único criterio de pertenencia posible a esta clase, es la definición de objetivos en el plan de estudios.
+      \item Competencia.
+      La clase Competencia agrupa a todas las competencias que es preciso adquirir para lograr el cumplimiento de los objetivos generales establecidos. Se definen como compentencias todos aquellos individuos que representan aptitudes y actitudes, cuya adquisición por parte del alumno conlleva la consecución de los objetivos generales propuestos para la obtención del título. Formalmente, se define como aquellos individuos que están relacionados con individuos de la clase Objetivo\_General mediante la propiedad que defina la adquisición, al menos una vez y que sólo tengan relación con individuos de la clase Objetivo\_General. Más adelante veremos la sintaxis de esta descripción en protegé, y definiremos la propiedad formalmente. Dentro de esta clase, podemos definir dos grupos de compentecias, según sean competencias específicas (propias de la rama del conocimiento donde se enmarca la titulación) o generales (comunes a todas las ramas del conocimiento y que suelen referirse a aptitudes y actitudes más que a 
+conocimientos o metodologías).
+      \begin{description}
+	\item Competencia\_General. La clase Competencia\_General engloba todas las competencias que es preciso adquirir para el cumplimiento de los objetivos generales del título, y que son comunes a otras ramas del conocimiento, como por ejemplo ``Saber trabajar en situaciones carentes de información y bajo presión, teniendo nuevas ideas y siendo creativo''. Se trata de una competencia que bien podría servir para cualquier otra titulación, no únicamente para la que estamos modelando. En general, están orientadas a la adqusición de aptitudes, actitudes y capacidades enfocadas hacia aspectos humanos, (como el trabajo en equipo, la motivación, o la actualización de conocimientos de manera autónoma, por citar algunos), que serán útiles al alumno en en su incorporación al mundo laboral. Son competencias generales todos aquellos individuos que son competencias y que además son otorgadas de forma específica al cursar una materia.
+	\item Competencia\_Especifica. La clase Competencia\_Especifica agrupa aquellas competencias que es preciso adquirir para el cumplimiento de los objetivos generales del título, y que son específicos de la rama del conocimiento propia de la titulación, como por ejemplo ``Concebir y desarrollar sistemas digitles utilizando lenguajes de descripción hardware''. Son competencias muy específicas de la titulación, y que fuera de ese ámbito su aplicación sería poco o nada útil. Suelen estar orientadas más hacia aspectos prácticos de la titulación e incluyen la adquisición de metodologías y rutinas de trabajo y desarrollo eminentemente prácticas. Se consideran competecias específicas todos aquellos individuos que son compentecias y que además son otorgadas de forma específica al cursar una materia
+      \end{description}
+      Como hemos visto, compentencias generales y específicas son distintas entre sí, pero los individuos de ambas clases adquieren su condición de competencia específica/general cuando son adquiridas al cursar una materia, sin disntinción entre unas y otras. Por cuestiones de diseño, y para facilitar la comprensión del modelo se ha optado por separar en dos clases las competencias específicas y generales. ¿Cómo distinguirá protegé entre las competencias específicas y generales? Los individuos pertenecientes a cada una de las clases, se relacionarán con las materias mediante dos relaciones distintas, creadas ad hoc para cada una de las clases. De este modo logramos que el razonador, una vez haya clasificado un individuo como perteneciente a la clase competencia, pueda clasificarlo como general o específica en función de la propiedad que lo relacione con las materias, ganando en potencia de cálculo, auqnue para ello la ontología deba de ser algo más compleja.
+      \item Materia.
+      La clase Materia aglutina todos los individuos que representan las diferentes materias de que se compone la titulación. Coloquialmente podemos entender las materias como aquellos individuos que permiten al alumno adquirir competencias, de modo que puedan cumplir con las objetivos generales del título. Formalmente hablando, son materias todos aquellos individuos relacionados con algún individuo de la clase Competencia, y al menos una vez con alguna Competencia\_General. Posteriormente se definirá la propiedad que une Materia con Compentencia y con Competencia\_General. 
+      \item Asignatura.
+      En la clase Asignatura se agrupan todos los individuos que representan las diferentes asignaturas de que se compone cada materia. Las definiciones de asignatura y de materia son complementarias: Podemos definir una materia como el conjunto de asignaturas de un mismo ámbito, o bien podemos definir una asignatura como parte integrante de una materia, con quien comparte la naturaleza de los conocimientos contenidos. Dado el carácter más general de la materia, se ha optado en la ontología por que sean las materias a partir de las cuales se definan las asignaturas, y no al contrario. Ademas, esa decisión simplifica el modelo, ya que como veremos más adelante, también actividades formativas y métodos docentes dependerán para su definición en el modelo de la clase Materia. Formalmente descrito, podemos definir una asignatura como todo aquel individuo relacionado con algún individuo de la clase Materia al menos una vez y sólo con Materias, de modo que la asignatura forme parte de dicha Materia.
+      \item Actividad\_Formativa.
+      La clase Actividad\_Formativa define todos aquellos individuos que tienen su correspondencia en el mundo real con las distintas actividades formativas que pueden desarrollarse para el aprendizaje de la asignatura. Una actividad formativa es la actividad a realizar por el profesor y el alumnado a lo largo de un curso, diferenciándose unas de otras en el propósito buscado por la acción didáctica. Por tanto, para una misma materia, concurren variadas actividades formativas, ponderándose su distribución a lo largo del curso de dicha materia en función de los objetivos propuestos en el plan de estudios.
+      Por tanto, de cara a nuestra ontología, definiremos la clase actividad formativa como el conjunto de individuos que representa actividades didácticas, que se utilizan  para impartir una o varias materias. En términos formales, serían todos los individuos que están relacionados al menos una vez con al menos un individuo de clase materia. Como en los casos ante3riores, cuando definamos las propiedades de cada objeto, veremos estas definiciones plasmadas en sintaxis de protegé.
+      \item Metodo\_Docente.
+      Un método docente es un conjunto de formas, procedimientos, técnicas, actividades, etc, de enseñanza y aprendizaje. Para una misma materia, es por tanto comatible el uso de diversos métodos docentes compaginados con las distintas actividades formativas. Algunas actividades formativas y algunos métodos docentes serán mutuamente excluyentes, pero por regla general pueden conbinarse entre ellos a criterio del docente. 
+      En la ontología definimos un método docente como el conjunto de procedimientos y técnicas de enseñanza y aprendizaje utilizados para impartir una materia. Más formalmente, podríamos definir un método docente como aquellos individuos que están relacionados al menos una vez con al menos un individuo de la clase materia. Más tarde veremos la definición de las propiedades en sintaxis de protegé.
+    \end{enumerate}
+
+  \item Propiedades de la ontología.
+  Las propiedades son relaciones binarias entre individuos, es decir, una propiedad une dos individuos entre sí. Las propiedades pueden tener inversas, pueden ser funcionales, transitivas, simétricas... Estas relaciones se pueden dar tanto entre individuos de la misma clase, como entre individuos de distintas clases...
+  Un razonador automático puede computar si una relación entre dos individuos es consistente con el resto de la ontología. 
+  Es de destacar que las propiedades únicamente se pueden establecer entre dos individuos. No existen propiedades con cardinalidad tres, lo que implicará que en el caso de que que sea preciso establecer una relación a tres, sería preciso modelarlo como la relación binaria entre el producto escalar de dos de ellas sobre la tercera. 
+  
+  \begin{enumerate}
+    \item OG\_seCumpleMedianteLaAdquisicionDe\_CO.
+    Dominio: 	Objetivo\_General.
+    Rango: 	Competencia.
+    Inversa: 	CO\_seAdquiereParaCumplir\_OG
+    Se trata de la relación que existe entre individuos pertenecientes a la clase Objetivo\_General y Competencia, mediante la cual se modela el hecho de que los objetivos generales de la titulación se cumplen al adquirirse ciertas competencias definidas en la guía de la titulación. 
+    \item CO\_seAdquiereParaCumplir\_OG.
+    Dominio: 	Competencia.
+    Rango: 	Objetivo\_General.
+    Inversa: 	OG\_seCumpleMedianteLaAdquisicionDe\_CO.
+    Las competencias, ya sean estas específicas o generales, se adquieren con el fin de poder cumplir con los objetivos generales establecidos en la guía de la titulación. 
+    \item CG\_esOtorgadaPor\_MA.
+    Dominio: 	Competencia\_General.
+    Rango: 	Materia.
+    Inversa: 	MA\_otorgaCompetenciasGenerales\_CG.
+    Un alumno adquiere una cierta competencia general al cursar la materia que la otorga. Se podría decir de otro modo: Para que un alumno adquiera una competencia general, es preciso que curse una cierta materia.
+    \item CE\_esOtorgadaPor\_MA.
+    Dominio: 	Competencia\_Especifica.
+    Rango: 	Materia.
+    Inversa: 	MA\_otorgaCompetenciasEspecíficas\_CE.
+    Un alumno adquiere una cierta competencia específica al cursar la materia que la otorga. Se podría decir de otro modo: Para que un alumno adquiera una competencia específica, es preciso que curse una cierta materia.
+    \item MA\_otorgaCompetenciasGenerales\_CG.
+    Dominio: 	Materia.
+    Rango: 	Compentencia\_General.
+    Inversa: 	CG\_esOtortgadaPor\_MA.
+    El curso de una materia por parte de un alumno, le otorga ciertas competencias generales definidas en la ficha de cada materia. 
+    \item MA\_otorgaCompetenciasEspecíficas\_CE.
+    Dominio: 	Materia.
+    Rango: 	Compentencia\_Específica.
+    Inversa: 	CE\_esOtortgadaPor\_MA.
+    El curso de una materia por parte de un alumno, le otorga ciertas competencias específicas definidas en la ficha de cada materia.
+    \item MA\_constaDe\_AS.
+    Dominio: 	Materia.
+    Rango: 	Asignatura.
+    Inversa: 	AS\_formaParteDe\_MA.
+    Una materia está compuesta por varias asignaturas, que quedan de ese modo agrupadas bajo esa materia. Se podría decird de otro modo: que las asignaturas quedan agrupadas en diversas materias. Es una relación inversamente funcional, es decir, su función inversa es funcional. Dicho coloquialmente, significa que una materia puede constar de una o varias asignaturas, pero una asignatura sólo puede pertenecer a una materia.
+    \item MA\_seImparteMediante\_ME.
+    Dominio: 	Materia.
+    Rango: 	Metodo\_Docente.
+    Inversa: 	ME\_utilizadoParaImpartir\_MA.
+    Las materias se imparten según dictan ciertos métodos docentes considerados adecuados por los docentes de la titulación. Estos métodos docentes pueden ser complementarios entre sí, y en ningún caso son excluyeentes entre ellos.
+    \item MA\_seImparteSegún\_AF.
+    Dominio: 	Materia.
+    Rango: 	Actividad_Formativa.
+    Inversa: 	AF\_utilizadaParaImpartir\_MA.
+    Las materias se imparten realizando ciertas activides formativas definidas por los docentes de la materia. Los créditos de docencia de esa materia, deben estar por tanto distribuidos entre las distintas actividades formativas. Al igual que ocurre con los métodos docentes, las diferentes actividades formativas no son excluyentes entre sí, sino complementarios.
+    \item AS\_esRequisitoPara\_AS.
+    Dominio: 	Asignatura.
+    Rango: 	Asignatura.
+    Inversa: 	AS\_esRequisitoPara\_AS.
+    Como ya se explicó antes, el hecho de que una asignatura tenga como requisito en la guía de la titulación el haber cursado una asignatura anteriormente, no implica que obligatoriamente se haya de cursar esa asignatura con anterioridad. Es decir, se trata de una mera recomendación de cara al itinerio a seguir en la titulación, y en ningñun caso de obligado cumplimiento. Se ha tenido en cuenta a la hora de elaborar la ontología, ya que el fín último de esta es proporcionar una herramienta para un diseño de la titulación correcto, lo que incluye el trayecto curricular del alumno, y no para el control del desarrollo del alumno. Por tanto, dado que lo que estamos haciendo es ayudar a diseñar el título, vamos a incluir los requisitos para el curso de asignaturas, como si de cumplimiento obligatorio se tratase.
+    Es una relación transitiva, es decir, que si la asignatura ``A'' es requisito de la asignatura ``B'' y a su vez ``B'' es requisito de la asignatura ``C'', entonces la asignatura ``A'' es un requisito de la asignatura ``C''.
+    \item AS\_formaParteDe\_MA.
+    Dominio: 	Asignatura.
+    Rango: 	Materia.
+    Inversa: 	MA\_constaDe\_AS.
+    Las asignaturas se agrupan por temática en diversas materias, de las que forman parte. Se trata de una relación funcional, dado que una asignatura sólo puede pertenecer a una materia, mientras que una materia puede estar compuesta por varias asignaturas.
+    \item MA\_otorgaCompetenciasGenerales\_CG.
+    Dominio: 	Materia.
+    Rango: 	Compentencia\_General.
+    Inversa: 	CG\_esOtortgadaPor\_MA.
+    El curso de una materia por parte de un alumno, le otorga ciertas competencias generales definidas en la ficha de cada materia. 
+  \end{enumerate}
+
+\item Individuos de la ontología.
+  Los individuos representan objetos de la ontología en el dominio que estamos estudiando. Protegé no hace uso del Unique Name Assumption, es decir, para protegé dos individuos pueden referirse al mismo objeto del mundo real, salvo que se especifique lo contrario. Esta es una consecuencia de las ontologías OWL: todo lo que no sea dicho de forma explícita puede ser cierto. El hecho de que no especifiquemos si dos individuos son o no los mismos, significa que pueden o no serlo, para ese dominio. En nuestra ontología todos los individuos que componen la ontología son distintos, lo que se especificara correctamente en la definición de cada individuo.
+  \begin{description}
+   \item OBJ01: Representa
+  \end{description}
+
+
+  
+    
+\end{itemize}
+
+
+\section{Instancia UPM (varios ejemplos?)}
+aplicar la instancia de nuestro plan. si es posible, incluir varios ejemplos.
