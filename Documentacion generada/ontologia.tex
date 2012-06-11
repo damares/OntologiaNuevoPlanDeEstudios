@@ -9,9 +9,9 @@ Adicionalmente, Protégé cuenta con amplica comunidad de usuarios (desarrolladore
 Para crear la ontología, se ha partido del documento \cite{FIUPM-MemoAneca}. Este documento es el remitido a ANECA\footnote{Agencia Nacional de Evaluación de Calidad y Acreditación - www.aneca.es} para su validación de acuerdo a las normas especificadas en el marco europeo. Aneca, como miembro de ENQA\footnote{European Association for Quality Assurance in Higher Education - www.enqa.eu}, EQAR\footnote{Eurpean Quality Assurance Register for Higher Education - www.eqar.eu} y INQAAHE\footnote{International Network for Quality Assurance Agencies in Higher Education - www.inqaahe.org} es el encargado de validar los planes de estudios y de certificar el cumplimiento de los requisitos marcados por Bolonia.
 
 Con el propósito de poder comprender mejor la construcción de la ontología, vamos a comenzar haciendo un pequeño resumen de los puntos 3 y 5, referidos a los objetivos del título y a la planificación de las enseñanzas.
+HAY QUE HABLAR EN ESTA PARTE DE TODO LO QUE COMPONE LAS MATERIAS, ETC; DE ACUERDO CON LO DESCRITO EN LAS DATATYPE PROPERTIES:
 
 \begin{itemize}
-
  \item Objetivos del título. Los objetivos generales del título son la adquisición por parte del egresado, de unos níveles mínimos de adquisición de una serie de capacidades, competencias y destrezas generales. Los objetivos van a fijar las capacidades mínimas de todo alumno al finalizar los estudios.
  
  \item Competencias generales y específicas. Estas capacidades, objetivos en la denominación dada por el documento, son adquiridas por el alumno mediante la adquisición de diversas compentencias, en distintos grados. La adquisición programada de estas competencias es lo que permitirá al alumno cumplir con los objetivos establecidos para el plan de estudios, y poder afrontar las diversas situaciones que en su vida laboral deberá afrontar. Las competencias se diferencian entre ellas según sean específicas de un título (aquellas que definen procedimientos y actitudes propias de una título) o generales si lo que definen son competenciase carácter general, aplicables a varios títulos. 
@@ -149,15 +149,119 @@ conocimientos o metodologías).
     Las actividades formativas se realizan para impartir las diferentes materias, según cierto número de créditos especificado en la guía del plan de estudios. Además se ha considerado importante, de cara al diseño del título, conocer cuántos créditos se dedican a cada actividad formativa. Más adelante, en la descripción de los distintos individuos, veremos cómo se almacena esa información. 
     
   \end{enumerate}
-
 \subsection{Individuos de la ontología}
   Los individuos representan objetos de la ontología en el dominio que estamos estudiando. Protegé no hace uso del Unique Name Assumption, es decir, para protegé dos individuos pueden referirse al mismo objeto del mundo real, salvo que se especifique lo contrario. Esta es una consecuencia de las ontologías OWL: todo lo que no sea dicho de forma explícita puede ser cierto. El hecho de que no especifiquemos si dos individuos son o no los mismos, significa que pueden o no serlo, para ese dominio. En nuestra ontología todos los individuos que componen la ontología son distintos, lo que se especificara correctamente en la definición de cada individuo.
   \begin{description}
    \item OBJ01: Representa
   \end{description}
+  
+\subsection{Propiedades sobre tipos de datos}
+  Las propiedaddes sobre tipos de datos son relaciones entre individuos y tipos de datos, de modo que se puede asociar a los individuos implicados en la relación ciertas características, ya sean de un tipo definido o indefinido, pero concretas y especificas. 
+  \begin{enumerate}
+   \item OG\_Descripción.
+   Dominio:	Objetivo\_General.
+   Rango:	Literal.
+   Se trata de una relación entre un individuo de la clase Objetivo\_General y un dato de tipo literal. Esta relación funcional (un objetivo sólo puede tener una descripción) es util para guardar la descripción del objetivo descrito, y poder identificarlo por algo menos formal y más útil que la numeración del objetivo.
+   \item CO\_Descripción
+   Dominio:	Competencia.
+   Rango:	Literal.
+   Esta propiedad relaciona una competencia con un literal. También es una propiedad funcional, y al igual que el resto de propiedades dedicadas a almacenar información acerca de descripciones de individuos, es útil para poder identificar los mismos por algo más que el código descriptivo.
+   \item MA\_Carácter
+   Dominio:	Materia.
+   Rango:	\{"Básica", "Mixta", "Obligatoria", "Optativa"\}.
+   Une un individuo de clase Materia con un dato enumerado de entre los cuatro descritos en rango, lo que permite asignar a la materia un carácter de entre los cuatro descritos.
+   \item MA\_Créditos
+   Dominio:	Materia
+   Rango:	decimal[> "0"^^integer]
+   Se utliza para saber qué cantidad de créditos otorga al alumno el curso de una materia, o lo que es lo mismo, el coste en créditos ECTS de cursar una materia. Como todas la propiedades que sólo pueden aparecer asociadas a un mismo individuo una vez, se trata de una propiedad funcional.
+   \item MA\_Coordinación
+   Dominio:	Materia
+   Rango:	literal
+   Esta type property se utiliza como un campo libre donde se define de manera informal los agentes que coordinarán la materia, y cuando se defina, las herramentas que utilizarán en su cometido.
+   \item MA\_Duración\_Y\_Ubicación
+   Dominio:	Materia
+   Rango:	literal
+   Especifica en qué cuatrimestre se estudiará la materia, ayudando a la coordinación de la materia. 
+   \item MA\_Evaluación
+   Dominio:	Materia
+   Rango:	Literal
+   Recoge el conjunto de pruebas y técnicas de evaluación que el docente utilizará a la hora de comrpobar el nivel de adquisición de competencias por aprte de los alumnos. Podría ser posible utilizar una relación por cada prueba, pero dado que las pruebas de evaluación quedan fuera del alcance de la ontología, y no se encuentran modeladas dentro de la misma más allá de esta mención, se utilizará una única entrada por cada materia.
+   \item MA\_Resultados
+   Dominio:	Materia
+   Rango:	Literal
+   esta relación sólo enmerará a título informativo,los resultados del aprendizaje obtenidos, o dicho de otro modo, el nivel de adquisicion de competencias una vez finalizado el curso de la materia objeto de estudio.  
+   \item ME\_Descripción
+   Dominio:	Método\_Docente
+   Rango:	Literal
+   Se trata de una relación entre un individuo de la clase Método\_Docente y un dato de tipo literal. Esta relación funcional (un método docente sólo puede tener una descripción) es util para guardar la descripción del método descrito.
+   \item AF\_Descripción
+   Dominio:	Actividad\_Formativa
+   Rango:	Literal
+   Se trata de una relación entre un individuo de la clase Actividad\_Formativa y un dato de tipo literal. Esta relación funcional se utiliza para guardar la descripción de la actividad descrita.
+   \item AF\_Créditos
+   Dominio:	Actividad\_Formativa
+   Rango:	decimal[> "0"^^integer]
+   Es preciso, de cara a la construcción y mantenimiento del título conocer qué tiempo ha de dedicar el alumno a cada actividad formativa, con el fin de asegurar la correcta adquisición de las competencias en el tiempo establecido. 
+   \item AS\_Carácter
+   Dominio:	Asignatura
+   Rango:	\{"Básica", "Mixta", "Obligatoria", "Optativa"\}.
+   Asigna a un individuo de la clase Asignatura un dato enumerado de entre los cuatro descritos, lo que permite asignarle un carácter.    
+   \item AS\_Contenidos
+   Dominio:	Asignatura
+   Rango:	Literal.
+   La relación AS\_Contenidos, permite relacionar un individuo de la clase asignatura con un dato literal, de modo que nos permite almacenar una descripción algo más extensa, que ayude en su identificación.  
+   \item AS\_Extensión
+   Dominio:	Asignatura
+   Rango:	decimal[> "0"^^integer]
+   Esta propiedad nos permite relacionar cada asignatura con su extensión en créditos ECTS, almacenado en forma de número decimal positivo, haciendo posible almacenar esta característica de las asignaturas.
+   \item AS\_Ubicación
+   Dominio:	Asignatura
+   Rango:	\{"1er semestre", "2o semestre", "3er semestre", "4o semestre", "5o semestre", "6o semestre", "7o semestre", "Ultimo curso"\}
+   Las asignaturas se ubican por trimestres. La propiedad AS\_Ubicación, nos permite asignar a cada asignatura su ubicación temporal correcta, de modo que su distribución sea adecuada.
+  \end{enumerate}
 
 \section{Instancia UPM (varios ejemplos?)}
-aplicar la instancia de nuestro plan. si es posible, incluir varios ejemplos.
+%\item Individuos de la ontología.
+A continuación vamos clasificar el título de grado en informática utilizando la ontología antes descrita, mediante la inclusión en la misma de los individuos que la componen. De este modo comprobaremos cómo la ontología es capaz de clasificar a todos los individuos que componen el título, además de comprobar la decidibilidad del conjunto. Este modelo del plan de estudios, nos permitirá más adelante (si está correctmente construido), la utilización de herramientas automáticas para profundizar en el análisis del plan de estudios que permitan encontrar inconsistencias en su diseño. 
+Los individuos de la ontología representan objetos reales del dominio que estamos estudiando. Protegé no hace uso del Unique Name Assumption, es decir, para protegé dos individuos pueden referirse al mismo objeto del mundo real, salvo que se especifique lo contrario. Esta es una consecuencia de las ontologías OWL: todo lo que no sea dicho de forma explícita puede ser cierto. El hecho de que no especifiquemos si dos individuos son o no los mismos, significa que pueden o no serlo, para ese dominio. En nuestra ontología todos los individuos que componen la ontología son distintos, lo que se especificara correctamente en la definición de cada individuo.
+\begin{description}
+ \item OBJ01. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 01, según se puede ver en su descripción OG\_Decripción: "Aprender de manera autónoma nuevos conocimientos y técnicas adecuados para la concepción, el desarrollo o la explotación de sistemas informáticos." Está relacionada con las competencias CG-24/25/26/27, CE-12/16, CG-1/21, CE-43, CG-2/CE-45, CG-14/15/18/23, CE-14/15, CE-2 y CE-1 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ02. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 02, según se puede ver en su descripción OG\_Descripción: "Comunicar de forma efectiva, tanto por escrito como oral, conocimientos, procedimientos, resultados e ideas relacionadas con las TIC y, concretamente con la Informática, conociendo su impacto socioeconómico." Está relacionada con las competencias CE-53/54, CG-24/25/26/27, CG-13/CE-55, CG-7/8/9/10/16/17 y CE-56 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ03. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 03, según se puede ver en su descripción OG\_Descripción: "Comprender la responsabilidad social, ética y profesional, y civil en su caso, de la actividad del Ingeniero en Informática y su papel en el ámbito de las TIC y de la Sociedad de la Información y del Conocimiento." Está relacionada con las competencias CG-22, CG-19, CG-2/CE-45, CE-52, CG-7/8/9/10/16/17, CG-14/15/18/23 y CE-12/16 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ04. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 04, según se puede ver en su descripción OG\_Descripción: "Concebir y llevar a cabo proyectos informáticos utilizando los principios y metodologías propios de la ingeniería." Está relacionada con las competencias CE-53/54, CG-11/12/20, CG-1/21, CE-22, CE-11, CG-5, CE-19/20, CG-7/8/9/10/16/17 y CG-24/25/16/27 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ05. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 05, según se puede ver en su descripción OG\_Descripción: "Diseñar, desarrollar, evaluar y asegurar la accesibilidad, ergonomía, usabilidad y seguridad de los sistemas, aplicaciones y servicios informáticos, así como de la información que proporcionan, conforme a la legislación y normativa vigentes." Está relacionada con las competencias CG-1/21, CE-34, CE-23, CE-28, CE-29 y CE-32 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ06. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 06, según se puede ver en su descripción OG\_Descripción: "Definir, evaluar y seleccionar plataformas hardware y software para el desarrollo y la ejecución de aplicaciones y servicios informáticos de diversa complejidad." Está relacionada con las competencias CG-1/21, CE-34, CE-26/27, CE-19/20 y CE-41 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ07. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 07, según se puede ver en su descripción OG\_Descripción: "Disponer de los fundamentos matemáticos, físicos, económicos y sociológicos necesarios para interpretar, seleccionar, valorar, y crear nuevos conceptos, teorías, usos y desarrollos tecnológicos relacionados con la informática, y su aplicación." Está relacionada con las competencias CE-1, CE-19/20, CE-3/4, CG-6, CE-56, CE-5, CG-3/4, CE-42, CG-1/21, CG-14/15/18/23 y CE-12/16 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ08. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 08, según se puede ver en su descripción OG\_Descripción: "Concebir, desarrollar y mantener sistemas y aplicaciones software empleando diversos métodos de ingeniería del software y lenguajes de programación adecuados al tipo de aplicación a desarrollar manteniendo los niveles de calidad exigidos." Está relacionada con las competencias CE-33, CE-39, CE-41, CE-47, CE-37, CE-38, CE-25, CG-14/15/18/23, CE-6, CE-8, CG-7/8/9/10/16/17, CE-24, CG-1/21, CE-9, CE-32 y CE-21 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ09. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 09, según se puede ver en su descripción OG\_Descripción: "Concebir y desarrollar sistemas o arquitecturas informáticas, centralizadas o distribuidas, integrando hardware, software y redes." Está relacionada con las competencias CE-29, CE-10, CE-26/27, CE-40, CE-19/20, CE-14/15, CG-1/21, CG7/8/9/10/16/17, CE-32, CE-30, CE-28, CE-7, CE-22, CE-25, y CE-44 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ10. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 10, según se puede ver en su descripción OG\_Descripción: "Proponer, analizar, validar, interpretar, instalar y mantener soluciones informáticas en situaciones reales en diversas áreas de aplicación dentro de una organización." Está relacionada con las competencias CE-34, CE-2, CE-49, CE-14/15, CG-11/12/20, CE-42, CG-1/21, CE-36, CE-35, CG-7/8/9/10/16/17, CG-13/CE-55, CG-19 y CE-50 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item OBJ11. Es un individuo perteneciente a la clase Objetivo\_General, que representa el objetivo general número 11, según se puede ver en su descripción OG\_Descripción: "Concebir, desplegar, organizar y gestionar sistemas y servicios informáticos en contextos empresariales o institucionales para mejorar sus procesos de negocio, responsabilizándose y liderando su puesta en marcha y mejora continua, así como valorar su impacto económico y social." Está relacionada con las competencias CG-1/21, CE-46, CE-50, CG-14/15/18/23, CG-11/12/20, CE-31, CE-38, CG-7/8/9/10/16/17, CE-48, CE-51 y CE-47 mediante la relación OG\_seCumpleMedianteLaAdquisicionDe\_CO. Es distinto de todos los demás individuos de la ontología.
+ \item MA-Empresa. Este individuo representa a la materia Empresa. Está definido por las propiedades:
+ \begin{itemize}
+  \item MA\_Resultados: 
+  - Identificar y describir las áreas funcionales de una empresa y sus responsabilidades.
+  - Aplicar técnicas de presupuestos en el marco de un plan de negocio.
+  - Utilizar técnicas de análisis de mercados, identificar necesidades de productos y servicios dentro de un marco de innovación tecnológica y generación de ideas que permitan la innovación.
+  - Identificar, planificar, seguir y evaluar las acciones necesarias para definir y alcanzar un objetivo dentro de una estrategia empresarial.
+  - Capacidad para la identificación, análisis y diseño de procesos de negocio en una organización.
+  - Conocimiento y aplicación de los principales marcos de procesos aplicables a las TI (Tecnologías de la Información).
+  - Definir indicadores y métricas en los procesos de negocio y de TI que permitan la mejora continua de los mismos.
+  - Conocimiento de las técnicas que permiten la mejora de procesos en los entornos de desarrollo, adquisición y servicios de TI.
+  - Capacitarse para la realización de certificaciones básicas relacionadas con procesos de negocio y TI.
+  \item MA\_Evaluación: 
+  - Pruebas objetivas (verdadero/falso, elección múltiple, emparejamiento de elementos...), de respuesta corta.
+  - Pruebas de respuesta larga, de desarrollo.
+  - Pruebas orales (individual, en grupo, presentación de temas-trabajos...).
+  - Pruebas de ejecución de tareas reales y/o simuladas.
+  \item MA\_Coordinación:
+   La coordinación en esta materia se va llevar a cabo por medio de la Comisión de Coordinación Vertical establecida para la misma, tal y como se describe en la sección 5. Planificación de las enseñanzas.
+  \item MA\_Créditos: "12.0"
+  \item MA\_Duración\_Y\_Ubicación:
+    "Materia compuesta por 2 asignaturas programadas en el 4º y 7º semestre, tal y como se recoge a continuación en la tabla de asignaturas"
+  \item MA\_Carácter: "Mixta"
+ \end{itemize}
+ Está relacionado con los individuos 
+\end{description}
 
 %%% Local Variables: 
 %%% mode: latex
