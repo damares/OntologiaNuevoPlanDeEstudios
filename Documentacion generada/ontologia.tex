@@ -34,22 +34,71 @@ Las ontologías OWL e protegé están compuestas por clases, propiedades e individu
 Además, el uso de ontologías OWL-DL, nos permite el uso de herramientas automáticas para comprobar que todas las sentencias y definiciones que conforman el lenguaje son consistentes, además de poder razonar qué individuos encajan en qué descripciones, o si la jerarquía establecida es consistente con los individuos presentes y sus descriupciones.
 Primeramente se mostrarán las clases, pero no se hablará de sus relaciones ni de los individuos que la componen. Posteriormente se tratarán la propiedades de los objetos (sus relaciones), y por último se entrará a detalle con los individuos que componen la ontología, explicando las relaciones, clases y propiedades de ellos.
 
-\begin{itemize}
-
-  \item Clases de la ontología.
+\subsection{Clases de la ontología}
   Las clases se pueden definir en protegé como conjuntos que contienen individuos. Las clases se describen utilizando descripciones formales que definen inequívocamente los requisitos de pertenencia a una clase. 
   Las clases se organizan en conjuntos de superclases y subclases, que forma la taxonomía de nuestro universo en observación. Esta taxonomía puede ser obtenida de manera automática por un razonador, que también puede comprobar su consistencia.
   Se han definido siete clases para la creación de nuestra ontología.	
-    \begin{enumerate}
-      \item Objetivo\_General.
+\lstset{language=protege,basicstyle=\sffamily,columns=flexible,mathescape}
+    \begin{description}
+      \item[Objetivo\_General.]
       Con la clase Objetivo\_General queremos definir el conjunto de individuos que componen los objetivos generales del título. Esta clase no cuenta con ninguna definición, ya que los objetivos generales vienen definidos en el título. El único criterio de pertenencia posible a esta clase, es la definición de objetivos en el plan de estudios.
-      \item Competencia.
-      La clase Competencia agrupa a todas las competencias que es preciso adquirir para lograr el cumplimiento de los objetivos generales establecidos. Se definen como compentencias todos aquellos individuos que representan aptitudes y actitudes, cuya adquisición por parte del alumno conlleva la consecución de los objetivos generales propuestos para la obtención del título. Formalmente, se define como aquellos individuos que están relacionados con individuos de la clase Objetivo\_General mediante la propiedad que defina la adquisición, al menos una vez y que sólo tengan relación con individuos de la clase Objetivo\_General. Más adelante veremos la sintaxis de esta descripción en protegé, y definiremos la propiedad formalmente. Dentro de esta clase, podemos definir dos grupos de compentecias, según sean competencias específicas (propias de la rama del conocimiento donde se enmarca la titulación) o generales (comunes a todas las ramas del conocimiento y que suelen referirse a aptitudes y actitudes más que a conocimientos o metodologías).
-      \begin{description}
-	\item Competencia\_General. La clase Competencia\_General engloba todas las competencias que es preciso adquirir para el cumplimiento de los objetivos generales del título, y que son comunes a otras ramas del conocimiento, como por ejemplo ``Saber trabajar en situaciones carentes de información y bajo presión, teniendo nuevas ideas y siendo creativo''. Se trata de una competencia que bien podría servir para cualquier otra titulación, no únicamente para la que estamos modelando. En general, están orientadas a la adqusición de aptitudes, actitudes y capacidades enfocadas hacia aspectos humanos, (como el trabajo en equipo, la motivación, o la actualización de conocimientos de manera autónoma, por citar algunos), que serán útiles al alumno en en su incorporación al mundo laboral. Son competencias generales todos aquellos individuos que son competencias y que además son otorgadas de forma específica al cursar una materia.
-	\item Competencia\_Especifica. La clase Competencia\_Especifica agrupa aquellas competencias que es preciso adquirir para el cumplimiento de los objetivos generales del título, y que son específicos de la rama del conocimiento propia de la titulación, como por ejemplo ``Concebir y desarrollar sistemas digitles utilizando lenguajes de descripción hardware''. Son competencias muy específicas de la titulación, y que fuera de ese ámbito su aplicación sería poco o nada útil. Suelen estar orientadas más hacia aspectos prácticos de la titulación e incluyen la adquisición de metodologías y rutinas de trabajo y desarrollo eminentemente prácticas. Se consideran competecias específicas todos aquellos individuos que son compentecias y que además son otorgadas de forma específica al cursar una materia
-      \end{description}
-      Como hemos visto, compentencias generales y específicas son distintas entre sí, pero los individuos de ambas clases adquieren su condición de competencia específica/general cuando son adquiridas al cursar una materia, sin disntinción entre unas y otras. Por cuestiones de diseño, y para facilitar la comprensión del modelo se ha optado por separar en dos clases las competencias específicas y generales. ¿Cómo distinguirá protegé entre las competencias específicas y generales? Los individuos pertenecientes a cada una de las clases, se relacionarán con las materias mediante dos relaciones distintas, creadas ad hoc para cada una de las clases. De este modo logramos que el razonador, una vez haya clasificado un individuo como perteneciente a la clase competencia, pueda clasificarlo como general o específica en función de la propiedad que lo relacione con las materias, ganando en potencia de cálculo, auqnue para ello la ontología deba de ser algo más compleja.
+      \item[Competencia.]
+      La clase \lstinline{Competencia} agrupa a todas las competencias que es preciso adquirir para lograr el cumplimiento de los objetivos generales establecidos. Se definen como compentencias todos aquellos individuos que representan aptitudes y actitudes, cuya adquisición por parte del alumno conlleva la consecución de los objetivos generales propuestos para la obtención del título.
+
+Formalmente, se define como aquellos individuos que están relacionados con individuos de la clase \lstinline{Objetivo_General} mediante la propiedad que defina la adquisición, al menos una vez y que sólo tengan relación con individuos de la clase \lstinline{Objetivo_General}:
+\begin{lstlisting}
+CO_seAdquiereParaCumplir_OG min 1 Objetivo_General $\cap$
+CO_seAdquiereParaCumplir_OG some Objetivo_General
+
+Competencia $\supseteq$ (Competencia_General $\cup$ Competencia_Específica)
+
+Competencia_General $\cap$ Compentencia Específica = $\varnothing$
+\end{lstlisting}
+
+ Más adelante veremos la sintaxis de esta descripción en protegé, y definiremos la propiedad formalmente. Dentro de esta clase, podemos definir dos grupos de compentecias, según sean competencias específicas (propias de la rama del conocimiento donde se enmarca la titulación) o generales (comunes a todas las ramas del conocimiento y que suelen referirse a aptitudes y actitudes más que a 
+conocimientos o metodologías).
+	\begin{description}
+	\item[Competencia\_General.] La clase \lstinline{Competencia_General} engloba todas las competencias que es preciso adquirir para el cumplimiento de los objetivos generales del título, y que son comunes a otras ramas del conocimiento. 
+	
+	En general, están orientadas a la adqusición de aptitudes, actitudes y capacidades enfocadas hacia aspectos humanos, (como el trabajo en equipo, la motivación, o la actualización de conocimientos de manera autónoma, por citar algunos), que serán útiles al alumno en su incorporación al mundo laboral.
+	
+	Son competencias generales todos aquellos individuos que son competencias y que además son otorgadas al alumno al cursar una materia definida. Dicho de otro modo, el hecho de cursar una determinada materia, hace que el alumno adquiera ciertas competencias generales.
+	
+	En la sintaxis de protegé, se define una \lstinline{Competencia_General} de la siguiente forma:
+	
+	\begin{lstlisting}
+	Compentencia_General $\subset$ Competencia
+	
+	Competencia $\cap$ (CG_esOtorgadaPor_MA some Materia)
+	
+	Competencia_General $\cap$ Compentencia Específica = $\varnothing$
+	
+	\end{lstlisting}
+	
+
+	\item[Competencia\_Especifica.] La clase \lstinline{Competencia_Especifica} agrupa aquellas competencias que es preciso adquirir para el cumplimiento de los objetivos generales del título, y que son específicos de la rama del conocimiento propia de la titulación.
+	
+	Son competencias muy específicas de la titulación, y que fuera de ese ámbito su aplicación sería poco o nada útil. Suelen estar orientadas más hacia aspectos prácticos de la titulación e incluyen la adquisición de metodologías y rutinas de trabajo y desarrollo eminentemente prácticas. 
+	
+	Se consideran competecias específicas todos aquellos individuos que son compentecias y que además son otorgadas de forma específica al cursar una materia. Visto de una manera más formal:
+	
+	\begin{lstlisting}
+	Compentencia_Específica $\subset$ Competencia
+	
+	Competencia $\cap$ (CE_esOtorgadaPor_MA some Materia)
+	
+	Competencia_Específica $\cap$ Compentencia General = $\varnothing$
+	
+	\end{lstlisting}
+	
+	
+  \end{description}
+  
+  Como hemos visto, compentencias generales y específicas son disjuntas entre sí, pero para la especificación de una \lstinline{Compentencia} dentro de \lstinline{Competencia_General} o \lstinline{Competencia_Específica} es suficiente con que la relación de la \lstinline{Competencia} con la \lstinline{Materia} tenga como dominio uno u otro conjunto de competencias, sin mayo diferenciación.
+  
+  Visto de esta forma, se podría haber optado por eliminar las subclases \lstinline{Competencia_General} y \lstinline{Competencia_Específica} y que hubiesen quedado diferenciadas únicamente por una etiqueta (con una Data Property diferente, por ejemplo), pero por cuestiones de diseño, y para facilitar la comprensión del modelo se ha optado por separar en dos clases las competencias específicas y generales. 
+  
+  ¿Cómo distinguirá protegé entre competencias específicas y generales? Los individuos pertenecientes a cada una de las clases, se relacionarán con las materias mediante dos relaciones distintas, creadas ad hoc para cada una de las clases. De este modo logramos que el razonador, una vez haya clasificado un individuo como perteneciente a la clase competencia, pueda clasificarlo como general o específica en función de la propiedad que lo relacione con las materias, ganando en potencia de cálculo, auqnue para ello la ontología deba de ser algo más compleja.
       \item Materia.
       La clase Materia aglutina todos los individuos que representan las diferentes materias de que se compone la titulación. Coloquialmente podemos entender las materias como aquellos individuos que permiten al alumno adquirir competencias, de modo que puedan cumplir con las objetivos generales del título. Formalmente hablando, son materias todos aquellos individuos relacionados con algún individuo de la clase Competencia, y al menos una vez con alguna Competencia\_General. Posteriormente se definirá la propiedad que une Materia con Compentencia y con Competencia\_General. 
       \item Asignatura.
@@ -60,9 +109,9 @@ Primeramente se mostrarán las clases, pero no se hablará de sus relaciones ni de
       \item Metodo\_Docente.
       Un método docente es un conjunto de formas, procedimientos, técnicas, actividades, etc, de enseñanza y aprendizaje. Para una misma materia, es por tanto comatible el uso de diversos métodos docentes compaginados con las distintas actividades formativas. Algunas actividades formativas y algunos métodos docentes serán mutuamente excluyentes, pero por regla general pueden conbinarse entre ellos a criterio del docente. 
       En la ontología definimos un método docente como el conjunto de procedimientos y técnicas de enseñanza y aprendizaje utilizados para impartir una materia. Más formalmente, podríamos definir un método docente como aquellos individuos que están relacionados al menos una vez con al menos un individuo de la clase materia. Más tarde veremos la definición de las propiedades en sintaxis de protegé.
-    \end{enumerate}
+    \end{description}
 
-  \item Propiedades de objetos.
+\subsection{Propiedades de la ontología}
   Las propiedades son relaciones binarias entre individuos, es decir, una propiedad une dos individuos entre sí. Las propiedades pueden tener inversas, pueden ser funcionales, transitivas, simétricas... Estas relaciones se pueden dar tanto entre individuos de la misma clase, como entre individuos de distintas clases...
   Un razonador automático puede computar si una relación entre dos individuos es consistente con el resto de la ontología. 
   Es de destacar que las propiedades únicamente se pueden establecer entre dos individuos. No existen propiedades con cardinalidad tres, lo que implicará que en el caso de que que sea preciso establecer una relación a tres, sería preciso modelarlo como la relación binaria entre el producto escalar de dos de ellas sobre la tercera. 
@@ -141,8 +190,13 @@ Primeramente se mostrarán las clases, pero no se hablará de sus relaciones ni de
     Las actividades formativas se realizan para impartir las diferentes materias, según cierto número de créditos especificado en la guía del plan de estudios. Además se ha considerado importante, de cara al diseño del título, conocer cuántos créditos se dedican a cada actividad formativa. Más adelante, en la descripción de los distintos individuos, veremos cómo se almacena esa información. 
     
   \end{enumerate}
+\subsection{Individuos de la ontología}
+  Los individuos representan objetos de la ontología en el dominio que estamos estudiando. Protegé no hace uso del Unique Name Assumption, es decir, para protegé dos individuos pueden referirse al mismo objeto del mundo real, salvo que se especifique lo contrario. Esta es una consecuencia de las ontologías OWL: todo lo que no sea dicho de forma explícita puede ser cierto. El hecho de que no especifiquemos si dos individuos son o no los mismos, significa que pueden o no serlo, para ese dominio. En nuestra ontología todos los individuos que componen la ontología son distintos, lo que se especificara correctamente en la definición de cada individuo.
+  \begin{description}
+   \item OBJ01: Representa
+  \end{description}
   
-  \item Propiedades sobre tipos de datos.
+\subsection{Propiedades sobre tipos de datos}
   Las propiedaddes sobre tipos de datos son relaciones entre individuos y tipos de datos, de modo que se puede asociar a los individuos implicados en la relación ciertas características, ya sean de un tipo definido o indefinido, pero concretas y especificas. 
   \begin{enumerate}
    \item OG\_Descripción.
@@ -206,8 +260,6 @@ Primeramente se mostrarán las clases, pero no se hablará de sus relaciones ni de
    Rango:	\{"1er semestre", "2o semestre", "3er semestre", "4o semestre", "5o semestre", "6o semestre", "7o semestre", "Ultimo curso"\}
    Las asignaturas se ubican por trimestres. La propiedad AS\_Ubicación, nos permite asignar a cada asignatura su ubicación temporal correcta, de modo que su distribución sea adecuada.
   \end{enumerate}
-\end{itemize}
-
 
 \section{Instancia UPM (varios ejemplos?)}
 %\item Individuos de la ontología.
