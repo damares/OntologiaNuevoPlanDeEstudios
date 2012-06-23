@@ -116,12 +116,18 @@ conocimientos o metodologías).
   Un razonador automático puede computar si una relación entre dos individuos es consistente con el resto de la ontología. 
   Es de destacar que las propiedades únicamente se pueden establecer entre dos individuos. No existen propiedades con cardinalidad tres, lo que implicará que en el caso de que que sea preciso establecer una relación a tres, sería preciso modelarlo como la relación binaria entre el producto escalar de dos de ellas sobre la tercera. 
   
-  \begin{enumerate}
-    \item OG\_seCumpleMedianteLaAdquisicionDe\_CO.
-    Dominio: 	Objetivo\_General.
-    Rango: 	Competencia.
-    Inversa: 	CO\_seAdquiereParaCumplir\_OG
-    Se trata de la relación que existe entre individuos pertenecientes a la clase Objetivo\_General y Competencia, mediante la cual se modela el hecho de que los objetivos generales de la titulación se cumplen al adquirirse ciertas competencias definidas en la guía de la titulación. 
+  \begin{description}
+    \item [OG\_seCumpleMedianteLaAdquisicionDe\_CO.] Como ya se comentó anteriormente, el objetivo de las titulaciones de grado es lograr que el alumno adquiera unos niveles de destreza mínimos en el manejo de ciertas competencias definidas en el título, de modo que esté capacitado para enfrentarse al mercado laboral. 
+    
+    Estas competencias se van adquiriendo conforme el alumno avanza por el itinerario formativo, hasta alcanzar los niveles mínimos exigidos en la titulación al finalizar sus estudios. Es por tanto la adquisición de esas competencias lo que permite al alumno cumplir con las objetivos generales establecidos en el título de grado. Dicho de otro modo, la titulación permite el cumplimiento de los objetivos marcados, en la medida que permite al alumno ir adquiriendo las competencias precisas para ello.
+     
+    Dominio: 	\lstinline{Objetivo_General.}
+    
+    Rango: 	\lstinline{Competencia.}
+    
+    Inversa: 	\lstinline{CO_seAdquiereParaCumplir_OG}.
+    
+    
     \item CO\_seAdquiereParaCumplir\_OG.
     Dominio: 	Competencia.
     Rango: 	Objetivo\_General.
@@ -189,7 +195,7 @@ conocimientos o metodologías).
     Inversa: 	MA\_seImparteSegún\_AF.
     Las actividades formativas se realizan para impartir las diferentes materias, según cierto número de créditos especificado en la guía del plan de estudios. Además se ha considerado importante, de cara al diseño del título, conocer cuántos créditos se dedican a cada actividad formativa. Más adelante, en la descripción de los distintos individuos, veremos cómo se almacena esa información. 
     
-  \end{enumerate}
+  \end{description}
 \subsection{Individuos de la ontología}
   Los individuos representan objetos de la ontología en el dominio que estamos estudiando. Protegé no hace uso del Unique Name Assumption, es decir, para protegé dos individuos pueden referirse al mismo objeto del mundo real, salvo que se especifique lo contrario. Esta es una consecuencia de las ontologías OWL: todo lo que no sea dicho de forma explícita puede ser cierto. El hecho de que no especifiquemos si dos individuos son o no los mismos, significa que pueden o no serlo, para ese dominio. En nuestra ontología todos los individuos que componen la ontología son distintos, lo que se especificara correctamente en la definición de cada individuo.
   \begin{description}
