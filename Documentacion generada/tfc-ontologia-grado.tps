@@ -18,17 +18,17 @@ MaxPos.x=-9
 MaxPos.y=-38
 NormalPos.left=30
 NormalPos.top=32
-NormalPos.right=1074
+NormalPos.right=1070
 NormalPos.bottom=504
 Class=CLatexEdit
 Document=summary.tex
 
 [Frame0_Row0]
-cyCur=412
+cyCur=413
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1007
+cxCur=1003
 cxMin=10
 
 [Frame0_View0,0]
@@ -53,7 +53,7 @@ Class=CLatexEdit
 Document=tfc-ontologia-grado.tex
 
 [Frame1_Row0]
-cyCur=415
+cyCur=416
 cyMin=10
 
 [Frame1_Col0]
@@ -73,7 +73,7 @@ ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
-MaxPos.y=-31
+MaxPos.y=-30
 NormalPos.left=50
 NormalPos.top=52
 NormalPos.right=630
@@ -82,7 +82,7 @@ Class=CLatexEdit
 Document=ontologia.tex
 
 [Frame2_Row0]
-cyCur=214
+cyCur=215
 cyMin=10
 
 [Frame2_Col0]
@@ -90,9 +90,9 @@ cxCur=543
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=45
-Cursor.column=31
-TopSubLine=176
+Cursor.row=7
+Cursor.column=0
+TopSubLine=16
 
 [Frame3]
 Columns=1
@@ -102,7 +102,7 @@ ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
-MaxPos.y=-31
+MaxPos.y=-30
 NormalPos.left=90
 NormalPos.top=96
 NormalPos.right=669
@@ -111,15 +111,15 @@ Class=CLatexEdit
 Document=introduccion.tex
 
 [Frame3_Row0]
-cyCur=448
+cyCur=226
 cyMin=10
 
 [Frame3_Col0]
-cxCur=757
+cxCur=749
 cxMin=10
 
 [Frame3_View0,0]
-Cursor.row=250
-Cursor.column=127
-TopSubLine=419
+Cursor.row=264
+Cursor.column=4
+TopSubLine=335
 

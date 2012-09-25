@@ -1,0 +1,58 @@
+%%
+%% This is file `lstlang0.sty',
+%% contains the definition of several language styles: slamsl
+%% 
+%% Copyright (C) 2000,2001 Ángel Herranz-Nieva <aherranz _at_ fi.upm.es>
+%% 
+%% This program is free software; you can redistribute it and/or modify
+%% it under the terms of the GNU General Public License as published by
+%% the Free Software Foundation; either version 2 of the License, or
+%% (at your option) any later version.
+%%
+%% This program is distributed in the hope that it will be useful,
+%% but WITHOUT ANY WARRANTY; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+%% GNU General Public License for more details.
+%%
+%% You should have received a copy of the GNU General Public License
+%% along with this program; if not, write to the Free Software
+%% Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+%% This file is distributed freely. You are not allowed to take money for
+%% the use or distribution of this file, except for a nominal charge for
+%% copying etc..
+
+%% Emacs macro for translating from slam-reserved.lex into morekeypasswords:
+%% C-SPC           ;; set-mark-command
+%% C-s         ;; isearch-forward
+%% "           ;; TeX-insert-quote
+%% <right>         ;; forward-char
+%% <left>          ;; backward-char
+%% DEL         ;; backward-delete-char-untabify
+%% C-w         ;; kill-region
+%% 6*SPC           ;; self-insert-command
+%% 2*C-s           ;; isearch-forward
+%% <left>          ;; backward-char
+%% C-k         ;; kill-line
+%% ,           ;; self-insert-command
+%% <right>         ;; forward-char
+
+\lstdefinelanguage{protege}%
+  {morekeywords={
+      any,
+      min,
+      some,
+      },%
+% %   otherkeywords={=,<,>,:,|,(,)},%
+%    sensitive,%
+%    morecomment=[l]--,%
+%    morecomment=[s]{\{-}{-\}},%
+%    commentstyle=\itshape,%
+%    morestring=[b]",%
+%    keepspaces=true,%
+% %   literate={and}{$\mathbf{\wedge}$ }2 {or}{$\mathbf{\vee}$ }2,%
+%    literate={<-}{{$\boldsymbol\gets$}}2 {=}{{$=$}}1 {~}{{$\boldsymbol\neg$}}2 {(A)}{{$\boldsymbol\forall$}}1 {(E)}{{$\boldsymbol\exists$}}1 {\\/}{{$\boldsymbol\lor$}}1 {/\\}{{$\boldsymbol\land$}}1 {=>}{{$\boldsymbol\Rightarrow$}}2 {<=}{{$\boldsymbol\Leftarrow$}}2 {<=}{{$\boldsymbol\le$}}2 {>=}{{$\boldsymbol\ge$}}2
+  }[keywords,comments,strings]%
+
+\endinput
+%%
+%% End of file `lstlang0.sty'.

@@ -19,10 +19,11 @@
 \usepackage[
 a4paper,
 bindingoffset=10mm,
-hmargin=30mm,
+hmargin=30mm,			
 vmargin=35mm,
 textwidth=150mm,
-textheight=225mm]{geometry}
+textheight=225mm,
+marginpar=25mm]{geometry}
 \linespread{1.1} % Para forzar unas 40 líneas
 \setlength{\parskip}{1.5ex}
 
@@ -93,7 +94,7 @@ textheight=225mm]{geometry}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Macros para este TFC
-\newcommand{\titulo}{Uso de ontologís para la implantación del EEES en las titulaciones de grado}
+\newcommand{\titulo}{Uso de ontologías para la implantación del Espacio Europeo de Educación Superior en las titulaciones de grado}
 \newcommand{\autor}{Daniel Martínez Esteban}
 \newcommand{\tutor}{Ángel Herranz Nieva}
 \newcommand{\fecha}{Julio 2012}
@@ -112,10 +113,11 @@ textheight=225mm]{geometry}
 \if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \makeatother
 
-\usepackage{todonotes}
+\usepackage[textsize=small]{todonotes}
 
 \usepackage{hyperref}
 
+\usepackage{listings}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
