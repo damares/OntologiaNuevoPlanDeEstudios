@@ -55,6 +55,47 @@ Competencia $\supseteq$ (Competencia_General $\cup$ Competencia_Específica)
 Competencia_General $\cap$ Compentencia Específica = $\varnothing$
 \end{lstlisting}
 
+Tabla con la semántica de Mánchester:
+
+\lstset{language=owlms,literate=,mathescape}
+
+\begin{center}
+  \begin{tabular}{||l|l||}
+    \hline
+    \hline
+    Expresión Mánchester & Semántica en teoría de conjuntos\\
+    \hline
+    \hline
+    \lstinline!$R$ only $C$! & $\{x ~|~ \forall y.~  x R y ~\rightarrow~ y \in C\}$\\
+    \hline
+    \lstinline!$R$ some $C$! & $\{x ~|~ \exists y.~  x R y ~\land~ y \in C\}$\\
+    \hline
+    \begin{minipage}[b]{0.4\linewidth}
+\begin{lstlisting}
+Class: $A$
+
+    EquivalentTo:
+        $C$
+\end{lstlisting}
+    \end{minipage}
+    & $A = C$\\
+    \hline
+    \lstinline!Class: $A$ EquivalentTo: $C$! & $A = C$\\
+    \hline
+    \lstinline!Class: $A$ SubClassOf: $C$! & $A \subset C$\\
+    \hline
+    \hline
+  \end{tabular}
+\end{center}
+
+\todo{Buscar la forma de que lstinputlisting imprima el número de página real del fichero}
+\lstinputlisting[language=owlms,literate=,linerange=405-412]{t-box.ms}
+
+\todo{Buscar la manera de indicarle a lstinputlisting las líneas de una forma más simbólica}
+\lstinputlisting[language=owlms,literate=,linerange="Class: Competencia"-"        owl:Thing"]{t-box.ms}
+
+
+
  Más adelante veremos la sintaxis de esta descripción en protegé, y definiremos la propiedad formalmente. Dentro de esta clase, podemos definir dos grupos de compentecias, según sean competencias específicas (propias de la rama del conocimiento donde se enmarca la titulación) o generales (comunes a todas las ramas del conocimiento y que suelen referirse a aptitudes y actitudes más que a 
 conocimientos o metodologías).
 	\begin{description}

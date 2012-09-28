@@ -119,6 +119,11 @@ marginpar=25mm]{geometry}
 
 \usepackage{listings}
 
+\usepackage{xcolor}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{light-gray}{rgb}{0.97,0.97,0.97}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Comienza en libro
@@ -195,15 +200,15 @@ marginpar=25mm]{geometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% COMIENZO DE LOS APÉNDICES
 %% (NO TOCAR)
-% \appendix
+\appendix
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% APÉNDICES:
 %%  * PONER CADA APÉNDICE EN UN FICHERO COMO SI FUERAN CAPÍTULOS
 %%  * HACER UN include POR CADA FICHERO E INCLUIRLO EN includeonly
 %%  * AÑADIR \clearemptydoublepage DESPUÉS DE CADA include
-% \include{ej-apendice}
-% \cleardoublepage
+\include{tboxms}
+\cleardoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% COMIENZO DE LA BIBLIOGRAFÍA
